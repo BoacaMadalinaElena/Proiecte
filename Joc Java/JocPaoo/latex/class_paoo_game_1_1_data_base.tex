@@ -1,0 +1,74 @@
+\hypertarget{class_paoo_game_1_1_data_base}{}\doxysection{Paoo\+Game.\+Data\+Base Class Reference}
+\label{class_paoo_game_1_1_data_base}\index{PaooGame.DataBase@{PaooGame.DataBase}}
+
+
+Collaboration diagram for Paoo\+Game.\+Data\+Base\+:
+% FIG 0
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_paoo_game_1_1_data_base_adce3049c6df8e8bca7e3fa333b942a35}\label{class_paoo_game_1_1_data_base_adce3049c6df8e8bca7e3fa333b942a35}} 
+{\bfseries Data\+Base} ()
+\begin{DoxyCompactList}\small\item\em Constructorul clasei. \end{DoxyCompactList}\item 
+List$<$ \mbox{\hyperlink{class_paoo_game_1_1_auxiliary_1_1_data_base_item}{Data\+Base\+Item}} $>$ \mbox{\hyperlink{class_paoo_game_1_1_data_base_ae29d78172238701abf6c6c162aa31261}{CREATE}} (int opt, String name)
+\begin{DoxyCompactList}\small\item\em Va gestiona baza de date(din ea voi apela celelalte metode). \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_paoo_game_1_1_data_base_a6491dd98990066c2d66038b9ffd7df7a}{INSERT}} ()
+\begin{DoxyCompactList}\small\item\em Va insera datele actuale(viata,banuti,diamante etc) in baza de date. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_paoo_game_1_1_data_base_acca70a84dfde513877c38790544e65ad}\label{class_paoo_game_1_1_data_base_acca70a84dfde513877c38790544e65ad}} 
+List$<$ \mbox{\hyperlink{class_paoo_game_1_1_auxiliary_1_1_data_base_item}{Data\+Base\+Item}} $>$ {\bfseries get\+Data\+Base\+Items} ()
+\begin{DoxyCompactList}\small\item\em Va returna o lista cu toate inregistrarile din baza de date. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static String \mbox{\hyperlink{class_paoo_game_1_1_data_base_af9f944e33e7a462a30e188891b77f94d}{current\+Save}} = \char`\"{}\char`\"{}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_paoo_game_1_1_data_base_ae29d78172238701abf6c6c162aa31261}\label{class_paoo_game_1_1_data_base_ae29d78172238701abf6c6c162aa31261}} 
+\index{PaooGame.DataBase@{PaooGame.DataBase}!CREATE@{CREATE}}
+\index{CREATE@{CREATE}!PaooGame.DataBase@{PaooGame.DataBase}}
+\doxysubsubsection{\texorpdfstring{CREATE()}{CREATE()}}
+{\footnotesize\ttfamily public List$<$ \mbox{\hyperlink{class_paoo_game_1_1_auxiliary_1_1_data_base_item}{Data\+Base\+Item}} $>$ Paoo\+Game.\+Data\+Base.\+CREATE (\begin{DoxyParamCaption}\item[{int}]{opt,  }\item[{String}]{name }\end{DoxyParamCaption})}
+
+
+
+Va gestiona baza de date(din ea voi apela celelalte metode). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em opt} & un intreg prin case voi specifica ce operatie realizez cu baza de date. \\
+\hline
+{\em name} & un String ce indica ce data extrag din baza de date sau sterg \\
+\hline
+\end{DoxyParams}
+intHere is the call graph for this function\+:
+% FIG 1
+Here is the caller graph for this function\+:
+% FIG 2
+\mbox{\Hypertarget{class_paoo_game_1_1_data_base_a6491dd98990066c2d66038b9ffd7df7a}\label{class_paoo_game_1_1_data_base_a6491dd98990066c2d66038b9ffd7df7a}} 
+\index{PaooGame.DataBase@{PaooGame.DataBase}!INSERT@{INSERT}}
+\index{INSERT@{INSERT}!PaooGame.DataBase@{PaooGame.DataBase}}
+\doxysubsubsection{\texorpdfstring{INSERT()}{INSERT()}}
+{\footnotesize\ttfamily public void Paoo\+Game.\+Data\+Base.\+INSERT (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Va insera datele actuale(viata,banuti,diamante etc) in baza de date. 
+
+conversie vector stringHere is the caller graph for this function\+:
+% FIG 3
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_paoo_game_1_1_data_base_af9f944e33e7a462a30e188891b77f94d}\label{class_paoo_game_1_1_data_base_af9f944e33e7a462a30e188891b77f94d}} 
+\index{PaooGame.DataBase@{PaooGame.DataBase}!currentSave@{currentSave}}
+\index{currentSave@{currentSave}!PaooGame.DataBase@{PaooGame.DataBase}}
+\doxysubsubsection{\texorpdfstring{currentSave}{currentSave}}
+{\footnotesize\ttfamily String Paoo\+Game.\+Data\+Base.\+current\+Save = \char`\"{}\char`\"{}\hspace{0.3cm}{\ttfamily [static]}}
+
+Referinta spre numele inregistrari curente(utila la salvare). 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/\+Paoo\+Game/Data\+Base.\+java\end{DoxyCompactItemize}

@@ -1,0 +1,44 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="MEDICAMENT" directorySegmentName="seg_0" id="E85F5745-6A2A-3F3E-749D-6C05BCAD6590">
+<createdBy>boaca</createdBy>
+<createdTime>2022-11-22 14:55:36 UTC</createdTime>
+<ownerDesignName>BDP</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="ID" id="3A65E71F-50B5-88C3-DE28-8895AF88CA65">
+<createdBy>boaca</createdBy>
+<createdTime>2022-11-22 14:55:36 UTC</createdTime>
+<ownerDesignName>BDP</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="Firma_producatoare" id="7F074133-9914-3F6A-A923-164C901D1187">
+<createdBy>boaca</createdBy>
+<createdTime>2022-11-22 14:55:36 UTC</createdTime>
+<ownerDesignName>BDP</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="Nume" id="F54497E3-F60F-63D1-565F-897330F19E7F">
+<createdBy>boaca</createdBy>
+<createdTime>2022-11-22 14:55:36 UTC</createdTime>
+<ownerDesignName>BDP</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="MEDICAMENT_PK" id="6FEB5583-FC26-B885-E350-FC0314067F19">
+<createdBy>boaca</createdBy>
+<createdTime>2022-11-22 14:55:36 UTC</createdTime>
+<ownerDesignName>BDP</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+<uniqueKeys>
+<UniqueKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.UniqueOraclev10g" name="MDT_Nume_Firma_producatoare_UN" id="8388A5FA-7A37-BAD0-0638-6A5ECB19B90D">
+<createdBy>boaca</createdBy>
+<createdTime>2022-11-22 14:55:36 UTC</createdTime>
+<ownerDesignName>BDP</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</UniqueKey>
+</uniqueKeys>
+</TableProxyOraclev11g>

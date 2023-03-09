@@ -1,0 +1,16 @@
+digraph "PaooGame.Characters.Hero.getSnakeCollision"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="RL";
+  Node1 [label="PaooGame.Characters.Hero.get\lSnakeCollision",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Se returneaza coliziunile cu sarpele."];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="PaooGame.Characters.Hero.\lUpdate",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_paoo_game_1_1_characters_1_1_hero.html#aa3b509e5ee41c2d0c59256d593103a13",tooltip="Se actualizeaza pozitia prin mutare si viata."];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="PaooGame.States.Level1Game\lState.Update",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_paoo_game_1_1_states_1_1_level1_game_state.html#adcfbf27e52b7e7678289dff4b33b04eb",tooltip="Actualizeaza starea curenta a meniului."];
+  Node2 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node4 [label="PaooGame.States.Level2Game\lState.Update",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_paoo_game_1_1_states_1_1_level2_game_state.html#a6941f67fbe2b052f12bdb91f220780f6",tooltip="Actualizeaza starea curenta a nivelului 2."];
+  Node2 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node5 [label="PaooGame.States.Level3Game\lState.Update",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_paoo_game_1_1_states_1_1_level3_game_state.html#ab95ee73d642506adb84fb58bb63b9866",tooltip="Actualizeaza starea curenta a nivelului."];
+}

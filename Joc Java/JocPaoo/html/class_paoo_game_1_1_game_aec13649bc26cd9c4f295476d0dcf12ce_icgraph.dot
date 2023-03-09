@@ -1,0 +1,38 @@
+digraph "PaooGame.Game.getBs"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="RL";
+  Node1 [label="PaooGame.Game.getBs",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="PaooGame.States.DeadState.Draw",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_paoo_game_1_1_states_1_1_dead_state.html#a7230c2fd70a4c1fded650ed8748ed0d0",tooltip="Deseneaza starea actuala."];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="PaooGame.States.Efective\lSaveGameState.Draw",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_paoo_game_1_1_states_1_1_efective_save_game_state.html#a7e09018eef8e8d1a29766e86e0fb6ce6",tooltip="Deseneaza starea curenta."];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="PaooGame.States.FinishGame.Draw",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_paoo_game_1_1_states_1_1_finish_game.html#a7650fca00850024dd355701f408036d2",tooltip="Deseneaza pe ecran fereastra pentru castigare."];
+  Node1 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="PaooGame.States.FinishGame\lState.Draw",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_paoo_game_1_1_states_1_1_finish_game_state.html#abac7d726d78bcacdf2fae09a2e5c4afd",tooltip="Deseneaza pe ecran fereastra cu finalul jocului."];
+  Node1 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="PaooGame.States.FinishState.Draw",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_paoo_game_1_1_states_1_1_finish_state.html#a92b919332dc0df9ebe259b2fa9c6b85a",tooltip="Deseneaza starea actuala."];
+  Node1 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="PaooGame.States.Information\lState.Draw",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_paoo_game_1_1_states_1_1_information_state.html#ae76617460dd7263b6de566e3b7b0383a",tooltip="Deseneaza starea actuala."];
+  Node1 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="PaooGame.States.Level2Game\lState.Draw",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_paoo_game_1_1_states_1_1_level2_game_state.html#a14ac658e331c08cc5571b7bac51276c7",tooltip="Deseneaza (randeaza) pe ecran starea curenta a nivelului."];
+  Node1 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="PaooGame.States.Level3Game\lState.Draw",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_paoo_game_1_1_states_1_1_level3_game_state.html#af0719c8aabe61a8730b882ea007cbd41",tooltip="Deseneaza (randeaza) pe ecran starea curenta a jocului."];
+  Node1 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="PaooGame.States.LoadGame\lState.Draw",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_paoo_game_1_1_states_1_1_load_game_state.html#a3010efa864e386f65489e725e67724ff",tooltip="Deseneaza starea curenta."];
+  Node1 -> Node11 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="PaooGame.States.LoadPlayer\lGameState.Draw",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_paoo_game_1_1_states_1_1_load_player_game_state.html#a6ade127f38672878a30a48721e55afe4",tooltip="Deseneaza starea curenta."];
+  Node1 -> Node12 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 [label="PaooGame.States.MenuState.Draw",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_paoo_game_1_1_states_1_1_menu_state.html#a3dfdf0df206a01c79b2d61af823d1e2f",tooltip="Deseneaza meniul."];
+  Node1 -> Node13 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node13 [label="PaooGame.States.PauseState.Draw",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_paoo_game_1_1_states_1_1_pause_state.html#add8bb175484c9af7a3a5eda4a789677f",tooltip="Deseneaza starea actuala."];
+  Node1 -> Node14 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node14 [label="PaooGame.States.QuitGame\lState.Draw",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_paoo_game_1_1_states_1_1_quit_game_state.html#aa633992c7c93b6da044c9125f5c3e3b3",tooltip="Metoda va afisa starea curenta."];
+  Node1 -> Node15 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node15 [label="PaooGame.States.SaveGame\lState.Draw",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_paoo_game_1_1_states_1_1_save_game_state.html#a7114005212df1f990d560af6b881405c",tooltip="Deseneaza fereastra de salvari."];
+  Node1 -> Node16 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node16 [label="PaooGame.States.StartGame\lState.Draw",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_paoo_game_1_1_states_1_1_start_game_state.html#af3e8cca0d8d71cc3c37501ccc5424480",tooltip="Deseneaza fereastra de inceput a jocului."];
+}

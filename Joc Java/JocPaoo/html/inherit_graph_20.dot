@@ -1,0 +1,45 @@
+digraph "Graphical Class Hierarchy"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node0 [label="PaooGame.States.State",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_paoo_game_1_1_states_1_1_state.html",tooltip="Implementeaza sablonul de proiectare State : jocul este compus din mai multe stari."];
+  Node0 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 [label="PaooGame.States.DeadState",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_paoo_game_1_1_states_1_1_dead_state.html",tooltip="Pisica pierde jocul prin deces."];
+  Node0 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="PaooGame.States.Efective\lSaveGameState",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_paoo_game_1_1_states_1_1_efective_save_game_state.html",tooltip=" "];
+  Node0 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="PaooGame.States.ExitState",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_paoo_game_1_1_states_1_1_exit_state.html",tooltip=" "];
+  Node0 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="PaooGame.States.FinishGame",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_paoo_game_1_1_states_1_1_finish_game.html",tooltip="Implementeaza fereastra pentru final ."];
+  Node0 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="PaooGame.States.FinishGame\lState",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_paoo_game_1_1_states_1_1_finish_game_state.html",tooltip=" "];
+  Node0 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="PaooGame.States.FinishState",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_paoo_game_1_1_states_1_1_finish_state.html",tooltip=" "];
+  Node0 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="PaooGame.States.Information\lState",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_paoo_game_1_1_states_1_1_information_state.html",tooltip=" "];
+  Node0 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="PaooGame.States.Level1Game\lState",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_paoo_game_1_1_states_1_1_level1_game_state.html",tooltip="Implementeaza nivelul 1 pentru joc."];
+  Node0 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="PaooGame.States.Level2Game\lState",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_paoo_game_1_1_states_1_1_level2_game_state.html",tooltip="Implementeaza nivelul 2 pentru joc."];
+  Node0 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="PaooGame.States.Level3Game\lState",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_paoo_game_1_1_states_1_1_level3_game_state.html",tooltip="Implementeaza nivelul 3 pentru joc."];
+  Node0 -> Node11 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="PaooGame.States.LoadGame\lState",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_paoo_game_1_1_states_1_1_load_game_state.html",tooltip=" "];
+  Node0 -> Node12 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 [label="PaooGame.States.LoadPlayer\lGameState",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_paoo_game_1_1_states_1_1_load_player_game_state.html",tooltip=" "];
+  Node0 -> Node13 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node13 [label="PaooGame.States.MenuState",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_paoo_game_1_1_states_1_1_menu_state.html",tooltip=" "];
+  Node0 -> Node14 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node14 [label="PaooGame.States.PauseState",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_paoo_game_1_1_states_1_1_pause_state.html",tooltip=" "];
+  Node0 -> Node15 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node15 [label="PaooGame.States.QuitGame\lState",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_paoo_game_1_1_states_1_1_quit_game_state.html",tooltip="Starea jocului la apasare butonului Quit."];
+  Node0 -> Node16 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node16 [label="PaooGame.States.SaveGame\lState",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_paoo_game_1_1_states_1_1_save_game_state.html",tooltip=" "];
+  Node0 -> Node17 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node17 [label="PaooGame.States.Settings\lState",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_paoo_game_1_1_states_1_1_settings_state.html",tooltip=" "];
+  Node0 -> Node18 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node18 [label="PaooGame.States.StartGame\lState",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_paoo_game_1_1_states_1_1_start_game_state.html",tooltip=" "];
+}

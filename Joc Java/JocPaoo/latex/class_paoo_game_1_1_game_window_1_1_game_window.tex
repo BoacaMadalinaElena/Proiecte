@@ -1,0 +1,112 @@
+\hypertarget{class_paoo_game_1_1_game_window_1_1_game_window}{}\doxysection{Paoo\+Game.\+Game\+Window.\+Game\+Window Class Reference}
+\label{class_paoo_game_1_1_game_window_1_1_game_window}\index{PaooGame.GameWindow.GameWindow@{PaooGame.GameWindow.GameWindow}}
+
+
+Implementeaza notiunea de fereastra a jocului.  
+
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_paoo_game_1_1_game_window_1_1_game_window_a763ae2ea3666f1590054a9e20e01d07d}{Game\+Window}} (String title, int width, int height)
+\begin{DoxyCompactList}\small\item\em Constructorul cu parametri al clasei \mbox{\hyperlink{class_paoo_game_1_1_game_window_1_1_game_window}{Game\+Window}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_paoo_game_1_1_game_window_1_1_game_window_a401047a835220339910d693bac886691}{Build\+Game\+Window}} ()
+\begin{DoxyCompactList}\small\item\em Construieste/creaza fereastra si seteaza toate proprietatile necesare\+: dimensiuni, pozitionare in centrul ecranului, operatia de inchidere, invalideaza redimensionarea ferestrei, afiseaza fereastra. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_paoo_game_1_1_game_window_1_1_game_window_a39360a42d4d8c24c2ebec8b3d03f2352}{Get\+Wnd\+Width}} ()
+\begin{DoxyCompactList}\small\item\em Returneaza latimea ferestrei. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_paoo_game_1_1_game_window_1_1_game_window_a659d636b541896cceba73d348cbd0dbd}\label{class_paoo_game_1_1_game_window_1_1_game_window_a659d636b541896cceba73d348cbd0dbd}} 
+int {\bfseries Get\+Wnd\+Height} ()
+\item 
+\mbox{\Hypertarget{class_paoo_game_1_1_game_window_1_1_game_window_a0e12813f2ec27b3f0e40bb6a6ccfe77a}\label{class_paoo_game_1_1_game_window_1_1_game_window_a0e12813f2ec27b3f0e40bb6a6ccfe77a}} 
+Canvas {\bfseries Get\+Canvas} ()
+\begin{DoxyCompactList}\small\item\em Returneaza referinta catre canvas-\/ul din fereastra pe care se poate desena. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_paoo_game_1_1_game_window_1_1_game_window_a697d4d5be55803b78618917eb0e08888}\label{class_paoo_game_1_1_game_window_1_1_game_window_a697d4d5be55803b78618917eb0e08888}} 
+JFrame {\bfseries Get\+Wnd\+Frame} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Implementeaza notiunea de fereastra a jocului. 
+
+Membrul wnd\+Frame este un obiect de tip JFrame care va avea utilitatea unei ferestre grafice si totodata si cea a unui container (toate elementele grafice vor fi continute de fereastra). 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_paoo_game_1_1_game_window_1_1_game_window_a763ae2ea3666f1590054a9e20e01d07d}\label{class_paoo_game_1_1_game_window_1_1_game_window_a763ae2ea3666f1590054a9e20e01d07d}} 
+\index{PaooGame.GameWindow.GameWindow@{PaooGame.GameWindow.GameWindow}!GameWindow@{GameWindow}}
+\index{GameWindow@{GameWindow}!PaooGame.GameWindow.GameWindow@{PaooGame.GameWindow.GameWindow}}
+\doxysubsubsection{\texorpdfstring{GameWindow()}{GameWindow()}}
+{\footnotesize\ttfamily Paoo\+Game.\+Game\+Window.\+Game\+Window.\+Game\+Window (\begin{DoxyParamCaption}\item[{String}]{title,  }\item[{int}]{width,  }\item[{int}]{height }\end{DoxyParamCaption})}
+
+
+
+Constructorul cu parametri al clasei \mbox{\hyperlink{class_paoo_game_1_1_game_window_1_1_game_window}{Game\+Window}}. 
+
+Retine proprietatile ferestrei proprietatile (titlu, latime, inaltime) in variabilele membre deoarece vor fi necesare pe parcursul jocului. Crearea obiectului va trebui urmata de crearea ferestrei propriuzise prin apelul metodei \mbox{\hyperlink{class_paoo_game_1_1_game_window_1_1_game_window_a401047a835220339910d693bac886691}{Build\+Game\+Window()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em title} & Titlul ferestrei. \\
+\hline
+{\em width} & Latimea ferestrei in pixeli. \\
+\hline
+{\em height} & Inaltimea ferestrei in pixeli. \\
+\hline
+\end{DoxyParams}
+\texorpdfstring{$<$}{<} Retine titlul ferestrei.
+
+\texorpdfstring{$<$}{<} Retine latimea ferestrei.
+
+\texorpdfstring{$<$}{<} Retine inaltimea ferestrei.
+
+\texorpdfstring{$<$}{<} Fereastra nu este construita.
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_paoo_game_1_1_game_window_1_1_game_window_a401047a835220339910d693bac886691}\label{class_paoo_game_1_1_game_window_1_1_game_window_a401047a835220339910d693bac886691}} 
+\index{PaooGame.GameWindow.GameWindow@{PaooGame.GameWindow.GameWindow}!BuildGameWindow@{BuildGameWindow}}
+\index{BuildGameWindow@{BuildGameWindow}!PaooGame.GameWindow.GameWindow@{PaooGame.GameWindow.GameWindow}}
+\doxysubsubsection{\texorpdfstring{BuildGameWindow()}{BuildGameWindow()}}
+{\footnotesize\ttfamily private void Paoo\+Game.\+Game\+Window.\+Game\+Window.\+Build\+Game\+Window (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Construieste/creaza fereastra si seteaza toate proprietatile necesare\+: dimensiuni, pozitionare in centrul ecranului, operatia de inchidere, invalideaza redimensionarea ferestrei, afiseaza fereastra. 
+
+Daca fereastra a mai fost construita intr-\/un apel anterior se renunta la apel
+
+Aloca memorie pentru obiectul de tip fereastra si seteaza denumirea ce apare in bara de titlu
+
+Seteaza dimensiunile ferestrei in pixeli
+
+Operatia de inchidere (fereastra sa poata fi inchisa atunci cand este apasat butonul x din dreapta sus al ferestrei). Totodata acest lucru garanteaza ca nu doar fereastra va fi inchisa ci intregul program
+
+Avand in vedere ca dimensiunea ferestrei poate fi modificata si corespunzator continutul actualizat (aici ma refer la dalele randate) va recomand sa constrangeti deocamdata jucatorul sa se joace in fereastra stabilitata de voi. Puteti reveni asupra urmatorului apel ulterior.
+
+Recomand ca fereastra sa apara in centrul ecranului. Pentru orice alte pozitie se va apela \char`\"{}wnd\+Frame.\+set\+Location(x, y)\char`\"{} etc.
+
+Implicit o fereastra cand este creata nu este vizibila motiv pentru care trebuie setata aceasta proprietate
+
+Creaza obiectul de tip canvas (panza) pe care se poate desena.
+
+In aceeasi maniera trebuiesc setate proprietatile pentru acest obiect canvas (panza)\+: dimensiuni preferabile, minime, maxime etc. Urmotorul apel de functie seteaza dimensiunea \char`\"{}preferata\char`\"{}/implicita a obiectului de tip canvas. Functia primeste ca parametru un obiect de tip Dimension ca incapsuleaza doua proprietati\+: latime si inaltime. Cum acest obiect nu exista a fost creat unul si dat ca parametru.
+
+Avand in vedere ca elementele unei ferestre pot fi scalate atunci cand fereastra este redimensionata
+
+Avand in vedere ca obiectul de tip canvas, proaspat creat, nu este automat adaugat in fereastra trebuie apelata metoda add a obiectul wnd\+Frame
+
+Urmatorul apel de functie are ca scop eventuala redimensionare a ferestrei ca tot ce contine sa poate fi afisat complet\mbox{\Hypertarget{class_paoo_game_1_1_game_window_1_1_game_window_a39360a42d4d8c24c2ebec8b3d03f2352}\label{class_paoo_game_1_1_game_window_1_1_game_window_a39360a42d4d8c24c2ebec8b3d03f2352}} 
+\index{PaooGame.GameWindow.GameWindow@{PaooGame.GameWindow.GameWindow}!GetWndWidth@{GetWndWidth}}
+\index{GetWndWidth@{GetWndWidth}!PaooGame.GameWindow.GameWindow@{PaooGame.GameWindow.GameWindow}}
+\doxysubsubsection{\texorpdfstring{GetWndWidth()}{GetWndWidth()}}
+{\footnotesize\ttfamily public int Paoo\+Game.\+Game\+Window.\+Game\+Window.\+Get\+Wnd\+Width (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returneaza latimea ferestrei. 
+
+Returneaza inaltimea ferestrei. Here is the caller graph for this function\+:
+% FIG 0
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/\+Paoo\+Game/\+Game\+Window/Game\+Window.\+java\end{DoxyCompactItemize}

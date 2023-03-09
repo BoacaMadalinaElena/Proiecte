@@ -1,0 +1,68 @@
+\hypertarget{class_paoo_game_1_1_auxiliary_1_1_data_base_item}{}\doxysection{Paoo\+Game.\+Auxiliary.\+Data\+Base\+Item Class Reference}
+\label{class_paoo_game_1_1_auxiliary_1_1_data_base_item}\index{PaooGame.Auxiliary.DataBaseItem@{PaooGame.Auxiliary.DataBaseItem}}
+
+
+Collaboration diagram for Paoo\+Game.\+Auxiliary.\+Data\+Base\+Item\+:
+% FIG 0
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_paoo_game_1_1_auxiliary_1_1_data_base_item_a79add2f7935d4d0d4dbad002dfe9a0a4}{Data\+Base\+Item}} (String name, String date, int x, int y, int w, int h, \mbox{\hyperlink{class_paoo_game_1_1_tiles_1_1_tile}{Tile}} tile)
+\item 
+String \mbox{\hyperlink{class_paoo_game_1_1_auxiliary_1_1_data_base_item_ac15a4e867331920fe384e578c096b611}{get\+Name}} ()
+\item 
+String \mbox{\hyperlink{class_paoo_game_1_1_auxiliary_1_1_data_base_item_a29686e9bee643ff14f410b8d244acf25}{get\+Date}} ()
+\item 
+\mbox{\hyperlink{class_paoo_game_1_1_map_1_1_rectangle_id}{Rectangle\+Id}} \mbox{\hyperlink{class_paoo_game_1_1_auxiliary_1_1_data_base_item_a6a0f7052db5f317cbc33411e185f92e9}{get\+Rectangle}} ()
+\item 
+void \mbox{\hyperlink{class_paoo_game_1_1_auxiliary_1_1_data_base_item_a0be5208b7d3137f89268dde60ac4f7fd}{setX}} (int x)
+\item 
+void \mbox{\hyperlink{class_paoo_game_1_1_auxiliary_1_1_data_base_item_ae7d017fefaf5b8c76172ce7f0bd9e811}{setY}} (int y)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_paoo_game_1_1_auxiliary_1_1_data_base_item_a79add2f7935d4d0d4dbad002dfe9a0a4}\label{class_paoo_game_1_1_auxiliary_1_1_data_base_item_a79add2f7935d4d0d4dbad002dfe9a0a4}} 
+\index{PaooGame.Auxiliary.DataBaseItem@{PaooGame.Auxiliary.DataBaseItem}!DataBaseItem@{DataBaseItem}}
+\index{DataBaseItem@{DataBaseItem}!PaooGame.Auxiliary.DataBaseItem@{PaooGame.Auxiliary.DataBaseItem}}
+\doxysubsubsection{\texorpdfstring{DataBaseItem()}{DataBaseItem()}}
+{\footnotesize\ttfamily Paoo\+Game.\+Auxiliary.\+Data\+Base\+Item.\+Data\+Base\+Item (\begin{DoxyParamCaption}\item[{String}]{name,  }\item[{String}]{date,  }\item[{int}]{x,  }\item[{int}]{y,  }\item[{int}]{w,  }\item[{int}]{h,  }\item[{\mbox{\hyperlink{class_paoo_game_1_1_tiles_1_1_tile}{Tile}}}]{tile }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_paoo_game_1_1_auxiliary_1_1_data_base_item_a29686e9bee643ff14f410b8d244acf25}\label{class_paoo_game_1_1_auxiliary_1_1_data_base_item_a29686e9bee643ff14f410b8d244acf25}} 
+\index{PaooGame.Auxiliary.DataBaseItem@{PaooGame.Auxiliary.DataBaseItem}!getDate@{getDate}}
+\index{getDate@{getDate}!PaooGame.Auxiliary.DataBaseItem@{PaooGame.Auxiliary.DataBaseItem}}
+\doxysubsubsection{\texorpdfstring{getDate()}{getDate()}}
+{\footnotesize\ttfamily String Paoo\+Game.\+Auxiliary.\+Data\+Base\+Item.\+get\+Date (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_paoo_game_1_1_auxiliary_1_1_data_base_item_ac15a4e867331920fe384e578c096b611}\label{class_paoo_game_1_1_auxiliary_1_1_data_base_item_ac15a4e867331920fe384e578c096b611}} 
+\index{PaooGame.Auxiliary.DataBaseItem@{PaooGame.Auxiliary.DataBaseItem}!getName@{getName}}
+\index{getName@{getName}!PaooGame.Auxiliary.DataBaseItem@{PaooGame.Auxiliary.DataBaseItem}}
+\doxysubsubsection{\texorpdfstring{getName()}{getName()}}
+{\footnotesize\ttfamily String Paoo\+Game.\+Auxiliary.\+Data\+Base\+Item.\+get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_paoo_game_1_1_auxiliary_1_1_data_base_item_a6a0f7052db5f317cbc33411e185f92e9}\label{class_paoo_game_1_1_auxiliary_1_1_data_base_item_a6a0f7052db5f317cbc33411e185f92e9}} 
+\index{PaooGame.Auxiliary.DataBaseItem@{PaooGame.Auxiliary.DataBaseItem}!getRectangle@{getRectangle}}
+\index{getRectangle@{getRectangle}!PaooGame.Auxiliary.DataBaseItem@{PaooGame.Auxiliary.DataBaseItem}}
+\doxysubsubsection{\texorpdfstring{getRectangle()}{getRectangle()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_paoo_game_1_1_map_1_1_rectangle_id}{Rectangle\+Id}} Paoo\+Game.\+Auxiliary.\+Data\+Base\+Item.\+get\+Rectangle (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_paoo_game_1_1_auxiliary_1_1_data_base_item_a0be5208b7d3137f89268dde60ac4f7fd}\label{class_paoo_game_1_1_auxiliary_1_1_data_base_item_a0be5208b7d3137f89268dde60ac4f7fd}} 
+\index{PaooGame.Auxiliary.DataBaseItem@{PaooGame.Auxiliary.DataBaseItem}!setX@{setX}}
+\index{setX@{setX}!PaooGame.Auxiliary.DataBaseItem@{PaooGame.Auxiliary.DataBaseItem}}
+\doxysubsubsection{\texorpdfstring{setX()}{setX()}}
+{\footnotesize\ttfamily void Paoo\+Game.\+Auxiliary.\+Data\+Base\+Item.\+setX (\begin{DoxyParamCaption}\item[{int}]{x }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_paoo_game_1_1_auxiliary_1_1_data_base_item_ae7d017fefaf5b8c76172ce7f0bd9e811}\label{class_paoo_game_1_1_auxiliary_1_1_data_base_item_ae7d017fefaf5b8c76172ce7f0bd9e811}} 
+\index{PaooGame.Auxiliary.DataBaseItem@{PaooGame.Auxiliary.DataBaseItem}!setY@{setY}}
+\index{setY@{setY}!PaooGame.Auxiliary.DataBaseItem@{PaooGame.Auxiliary.DataBaseItem}}
+\doxysubsubsection{\texorpdfstring{setY()}{setY()}}
+{\footnotesize\ttfamily void Paoo\+Game.\+Auxiliary.\+Data\+Base\+Item.\+setY (\begin{DoxyParamCaption}\item[{int}]{y }\end{DoxyParamCaption})}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/\+Paoo\+Game/\+Auxiliary/\mbox{\hyperlink{_data_base_item_8java}{Data\+Base\+Item.\+java}}\end{DoxyCompactItemize}

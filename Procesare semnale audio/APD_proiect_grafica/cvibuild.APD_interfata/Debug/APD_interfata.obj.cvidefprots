@@ -1,0 +1,150 @@
+[main]
+Class="Function"
+Prototype="int main(int argc, char *argv[]);"
+SourceLocation="c:\Users\boaca\Desktop\Facultate\APDP\APD_proiect_grafica\APD_interfata.c:51:5"
+
+[afisareSemnal]
+Class="Function"
+Prototype="void afisareSemnal(int panel);"
+SourceLocation="c:\Users\boaca\Desktop\Facultate\APDP\APD_proiect_grafica\APD_interfata.c:76:6"
+
+[afisareSemnalFiltrat]
+Class="Function"
+Prototype="void afisareSemnalFiltrat(int panel);"
+SourceLocation="c:\Users\boaca\Desktop\Facultate\APDP\APD_proiect_grafica\APD_interfata.c:90:6"
+
+[afisareDerivata]
+Class="Function"
+Prototype="void afisareDerivata(int panel);"
+SourceLocation="c:\Users\boaca\Desktop\Facultate\APDP\APD_proiect_grafica\APD_interfata.c:104:6"
+
+[afisareAmvlopa]
+Class="Function"
+Prototype="void afisareAmvlopa(int panel);"
+SourceLocation="c:\Users\boaca\Desktop\Facultate\APDP\APD_proiect_grafica\APD_interfata.c:118:6"
+
+[OnAfisareAmvelopa]
+Class="Function"
+Prototype="int OnAfisareAmvelopa(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+SourceLocation="c:\Users\boaca\Desktop\Facultate\APDP\APD_proiect_grafica\APD_interfata.c:132:17"
+
+[OnPrev]
+Class="Function"
+Prototype="int OnPrev(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+SourceLocation="c:\Users\boaca\Desktop\Facultate\APDP\APD_proiect_grafica\APD_interfata.c:156:17"
+
+[OnNext]
+Class="Function"
+Prototype="int OnNext(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+SourceLocation="c:\Users\boaca\Desktop\Facultate\APDP\APD_proiect_grafica\APD_interfata.c:181:17"
+
+[OnAplica]
+Class="Function"
+Prototype="int OnAplica(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+SourceLocation="c:\Users\boaca\Desktop\Facultate\APDP\APD_proiect_grafica\APD_interfata.c:207:17"
+
+[OnMainPanel]
+Class="Function"
+Prototype="int OnMainPanel(int panel, int event, void *callbackData, int eventData1, int eventData2);"
+SourceLocation="c:\Users\boaca\Desktop\Facultate\APDP\APD_proiect_grafica\APD_interfata.c:262:17"
+
+[OnPanel2]
+Class="Function"
+Prototype="int OnPanel2(int panel, int event, void *callbackData, int eventData1, int eventData2);"
+SourceLocation="c:\Users\boaca\Desktop\Facultate\APDP\APD_proiect_grafica\APD_interfata.c:280:17"
+
+[OnDimensiuneFereastra]
+Class="Function"
+Prototype="int OnDimensiuneFereastra(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+SourceLocation="c:\Users\boaca\Desktop\Facultate\APDP\APD_proiect_grafica\APD_interfata.c:298:17"
+
+[OnLoadButtonCB]
+Class="Function"
+Prototype="int OnLoadButtonCB(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+SourceLocation="c:\Users\boaca\Desktop\Facultate\APDP\APD_proiect_grafica\APD_interfata.c:311:17"
+
+[StartValue]
+Class="Function"
+Prototype="int StartValue(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+SourceLocation="c:\Users\boaca\Desktop\Facultate\APDP\APD_proiect_grafica\APD_interfata.c:392:17"
+
+[StopValue]
+Class="Function"
+Prototype="int StopValue(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+SourceLocation="c:\Users\boaca\Desktop\Facultate\APDP\APD_proiect_grafica\APD_interfata.c:418:17"
+
+[AlphaSchimbat]
+Class="Function"
+Prototype="int AlphaSchimbat(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+SourceLocation="c:\Users\boaca\Desktop\Facultate\APDP\APD_proiect_grafica\APD_interfata.c:444:17"
+
+[OnSave]
+Class="Function"
+Prototype="int OnSave(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+SourceLocation="c:\Users\boaca\Desktop\Facultate\APDP\APD_proiect_grafica\APD_interfata.c:456:17"
+
+[OnDerivata]
+Class="Function"
+Prototype="int OnDerivata(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+SourceLocation="c:\Users\boaca\Desktop\Facultate\APDP\APD_proiect_grafica\APD_interfata.c:511:17"
+
+[OnTime_Freq]
+Class="Function"
+Prototype="int OnTime_Freq(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+SourceLocation="c:\Users\boaca\Desktop\Facultate\APDP\APD_proiect_grafica\APD_interfata.c:536:17"
+
+[OnSpectrumDimensiuneFereastra]
+Class="Function"
+Prototype="int OnSpectrumDimensiuneFereastra(int panel);"
+SourceLocation="c:\Users\boaca\Desktop\Facultate\APDP\APD_proiect_grafica\APD_interfata.c:560:6"
+
+[OnSpectrumPeOSecunda]
+Class="Function"
+Prototype="int OnSpectrumPeOSecunda(int panel);"
+SourceLocation="c:\Users\boaca\Desktop\Facultate\APDP\APD_proiect_grafica\APD_interfata.c:619:6"
+
+[OnTimer]
+Class="Function"
+Prototype="int OnTimer(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+SourceLocation="c:\Users\boaca\Desktop\Facultate\APDP\APD_proiect_grafica\APD_interfata.c:658:17"
+
+[FiltrareFerestruireSpectruSecunde]
+Class="Function"
+Prototype="int FiltrareFerestruireSpectruSecunde(int panel);"
+SourceLocation="c:\Users\boaca\Desktop\Facultate\APDP\APD_proiect_grafica\APD_interfata.c:788:5"
+
+[OnSpectrumPeTotSemnalul]
+Class="Function"
+Prototype="int OnSpectrumPeTotSemnalul(int panel);"
+SourceLocation="c:\Users\boaca\Desktop\Facultate\APDP\APD_proiect_grafica\APD_interfata.c:935:6"
+
+[FiltrareFerestruireSpectruTotSemnalul]
+Class="Function"
+Prototype="int FiltrareFerestruireSpectruTotSemnalul(int panel);"
+SourceLocation="c:\Users\boaca\Desktop\Facultate\APDP\APD_proiect_grafica\APD_interfata.c:973:5"
+
+[functieDateSchimbate]
+Class="Function"
+Prototype="int functieDateSchimbate(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+SourceLocation="c:\Users\boaca\Desktop\Facultate\APDP\APD_proiect_grafica\APD_interfata.c:1122:5"
+
+[OnNrEsantioane]
+Class="Function"
+Prototype="int OnNrEsantioane(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+SourceLocation="c:\Users\boaca\Desktop\Facultate\APDP\APD_proiect_grafica\APD_interfata.c:1272:17"
+
+[SaveFreq]
+Class="Function"
+Prototype="int SaveFreq(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+SourceLocation="c:\Users\boaca\Desktop\Facultate\APDP\APD_proiect_grafica\APD_interfata.c:1286:17"
+
+[OnWriteOutput]
+Class="Function"
+Prototype="int OnWriteOutput(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+SourceLocation="c:\Users\boaca\Desktop\Facultate\APDP\APD_proiect_grafica\APD_interfata.c:1498:17"
+
+[SaveWaveFrequency]
+Class="Function"
+Prototype="int SaveWaveFrequency(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+SourceLocation="c:\Users\boaca\Desktop\Facultate\APDP\APD_proiect_grafica\APD_interfata.c:1562:17"
+

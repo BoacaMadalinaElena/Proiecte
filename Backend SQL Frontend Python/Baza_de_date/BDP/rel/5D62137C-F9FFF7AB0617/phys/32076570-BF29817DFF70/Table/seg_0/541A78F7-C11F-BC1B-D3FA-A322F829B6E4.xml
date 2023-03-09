@@ -1,0 +1,62 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="DETALII_AFECTIUNE" directorySegmentName="seg_0" id="541A78F7-C11F-BC1B-D3FA-A322F829B6E4">
+<createdBy>boaca</createdBy>
+<createdTime>2022-11-22 14:55:36 UTC</createdTime>
+<ownerDesignName>BDP</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="Asistenta_personala" id="106B32D7-BAFF-80B3-0A82-FB515A1E7041">
+<createdBy>boaca</createdBy>
+<createdTime>2022-11-22 14:55:36 UTC</createdTime>
+<ownerDesignName>BDP</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="Specificitate_gen" id="1EDDB014-2E89-AA73-230F-1F02C85FE374">
+<createdBy>boaca</createdBy>
+<createdTime>2022-11-22 14:55:36 UTC</createdTime>
+<ownerDesignName>BDP</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="AFECTIUNE_ID" id="1F4BC59C-6343-7BE5-A002-B88EA7E323C9">
+<createdBy>boaca</createdBy>
+<createdTime>2022-11-22 14:55:36 UTC</createdTime>
+<ownerDesignName>BDP</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="Gravitate" id="231110F5-FA71-6C81-998A-29FC6A708598">
+<createdBy>boaca</createdBy>
+<createdTime>2022-11-22 14:55:36 UTC</createdTime>
+<ownerDesignName>BDP</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="Tratament_medicamentos" id="4CC58360-A3A6-4F2C-B9D6-8746CB0577AE">
+<createdBy>boaca</createdBy>
+<createdTime>2022-11-22 14:55:36 UTC</createdTime>
+<ownerDesignName>BDP</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="Rata_suicid" id="EF1AAC05-D581-F2B1-B3F3-4C991A697BF7">
+<createdBy>boaca</createdBy>
+<createdTime>2022-11-22 14:55:36 UTC</createdTime>
+<ownerDesignName>BDP</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="Rata_vindecare" id="F5EEC059-F6CA-5E50-3407-ECA0504F82FF">
+<createdBy>boaca</createdBy>
+<createdTime>2022-11-22 14:55:36 UTC</createdTime>
+<ownerDesignName>BDP</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="DETALII_AFECTIUNE__IDX" id="4CC62264-EEF9-29EA-AA4B-44D551197E29">
+<createdBy>boaca</createdBy>
+<createdTime>2022-11-22 14:55:36 UTC</createdTime>
+<ownerDesignName>BDP</ownerDesignName>
+</IndexProxy>
+</indexProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="DETALII_AFECTIUNE_AFECTIUNE_FK" id="13C28970-DB2F-E813-CF19-AC275F95F537">
+<createdBy>boaca</createdBy>
+<createdTime>2022-11-22 14:55:36 UTC</createdTime>
+<ownerDesignName>BDP</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+</TableProxyOraclev11g>

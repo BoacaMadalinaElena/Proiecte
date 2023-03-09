@@ -1,0 +1,15 @@
+digraph "PaooGame.Tiles.Tile.Draw"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="RL";
+  Node1 [label="PaooGame.Tiles.Tile.Draw",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Deseneaza in fereastra majoritatea dalelor."];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="PaooGame.States.LoadGame\lState.Draw",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_paoo_game_1_1_states_1_1_load_game_state.html#a3010efa864e386f65489e725e67724ff",tooltip="Deseneaza starea curenta."];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="PaooGame.States.LoadPlayer\lGameState.Draw",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_paoo_game_1_1_states_1_1_load_player_game_state.html#a6ade127f38672878a30a48721e55afe4",tooltip="Deseneaza starea curenta."];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node4 [label="PaooGame.States.Settings\lState.Draw",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_paoo_game_1_1_states_1_1_settings_state.html#a227b02c65476cee0935df713181dd89a",tooltip="Deseneaza meniul."];
+}

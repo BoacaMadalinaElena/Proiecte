@@ -1,0 +1,68 @@
+\hypertarget{class_paoo_game_1_1_data_base_player}{}\doxysection{Paoo\+Game.\+Data\+Base\+Player Class Reference}
+\label{class_paoo_game_1_1_data_base_player}\index{PaooGame.DataBasePlayer@{PaooGame.DataBasePlayer}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+List$<$ \mbox{\hyperlink{class_paoo_game_1_1_auxiliary_1_1_data_base_item_player}{Data\+Base\+Item\+Player}} $>$ \mbox{\hyperlink{class_paoo_game_1_1_data_base_player_a6ac78aefc514935e26392c4084205078}{CREATE}} (int opt, String name, int \mbox{\hyperlink{class_paoo_game_1_1_data_base_player_a2ab652c7fc5e568bd211af3ae455108a}{point}})
+\begin{DoxyCompactList}\small\item\em prin convenite numarul de puncte este 2$\ast$\+DIAMOND + COINS \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_paoo_game_1_1_data_base_player_a06351fdbd0bff91e5f52826509122d75}\label{class_paoo_game_1_1_data_base_player_a06351fdbd0bff91e5f52826509122d75}} 
+void {\bfseries INSERT} ()
+\begin{DoxyCompactList}\small\item\em Va insera datele pentru un nou jucator(se va genera un nume nou -\/ unic) si se vor pune numarul de puncte pe 0. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_paoo_game_1_1_data_base_player_a4676fe680eb37e8ce554e87c8fdd61b0}\label{class_paoo_game_1_1_data_base_player_a4676fe680eb37e8ce554e87c8fdd61b0}} 
+List$<$ \mbox{\hyperlink{class_paoo_game_1_1_auxiliary_1_1_data_base_item_player}{Data\+Base\+Item\+Player}} $>$ {\bfseries get\+Data\+Base\+Items} ()
+\begin{DoxyCompactList}\small\item\em Va returna o lista cu toate inregistrarile din baza de date. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static String \mbox{\hyperlink{class_paoo_game_1_1_data_base_player_ae9b78def191ad18fc4acf31adf44c88e}{current\+Player}} = \char`\"{}\char`\"{}
+\item 
+static int \mbox{\hyperlink{class_paoo_game_1_1_data_base_player_a2ab652c7fc5e568bd211af3ae455108a}{point}} = 0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_paoo_game_1_1_data_base_player_a6ac78aefc514935e26392c4084205078}\label{class_paoo_game_1_1_data_base_player_a6ac78aefc514935e26392c4084205078}} 
+\index{PaooGame.DataBasePlayer@{PaooGame.DataBasePlayer}!CREATE@{CREATE}}
+\index{CREATE@{CREATE}!PaooGame.DataBasePlayer@{PaooGame.DataBasePlayer}}
+\doxysubsubsection{\texorpdfstring{CREATE()}{CREATE()}}
+{\footnotesize\ttfamily public List$<$ \mbox{\hyperlink{class_paoo_game_1_1_auxiliary_1_1_data_base_item}{Data\+Base\+Item}} $>$ Paoo\+Game.\+Data\+Base\+Player.\+CREATE (\begin{DoxyParamCaption}\item[{int}]{opt,  }\item[{String}]{name,  }\item[{int}]{point }\end{DoxyParamCaption})}
+
+
+
+prin convenite numarul de puncte este 2$\ast$\+DIAMOND + COINS 
+
+Va gestiona baza de date(din ea voi apela celelalte metode).
+
+
+\begin{DoxyParams}{Parameters}
+{\em opt} & un intreg prin case voi specifica ce operatie realizez cu baza de date. \\
+\hline
+{\em name} & un String ce indica ce data extrag din baza de date sau sterg \\
+\hline
+{\em int} & point -\/ numarul de puncte \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+% FIG 0
+Here is the caller graph for this function\+:
+% FIG 1
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_paoo_game_1_1_data_base_player_ae9b78def191ad18fc4acf31adf44c88e}\label{class_paoo_game_1_1_data_base_player_ae9b78def191ad18fc4acf31adf44c88e}} 
+\index{PaooGame.DataBasePlayer@{PaooGame.DataBasePlayer}!currentPlayer@{currentPlayer}}
+\index{currentPlayer@{currentPlayer}!PaooGame.DataBasePlayer@{PaooGame.DataBasePlayer}}
+\doxysubsubsection{\texorpdfstring{currentPlayer}{currentPlayer}}
+{\footnotesize\ttfamily String Paoo\+Game.\+Data\+Base\+Player.\+current\+Player = \char`\"{}\char`\"{}\hspace{0.3cm}{\ttfamily [static]}}
+
+Referinta spre identificatorul jucatorului. \mbox{\Hypertarget{class_paoo_game_1_1_data_base_player_a2ab652c7fc5e568bd211af3ae455108a}\label{class_paoo_game_1_1_data_base_player_a2ab652c7fc5e568bd211af3ae455108a}} 
+\index{PaooGame.DataBasePlayer@{PaooGame.DataBasePlayer}!point@{point}}
+\index{point@{point}!PaooGame.DataBasePlayer@{PaooGame.DataBasePlayer}}
+\doxysubsubsection{\texorpdfstring{point}{point}}
+{\footnotesize\ttfamily int Paoo\+Game.\+Data\+Base\+Player.\+point = 0\hspace{0.3cm}{\ttfamily [static]}}
+
+Referinta spre numarul de puncte al jucatorului. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/\+Paoo\+Game/Data\+Base\+Player.\+java\end{DoxyCompactItemize}

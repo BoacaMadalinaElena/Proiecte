@@ -1,0 +1,21 @@
+digraph "PaooGame.Characters.Elements"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="PaooGame.Characters.Elements",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="PaooGame.Characters.Bullet",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",URL="$class_paoo_game_1_1_characters_1_1_bullet.html",tooltip=" "];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="PaooGame.Characters.Fire",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_paoo_game_1_1_characters_1_1_fire.html",tooltip="Implementeaza notiunea de foc."];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node4 [label="PaooGame.Characters.Hero",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_paoo_game_1_1_characters_1_1_hero.html",tooltip="Implementeaza notiunea de erou(pisica)."];
+  Node1 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node5 [label="PaooGame.Characters.Mogly",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",URL="$class_paoo_game_1_1_characters_1_1_mogly.html",tooltip=" "];
+  Node1 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node6 [label="PaooGame.Characters.Rino",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",URL="$class_paoo_game_1_1_characters_1_1_rino.html",tooltip=" "];
+  Node1 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node7 [label="PaooGame.Characters.Snake",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",URL="$class_paoo_game_1_1_characters_1_1_snake.html",tooltip=" "];
+}

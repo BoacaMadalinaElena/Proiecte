@@ -1,0 +1,13 @@
+digraph "PaooGame.Tiles.UpTile"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="PaooGame.Tiles.UpTile",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="PaooGame.Tiles.Tile",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_paoo_game_1_1_tiles_1_1_tile.html",tooltip="Retine toate dalele intr-un vector si ofera posibilitatea regasirii dupa un ID."];
+  Node2 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" barrel1Tile\nbarrel2Tile\nbig\nbig1\nblocaj\nchest1Tile\nchest2Tile\nchest3Tile\ncoinsTile\ncontinuePause1\lTile\n..." ,fontname="Helvetica"];
+  Node3 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" img" ,fontname="Helvetica"];
+  Node3 [label="BufferedImage",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+}

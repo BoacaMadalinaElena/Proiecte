@@ -1,0 +1,17 @@
+digraph "PaooGame.DataBaseSettings.CREATE"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="PaooGame.DataBaseSettings.\lCREATE",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Va gestiona baza de date(din ea voi apela celelalte metode - adaugare inregistrare,..."];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="PaooGame.DataBaseSettings.\lINSERT",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_paoo_game_1_1_data_base_settings.html#a3b5303424737c1d91978d7ac1871270c",tooltip="Va insera setarile in baza de date."];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="PaooGame.DataBaseSettings.\lSetSettings",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_paoo_game_1_1_data_base_settings.html#af1fd0053ce1bfc38d5792a94136177f8",tooltip="Va restaura setarile din baza de date."];
+  Node3 -> Node4 [color="midnightblue",fontsize="10",style="solid"];
+  Node4 [label="PaooGame.Input.Audio.play",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_paoo_game_1_1_input_1_1_audio.html#a8234035f0828ea19a2fb2066ce976bd6",tooltip="Pornirea clipului audio."];
+  Node3 -> Node5 [color="midnightblue",fontsize="10",style="solid"];
+  Node5 [label="PaooGame.Input.Audio.stop\lAudio",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_paoo_game_1_1_input_1_1_audio.html#a6c5c17935b9ea68075a92f7f28b3d9df",tooltip="Oprirea clipului audio."];
+}

@@ -1,0 +1,1 @@
+-force-include-file "APD_interfata.c";"c:\Users\boaca\Desktop\Facultate\APDP\APD_proiect_grafica\APD_interfata.c" -force-include-file "APD_interfata.h";"c:\Users\boaca\Desktop\Facultate\APDP\APD_proiect_grafica\APD_interfata.h" 

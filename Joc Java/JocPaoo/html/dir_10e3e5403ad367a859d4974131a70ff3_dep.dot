@@ -1,0 +1,11 @@
+digraph "PaooGame/Exception"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  compound=true
+  subgraph clusterdir_b74d128e4f73e7cbb693cd984ddee52f {
+    graph [ bgcolor="#edf0f7", pencolor="grey25", style="filled,dashed,", label="PaooGame", fontname="Helvetica", fontsize="10", URL="dir_b74d128e4f73e7cbb693cd984ddee52f.html"]
+  dir_10e3e5403ad367a859d4974131a70ff3 [shape=box, label="Exception", style="filled,bold,", fillcolor="#edf0f7", color="grey25", URL="dir_10e3e5403ad367a859d4974131a70ff3.html"];
+  }
+}

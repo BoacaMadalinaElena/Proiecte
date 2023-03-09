@@ -1,0 +1,128 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="87CA6E4F-88C2-048C-843F-723D76C0FEDA" name="PSIHIATRU">
+<createdBy>boaca</createdBy>
+<createdTime>2022-11-22 14:55:32 UTC</createdTime>
+<generatorID>140F8306-E825-871F-1E5B-5AD36CC3D1D5</generatorID>
+<ownerDesignName>BDP</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="60984A9E-9D9F-FD67-69EB-7E24AA01D122">
+<createdBy>boaca</createdBy>
+<createdTime>2022-11-22 14:55:32 UTC</createdTime>
+<generatorID>4CC8B7A1-952F-86F2-E926-FFFAEFCB54E4</generatorID>
+<ownerDesignName>BDP</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementStartWith>100</autoIncrementStartWith>
+<autoIncrementIncrementBy>10</autoIncrementIncrementBy>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Nume" id="778D7C77-3554-36A0-BBEF-0811B164520F">
+<createdBy>boaca</createdBy>
+<createdTime>2022-11-22 14:55:32 UTC</createdTime>
+<generatorID>CD0C9E6F-CB98-3BF1-3685-BDDDDD5FE171</generatorID>
+<ownerDesignName>BDP</ownerDesignName>
+<constraintName>Psihiatru_Nume_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="length(Nume) &gt;= 2 AND  REGEXP_LIKE ( nume,  &apos;^[a-zA-Z ]*$&apos; )"/>
+</checkConstraint>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Prenume" id="E13FE972-FFFC-DB16-3356-501F0ABEFACB">
+<createdBy>boaca</createdBy>
+<createdTime>2022-11-22 14:55:32 UTC</createdTime>
+<generatorID>71238DDB-0C79-B0F9-251E-F67EB4D0B858</generatorID>
+<ownerDesignName>BDP</ownerDesignName>
+<constraintName>Psihiatru_Prenume_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="length(Prenume) &gt;= 2 AND  REGEXP_LIKE (  Prenume,  &apos;^[a-zA-Z ]*$&apos; )"/>
+</checkConstraint>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Numar_telefon" id="AD7CDDFA-44BF-A463-42C8-4C1A0220BC9D">
+<createdBy>boaca</createdBy>
+<createdTime>2022-11-22 14:55:32 UTC</createdTime>
+<generatorID>3B81C91A-E0A2-AFC9-A54E-609B4278471A</generatorID>
+<ownerDesignName>BDP</ownerDesignName>
+<constraintName>Psihiatru_Numar_telefon_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="length(Numar_telefon) = 10 AND REGEXP_LIKE ( Numar_telefon,  &apos;^[0][:7:3:2][0-9 ]*$&apos;)"/>
+</checkConstraint>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Email" id="14461BA2-1EF7-9325-74B3-95ADC9860FD8">
+<createdBy>boaca</createdBy>
+<createdTime>2022-11-22 14:55:32 UTC</createdTime>
+<generatorID>3AEAEE32-1722-ACCA-2B40-0BAE98A3BB9B</generatorID>
+<ownerDesignName>BDP</ownerDesignName>
+<constraintName>Psihiatru_Email_ck</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="regexp_like(email, &apos;[a-z0-9._%-]+@[a-z0-9._%-]+\.[a-z]{2,4}&apos;)"/>
+</checkConstraint>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="C19E8AB0-FBC8-8D13-07FC-7D564011B91E" name="PSIHIATRU_PK">
+<createdBy>boaca</createdBy>
+<createdTime>2022-11-22 14:55:32 UTC</createdTime>
+<generatorID>43A3B2D4-497E-0656-77A9-06E50C1E4B12</generatorID>
+<ownerDesignName>BDP</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="60984A9E-9D9F-FD67-69EB-7E24AA01D122"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6396A985-F980-BB17-8D54-A24FEA0D81C9" name="PSIHIATRU_Numar_telefon_UN">
+<createdBy>boaca</createdBy>
+<createdTime>2022-11-22 14:55:32 UTC</createdTime>
+<generatorID>5EA885F1-F0CD-2166-393C-725FFF2F46D0</generatorID>
+<ownerDesignName>BDP</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AD7CDDFA-44BF-A463-42C8-4C1A0220BC9D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="CF476643-8114-4239-060D-80DC64BA0713" name="PSIHIATRU_Email_UN">
+<createdBy>boaca</createdBy>
+<createdTime>2022-11-22 14:55:32 UTC</createdTime>
+<generatorID>22DFE36E-3858-71E6-BACE-19CB64A86F94</generatorID>
+<ownerDesignName>BDP</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="14461BA2-1EF7-9325-74B3-95ADC9860FD8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

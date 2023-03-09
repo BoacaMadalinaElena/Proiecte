@@ -1,0 +1,14 @@
+digraph "PaooGame.Characters.Hero.getInstance"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="RL";
+  Node1 [label="PaooGame.Characters.Hero.get\lInstance",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Pentru a avea mereu aceiasi pisica intre nivele se va folosi SINGLETON."];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="PaooGame.States.Level1Game\lState.Level1GameState",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_paoo_game_1_1_states_1_1_level1_game_state.html#af73a7eb16cc96367899ebe0e22282226",tooltip="Constructorul clasei."];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="PaooGame.States.Level2Game\lState.Level2GameState",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_paoo_game_1_1_states_1_1_level2_game_state.html#a14b8c001f3f14659113328c59834460a",tooltip="Constructorul clasei."];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node4 [label="PaooGame.States.Level3Game\lState.Level3GameState",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_paoo_game_1_1_states_1_1_level3_game_state.html#a501f990ba98ccc23d9d7d4988a5eace9",tooltip="Constructorul clasei."];
+}

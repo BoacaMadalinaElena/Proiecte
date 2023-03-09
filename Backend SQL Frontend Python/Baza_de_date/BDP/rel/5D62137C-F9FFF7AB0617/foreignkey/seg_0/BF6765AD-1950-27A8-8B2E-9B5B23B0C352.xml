@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="BF6765AD-1950-27A8-8B2E-9B5B23B0C352" containerWithKeyObject="4DA6A0D4-6D6B-2041-4407-EA4F412C630B" localFKIndex="098D393A-4CF0-E513-9FDA-1DE2FDB5200E" name="FISA_MEDICALA_PSIHIATRU_FK">
+<createdBy>boaca</createdBy>
+<createdTime>2022-11-22 14:55:32 UTC</createdTime>
+<generatorID>6B66B70C-4FA5-706A-725B-EA09D5D99C07</generatorID>
+<ownerDesignName>BDP</ownerDesignName>
+<referredTableLongName>PSIHIATRU</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>87CA6E4F-88C2-048C-843F-723D76C0FEDA</referredTableID>
+<keyObject>C19E8AB0-FBC8-8D13-07FC-7D564011B91E</keyObject>
+<referredKeyID>C19E8AB0-FBC8-8D13-07FC-7D564011B91E</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

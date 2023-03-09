@@ -1,0 +1,45 @@
+digraph "PaooGame.States.State.SetState"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="RL";
+  Node1 [label="PaooGame.States.State.Set\lState",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="se va modifica valoarea lui currentState in timpul joclui."];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="PaooGame.Characters.Hero.\lUpdate",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_paoo_game_1_1_characters_1_1_hero.html#aa3b509e5ee41c2d0c59256d593103a13",tooltip="Se actualizeaza pozitia prin mutare si viata."];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="PaooGame.States.Level1Game\lState.Update",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_paoo_game_1_1_states_1_1_level1_game_state.html#adcfbf27e52b7e7678289dff4b33b04eb",tooltip="Actualizeaza starea curenta a meniului."];
+  Node2 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node4 [label="PaooGame.States.Level2Game\lState.Update",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_paoo_game_1_1_states_1_1_level2_game_state.html#a6941f67fbe2b052f12bdb91f220780f6",tooltip="Actualizeaza starea curenta a nivelului 2."];
+  Node2 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node5 [label="PaooGame.States.Level3Game\lState.Update",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_paoo_game_1_1_states_1_1_level3_game_state.html#ab95ee73d642506adb84fb58bb63b9866",tooltip="Actualizeaza starea curenta a nivelului."];
+  Node1 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node6 [label="PaooGame.States.DeadState.\lUpdate",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_paoo_game_1_1_states_1_1_dead_state.html#a90129485509f1d920e65712d16c3fa25",tooltip="Asteapta ca jucatorul sa apese enter pentru a reveni in meniu."];
+  Node1 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node7 [label="PaooGame.States.Efective\lSaveGameState.Update",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_paoo_game_1_1_states_1_1_efective_save_game_state.html#a18562b937367dc3bf110af6f3952a48a",tooltip="Se ofera posibilitatea reveniri la meniu."];
+  Node1 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node8 [label="PaooGame.States.FinishGame.\lUpdate",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_paoo_game_1_1_states_1_1_finish_game.html#ad425b06b100dc8167652b536931bfa78",tooltip="Actualizeaza setarile si meniul din ele ."];
+  Node1 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node9 [label="PaooGame.States.FinishGame\lState.Update",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_paoo_game_1_1_states_1_1_finish_game_state.html#a7b55f2f2cab1385773b7707141e4c994",tooltip="Actualizeaza starea de castigare a jocului."];
+  Node1 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node10 [label="PaooGame.States.FinishState.\lUpdate",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_paoo_game_1_1_states_1_1_finish_state.html#a9570c43202ab43f421d82263c190509d",tooltip="Actualizeaza starea jocului si a butoanelor cand ma plimb cu mouse-ul."];
+  Node1 -> Node11 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node11 [label="PaooGame.States.Information\lState.Update",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_paoo_game_1_1_states_1_1_information_state.html#a121844c80054651431d4f38090698d73",tooltip="La enter se poate reveni in meniu."];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node1 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node1 -> Node12 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node12 [label="PaooGame.States.LoadGame\lState.Update",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_paoo_game_1_1_states_1_1_load_game_state.html#a7e7f114886d7006ed771c2e1b5d113b7",tooltip="Actualizeaza starea curenta ."];
+  Node1 -> Node13 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node13 [label="PaooGame.States.LoadPlayer\lGameState.Update",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_paoo_game_1_1_states_1_1_load_player_game_state.html#a4e8ac97fa5dc41dfd012cac2dc88d6d5",tooltip="Actualizeaza starea curenta ."];
+  Node1 -> Node14 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node14 [label="PaooGame.States.MenuState.\lUpdate",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_paoo_game_1_1_states_1_1_menu_state.html#aa2ff0445baa4b134d9e1c48b152d98e7",tooltip="Actualizeaza starea curenta a meniului."];
+  Node1 -> Node15 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node15 [label="PaooGame.States.PauseState.\lUpdate",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_paoo_game_1_1_states_1_1_pause_state.html#ab529ee535abf329759da774a2094f8ab",tooltip="Actualizeaza starea jocului si a butoanelor cand ma plimb cu mouse-ul."];
+  Node1 -> Node16 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node16 [label="PaooGame.States.QuitGame\lState.Update",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_paoo_game_1_1_states_1_1_quit_game_state.html#a1f9d094915b79eedc0b2573a5344bd3d",tooltip="Metoda de actualizare a stari."];
+  Node1 -> Node17 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node17 [label="PaooGame.States.SaveGame\lState.Update",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_paoo_game_1_1_states_1_1_save_game_state.html#a588860fa0631b8bda733908a0b54ec4a",tooltip="Actualizeaza starea curenta a salvarilor."];
+  Node1 -> Node18 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node18 [label="PaooGame.States.StartGame\lState.Update",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_paoo_game_1_1_states_1_1_start_game_state.html#acbb22073745ddf349a509f48b0d6917a",tooltip="La enter se va intra in meniu."];
+}

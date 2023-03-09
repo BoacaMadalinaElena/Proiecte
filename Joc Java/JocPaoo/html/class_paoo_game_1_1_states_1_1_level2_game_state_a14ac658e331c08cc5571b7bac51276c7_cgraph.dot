@@ -1,0 +1,15 @@
+digraph "PaooGame.States.Level2GameState.Draw"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="PaooGame.States.Level2Game\lState.Draw",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Deseneaza (randeaza) pe ecran starea curenta a nivelului."];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="PaooGame.Characters.Hero.Draw",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_paoo_game_1_1_characters_1_1_hero.html#a6b172cab0e2a128e64424e4aa28f5ef0",tooltip="Deseneaza eroul."];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="PaooGame.Map.Map.Draw",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_paoo_game_1_1_map_1_1_map.html#ac287bb3deac0a084105b7dd45b28a7e9",tooltip="Deseneaza harta actuala."];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="PaooGame.GameWindow.Game\lWindow.GetWndWidth",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_paoo_game_1_1_game_window_1_1_game_window.html#a39360a42d4d8c24c2ebec8b3d03f2352",tooltip="Returneaza latimea ferestrei."];
+}

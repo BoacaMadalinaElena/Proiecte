@@ -1,0 +1,155 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="088D96FB-0F46-3C13-72C7-A4A287483F0C" name="DETALII_AFECTIUNE">
+<createdBy>boaca</createdBy>
+<createdTime>2022-10-26 16:48:58 UTC</createdTime>
+<ownerDesignName>BDP</ownerDesignName>
+<engineerTo>
+<item key="2453D8CA-69CE-1C46-15E1-D818FA8CCDA6" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Gravitate" id="08D09080-F3B0-A9DD-4464-E7334DDFC92C">
+<createdBy>boaca</createdBy>
+<createdTime>2022-10-26 16:49:55 UTC</createdTime>
+<ownerDesignName>BDP</ownerDesignName>
+<engineerTo>
+<item key="2453D8CA-69CE-1C46-15E1-D818FA8CCDA6" value="true"/>
+</engineerTo>
+<constraintName>Detalii_Gravitate_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,1,</ownDataTypeParameters>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>0</beginValue>
+<endValue>10</endValue>
+</rangeDef>
+</listOfRanges>
+</Attribute>
+<Attribute name="Rata_vindecare" id="12CAD0F0-496B-DF2F-6552-99FCC3ABF636">
+<createdBy>boaca</createdBy>
+<createdTime>2022-10-28 11:56:56 UTC</createdTime>
+<ownerDesignName>BDP</ownerDesignName>
+<engineerTo>
+<item key="2453D8CA-69CE-1C46-15E1-D818FA8CCDA6" value="true"/>
+</engineerTo>
+<constraintName>Detalii_rata_vindecare_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,5,2</ownDataTypeParameters>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>0.0</beginValue>
+<endValue>100.0</endValue>
+</rangeDef>
+</listOfRanges>
+</Attribute>
+<Attribute name="Tratament_medicamentos" id="318DDDF8-F8D3-2DB1-3001-B6D72466C166">
+<createdBy>boaca</createdBy>
+<createdTime>2022-10-28 11:57:22 UTC</createdTime>
+<ownerDesignName>BDP</ownerDesignName>
+<engineerTo>
+<item key="2453D8CA-69CE-1C46-15E1-D818FA8CCDA6" value="true"/>
+</engineerTo>
+<constraintName>Detalii_tratament_ck</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>2</dataTypeSize>
+<listOfValues>
+<valueDef value="Da" description=""/>
+<valueDef value="Nu" description=""/>
+</listOfValues>
+<ownDataTypeParameters>2,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Rata_suicid " id="8285DF8B-635D-2F13-7034-CFD344B40835">
+<createdBy>boaca</createdBy>
+<createdTime>2022-10-28 11:59:51 UTC</createdTime>
+<ownerDesignName>BDP</ownerDesignName>
+<engineerTo>
+<item key="2453D8CA-69CE-1C46-15E1-D818FA8CCDA6" value="true"/>
+</engineerTo>
+<constraintName>Detalii_rata_suicid_ck</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,5,2</ownDataTypeParameters>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>0.0</beginValue>
+<endValue>100.0</endValue>
+</rangeDef>
+</listOfRanges>
+</Attribute>
+<Attribute name="Specificitate_gen" id="0BBCFD7A-8DE1-F961-8022-3F91DD4AA19A">
+<createdBy>boaca</createdBy>
+<createdTime>2022-10-28 12:00:52 UTC</createdTime>
+<ownerDesignName>BDP</ownerDesignName>
+<engineerTo>
+<item key="2453D8CA-69CE-1C46-15E1-D818FA8CCDA6" value="true"/>
+</engineerTo>
+<constraintName>Detalii_specificitate_gen_ck</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>8</dataTypeSize>
+<listOfValues>
+<valueDef value="Feminin" description=""/>
+<valueDef value="Masculin" description=""/>
+<valueDef value="Nu" description=""/>
+</listOfValues>
+<ownDataTypeParameters>8,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Asistenta_personala" id="33E47BF6-43B5-FA52-CFE6-0572B9B6F23E">
+<createdBy>boaca</createdBy>
+<createdTime>2022-10-28 12:23:05 UTC</createdTime>
+<ownerDesignName>BDP</ownerDesignName>
+<engineerTo>
+<item key="2453D8CA-69CE-1C46-15E1-D818FA8CCDA6" value="true"/>
+</engineerTo>
+<constraintName>Detalii_asistenta_ck</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>2</dataTypeSize>
+<listOfValues>
+<valueDef value="Da" description=""/>
+<valueDef value="Nu" description=""/>
+</listOfValues>
+<ownDataTypeParameters>2,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID" id="E2DC3982-4C9F-7DF5-CA46-955E024157C7">
+<createdBy>boaca</createdBy>
+<createdTime>2022-11-08 13:58:46 UTC</createdTime>
+<generatorID>2B1CF1C0-4653-4F90-4658-AA558A6727DE</generatorID>
+<ownerDesignName>BDP</ownerDesignName>
+<engineerTo>
+<item key="2453D8CA-69CE-1C46-15E1-D818FA8CCDA6" value="true"/>
+</engineerTo>
+<referedAttribute>C3540BE2-FAA1-0A5E-4E79-8D93386801D0</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+</Entity>

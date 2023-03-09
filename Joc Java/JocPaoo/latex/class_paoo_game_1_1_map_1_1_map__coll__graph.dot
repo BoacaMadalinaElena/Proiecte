@@ -1,0 +1,12 @@
+digraph "PaooGame.Map.Map"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="PaooGame.Map.Map",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Utilizata pentru memorarea matricelor si determinarea obiectelor de coliziune."];
+  Node2 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" RectangleTileL1\nRectangleTileL2\nRectangleTileL3" ];
+  Node2 [label="Vector\< PaooGame.Map.RectangleId \>",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node3 -> Node2 [dir="back",color="orange",fontsize="10",style="dashed",label=" \< PaooGame::Map::RectangleId \>" ];
+  Node3 [label="Vector",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+}

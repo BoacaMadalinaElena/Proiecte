@@ -1,0 +1,447 @@
+%!PS-Adobe-2.0 EPSF-2.0
+%%Title: ClassName
+%%Creator: Doxygen
+%%CreationDate: Time
+%%For: 
+%Magnification: 1.00
+%%Orientation: Portrait
+%%BoundingBox: 0 0 500 2677.824219
+%%Pages: 0
+%%BeginSetup
+%%EndSetup
+%%EndComments
+
+% ----- variables -----
+
+/boxwidth 0 def
+/boxheight 40 def
+/fontheight 24 def
+/marginwidth 10 def
+/distx 20 def
+/disty 40 def
+/boundaspect 0.186719 def  % aspect ratio of the BoundingBox (width/height)
+/boundx 500 def
+/boundy boundx boundaspect div def
+/xspacing 0 def
+/yspacing 0 def
+/rows 64 def
+/cols 2 def
+/scalefactor 0 def
+/boxfont /Times-Roman findfont fontheight scalefont def
+
+% ----- procedures -----
+
+/dotted { [1 4] 0 setdash } def
+/dashed { [5] 0 setdash } def
+/solid  { [] 0 setdash } def
+
+/max % result = MAX(arg1,arg2)
+{
+  /a exch def
+  /b exch def
+  a b gt {a} {b} ifelse
+} def
+
+/xoffset % result = MAX(0,(scalefactor-(boxwidth*cols+distx*(cols-1)))/2)
+{
+  0 scalefactor boxwidth cols mul distx cols 1 sub mul add sub 2 div max
+} def
+
+/cw % boxwidth = MAX(boxwidth, stringwidth(arg1))
+{
+  /str exch def
+  /boxwidth boxwidth str stringwidth pop max def
+} def
+
+/box % draws a box with text 'arg1' at grid pos (arg2,arg3)
+{ gsave
+  2 setlinewidth
+  newpath
+  exch xspacing mul xoffset add
+  exch yspacing mul
+  moveto
+  boxwidth 0 rlineto 
+  0 boxheight rlineto 
+  boxwidth neg 0 rlineto 
+  0 boxheight neg rlineto 
+  closepath
+  dup stringwidth pop neg boxwidth add 2 div
+  boxheight fontheight 2 div sub 2 div
+  rmoveto show stroke
+  grestore
+} def  
+
+/mark
+{ newpath
+  exch xspacing mul xoffset add boxwidth add
+  exch yspacing mul
+  moveto
+  0 boxheight 4 div rlineto
+  boxheight neg 4 div boxheight neg 4 div rlineto
+  closepath
+  eofill
+  stroke
+} def
+
+/arrow
+{ newpath
+  moveto
+  3 -8 rlineto
+  -6 0 rlineto
+  3 8 rlineto
+  closepath
+  eofill
+  stroke
+} def
+
+/out % draws an output connector for the block at (arg1,arg2)
+{
+  newpath
+  exch xspacing mul xoffset add boxwidth 2 div add
+  exch yspacing mul boxheight add
+  /y exch def
+  /x exch def
+  x y moveto
+  0 disty 2 div rlineto 
+  stroke
+  1 eq { x y disty 2 div add arrow } if
+} def
+
+/in % draws an input connector for the block at (arg1,arg2)
+{
+  newpath
+  exch xspacing mul xoffset add boxwidth 2 div add
+  exch yspacing mul disty 2 div sub
+  /y exch def
+  /x exch def
+  x y moveto
+  0 disty 2 div rlineto
+  stroke
+  1 eq { x y disty 2 div add arrow } if
+} def
+
+/hedge
+{
+  exch xspacing mul xoffset add boxwidth 2 div add
+  exch yspacing mul boxheight 2 div sub
+  /y exch def
+  /x exch def
+  newpath
+  x y moveto
+  boxwidth 2 div distx add 0 rlineto
+  stroke
+  1 eq
+  { newpath x boxwidth 2 div distx add add y moveto
+    -8 3 rlineto
+    0 -6 rlineto
+    8 3 rlineto
+    closepath
+    eofill
+    stroke
+  } if
+} def
+
+/vedge
+{
+  /ye exch def
+  /ys exch def
+  /xs exch def
+  newpath
+  xs xspacing mul xoffset add boxwidth 2 div add dup
+  ys yspacing mul boxheight 2 div sub
+  moveto
+  ye yspacing mul boxheight 2 div sub
+  lineto
+  stroke
+} def
+
+/conn % connections the blocks from col 'arg1' to 'arg2' of row 'arg3'
+{
+  /ys exch def
+  /xe exch def
+  /xs exch def
+  newpath
+  xs xspacing mul xoffset add boxwidth 2 div add
+  ys yspacing mul disty 2 div sub
+  moveto
+  xspacing xe xs sub mul 0
+  rlineto
+  stroke
+} def
+
+% ----- main ------
+
+boxfont setfont
+1 boundaspect scale
+(PaooGame.Tiles.Tile) cw
+(PaooGame.Tiles.Barrel1Tile) cw
+(PaooGame.Tiles.Barrel2Tile) cw
+(PaooGame.Tiles.Blocaj) cw
+(PaooGame.Tiles.Chest1Tile) cw
+(PaooGame.Tiles.Chest2Tile) cw
+(PaooGame.Tiles.Chest3Tile) cw
+(PaooGame.Tiles.CoinsTile) cw
+(PaooGame.Tiles.ContinuePause1Tile) cw
+(PaooGame.Tiles.ContinuePauseTile) cw
+(PaooGame.Tiles.CreateButton1Tile) cw
+(PaooGame.Tiles.CreateButtonTile) cw
+(PaooGame.Tiles.Diamond1Tile) cw
+(PaooGame.Tiles.Diamond2Tile) cw
+(PaooGame.Tiles.Diamond3Tile) cw
+(PaooGame.Tiles.Down1Tile) cw
+(PaooGame.Tiles.DownTile) cw
+(PaooGame.Tiles.Earth1Tile) cw
+(PaooGame.Tiles.Earth2Tile) cw
+(PaooGame.Tiles.Earth3Tile) cw
+(PaooGame.Tiles.Earth4Tile) cw
+(PaooGame.Tiles.ExitPause1Tile) cw
+(PaooGame.Tiles.ExitPauseTile) cw
+(PaooGame.Tiles.FenceTile) cw
+(PaooGame.Tiles.FinishTile) cw
+(PaooGame.Tiles.InformationButton1Tile) cw
+(PaooGame.Tiles.InformationButtonTile) cw
+(PaooGame.Tiles.ItemDataBaseTile) cw
+(PaooGame.Tiles.ItemDataBaseTile1) cw
+(PaooGame.Tiles.Load1Tile) cw
+(PaooGame.Tiles.LoadTile) cw
+(PaooGame.Tiles.Menu1Tile) cw
+(PaooGame.Tiles.MenuTile) cw
+(PaooGame.Tiles.New1Tile) cw
+(PaooGame.Tiles.NewTile) cw
+(PaooGame.Tiles.NextLevel1Tile) cw
+(PaooGame.Tiles.NextLevelTile) cw
+(PaooGame.Tiles.PauseTile) cw
+(PaooGame.Tiles.Quit1Tile) cw
+(PaooGame.Tiles.QuitTile) cw
+(PaooGame.Tiles.Sand1Tile) cw
+(PaooGame.Tiles.Sand2Tile) cw
+(PaooGame.Tiles.Sand3Tile) cw
+(PaooGame.Tiles.Sand4Tile) cw
+(PaooGame.Tiles.Save1Tile) cw
+(PaooGame.Tiles.SavePause1Tile) cw
+(PaooGame.Tiles.SavePauseTile) cw
+(PaooGame.Tiles.SaveTile) cw
+(PaooGame.Tiles.Settings1Tile) cw
+(PaooGame.Tiles.SettingsTile) cw
+(PaooGame.Tiles.Start) cw
+(PaooGame.Tiles.Stone1Tile) cw
+(PaooGame.Tiles.Stone2Tile) cw
+(PaooGame.Tiles.Stone3Tile) cw
+(PaooGame.Tiles.Stone4Tile) cw
+(PaooGame.Tiles.Stone5Tile) cw
+(PaooGame.Tiles.SunTile) cw
+(PaooGame.Tiles.Treasure) cw
+(PaooGame.Tiles.Up1Tile) cw
+(PaooGame.Tiles.UpTile) cw
+(PaooGame.Tiles.VidTile) cw
+(PaooGame.Tiles.WaterTile) cw
+(PaooGame.Tiles.WoodHorizontalTile) cw
+(PaooGame.Tiles.WoodVerticalTile) cw
+/boxwidth boxwidth marginwidth 2 mul add def
+/xspacing boxwidth distx add def
+/yspacing boxheight disty add def
+/scalefactor 
+  boxwidth cols mul distx cols 1 sub mul add
+  boxheight rows mul disty rows 1 sub mul add boundaspect mul 
+  max def
+boundx scalefactor div boundy scalefactor div scale
+
+% ----- classes -----
+
+ (PaooGame.Tiles.Tile) 0.000000 63.000000 box
+ (PaooGame.Tiles.Barrel1Tile) 1.000000 62.000000 box
+ (PaooGame.Tiles.Barrel2Tile) 1.000000 61.000000 box
+ (PaooGame.Tiles.Blocaj) 1.000000 60.000000 box
+ (PaooGame.Tiles.Chest1Tile) 1.000000 59.000000 box
+ (PaooGame.Tiles.Chest2Tile) 1.000000 58.000000 box
+ (PaooGame.Tiles.Chest3Tile) 1.000000 57.000000 box
+ (PaooGame.Tiles.CoinsTile) 1.000000 56.000000 box
+ (PaooGame.Tiles.ContinuePause1Tile) 1.000000 55.000000 box
+ (PaooGame.Tiles.ContinuePauseTile) 1.000000 54.000000 box
+ (PaooGame.Tiles.CreateButton1Tile) 1.000000 53.000000 box
+ (PaooGame.Tiles.CreateButtonTile) 1.000000 52.000000 box
+ (PaooGame.Tiles.Diamond1Tile) 1.000000 51.000000 box
+ (PaooGame.Tiles.Diamond2Tile) 1.000000 50.000000 box
+ (PaooGame.Tiles.Diamond3Tile) 1.000000 49.000000 box
+ (PaooGame.Tiles.Down1Tile) 1.000000 48.000000 box
+ (PaooGame.Tiles.DownTile) 1.000000 47.000000 box
+ (PaooGame.Tiles.Earth1Tile) 1.000000 46.000000 box
+ (PaooGame.Tiles.Earth2Tile) 1.000000 45.000000 box
+ (PaooGame.Tiles.Earth3Tile) 1.000000 44.000000 box
+ (PaooGame.Tiles.Earth4Tile) 1.000000 43.000000 box
+ (PaooGame.Tiles.ExitPause1Tile) 1.000000 42.000000 box
+ (PaooGame.Tiles.ExitPauseTile) 1.000000 41.000000 box
+ (PaooGame.Tiles.FenceTile) 1.000000 40.000000 box
+ (PaooGame.Tiles.FinishTile) 1.000000 39.000000 box
+ (PaooGame.Tiles.InformationButton1Tile) 1.000000 38.000000 box
+ (PaooGame.Tiles.InformationButtonTile) 1.000000 37.000000 box
+ (PaooGame.Tiles.ItemDataBaseTile) 1.000000 36.000000 box
+ (PaooGame.Tiles.ItemDataBaseTile1) 1.000000 35.000000 box
+ (PaooGame.Tiles.Load1Tile) 1.000000 34.000000 box
+ (PaooGame.Tiles.LoadTile) 1.000000 33.000000 box
+ (PaooGame.Tiles.Menu1Tile) 1.000000 32.000000 box
+ (PaooGame.Tiles.MenuTile) 1.000000 31.000000 box
+ (PaooGame.Tiles.New1Tile) 1.000000 30.000000 box
+ (PaooGame.Tiles.NewTile) 1.000000 29.000000 box
+ (PaooGame.Tiles.NextLevel1Tile) 1.000000 28.000000 box
+ (PaooGame.Tiles.NextLevelTile) 1.000000 27.000000 box
+ (PaooGame.Tiles.PauseTile) 1.000000 26.000000 box
+ (PaooGame.Tiles.Quit1Tile) 1.000000 25.000000 box
+ (PaooGame.Tiles.QuitTile) 1.000000 24.000000 box
+ (PaooGame.Tiles.Sand1Tile) 1.000000 23.000000 box
+ (PaooGame.Tiles.Sand2Tile) 1.000000 22.000000 box
+ (PaooGame.Tiles.Sand3Tile) 1.000000 21.000000 box
+ (PaooGame.Tiles.Sand4Tile) 1.000000 20.000000 box
+ (PaooGame.Tiles.Save1Tile) 1.000000 19.000000 box
+ (PaooGame.Tiles.SavePause1Tile) 1.000000 18.000000 box
+ (PaooGame.Tiles.SavePauseTile) 1.000000 17.000000 box
+ (PaooGame.Tiles.SaveTile) 1.000000 16.000000 box
+ (PaooGame.Tiles.Settings1Tile) 1.000000 15.000000 box
+ (PaooGame.Tiles.SettingsTile) 1.000000 14.000000 box
+ (PaooGame.Tiles.Start) 1.000000 13.000000 box
+ (PaooGame.Tiles.Stone1Tile) 1.000000 12.000000 box
+ (PaooGame.Tiles.Stone2Tile) 1.000000 11.000000 box
+ (PaooGame.Tiles.Stone3Tile) 1.000000 10.000000 box
+ (PaooGame.Tiles.Stone4Tile) 1.000000 9.000000 box
+ (PaooGame.Tiles.Stone5Tile) 1.000000 8.000000 box
+ (PaooGame.Tiles.SunTile) 1.000000 7.000000 box
+ (PaooGame.Tiles.Treasure) 1.000000 6.000000 box
+ (PaooGame.Tiles.Up1Tile) 1.000000 5.000000 box
+ (PaooGame.Tiles.UpTile) 1.000000 4.000000 box
+ (PaooGame.Tiles.VidTile) 1.000000 3.000000 box
+ (PaooGame.Tiles.WaterTile) 1.000000 2.000000 box
+ (PaooGame.Tiles.WoodHorizontalTile) 1.000000 1.000000 box
+ (PaooGame.Tiles.WoodVerticalTile) 1.000000 0.000000 box
+
+% ----- relations -----
+
+solid
+1 0.000000 62.250000 out
+solid
+0 0.000000 62.500000 hedge
+solid
+0 0.000000 61.500000 hedge
+solid
+0 0.000000 60.500000 hedge
+solid
+0 0.000000 59.500000 hedge
+solid
+0 0.000000 58.500000 hedge
+solid
+0 0.000000 57.500000 hedge
+solid
+0 0.000000 56.500000 hedge
+solid
+0 0.000000 55.500000 hedge
+solid
+0 0.000000 54.500000 hedge
+solid
+0 0.000000 53.500000 hedge
+solid
+0 0.000000 52.500000 hedge
+solid
+0 0.000000 51.500000 hedge
+solid
+0 0.000000 50.500000 hedge
+solid
+0 0.000000 49.500000 hedge
+solid
+0 0.000000 48.500000 hedge
+solid
+0 0.000000 47.500000 hedge
+solid
+0 0.000000 46.500000 hedge
+solid
+0 0.000000 45.500000 hedge
+solid
+0 0.000000 44.500000 hedge
+solid
+0 0.000000 43.500000 hedge
+solid
+0 0.000000 42.500000 hedge
+solid
+0 0.000000 41.500000 hedge
+solid
+0 0.000000 40.500000 hedge
+solid
+0 0.000000 39.500000 hedge
+solid
+0 0.000000 38.500000 hedge
+solid
+0 0.000000 37.500000 hedge
+solid
+0 0.000000 36.500000 hedge
+solid
+0 0.000000 35.500000 hedge
+solid
+0 0.000000 34.500000 hedge
+solid
+0 0.000000 33.500000 hedge
+solid
+0 0.000000 32.500000 hedge
+solid
+0 0.000000 31.500000 hedge
+solid
+0 0.000000 30.500000 hedge
+solid
+0 0.000000 29.500000 hedge
+solid
+0 0.000000 28.500000 hedge
+solid
+0 0.000000 27.500000 hedge
+solid
+0 0.000000 26.500000 hedge
+solid
+0 0.000000 25.500000 hedge
+solid
+0 0.000000 24.500000 hedge
+solid
+0 0.000000 23.500000 hedge
+solid
+0 0.000000 22.500000 hedge
+solid
+0 0.000000 21.500000 hedge
+solid
+0 0.000000 20.500000 hedge
+solid
+0 0.000000 19.500000 hedge
+solid
+0 0.000000 18.500000 hedge
+solid
+0 0.000000 17.500000 hedge
+solid
+0 0.000000 16.500000 hedge
+solid
+0 0.000000 15.500000 hedge
+solid
+0 0.000000 14.500000 hedge
+solid
+0 0.000000 13.500000 hedge
+solid
+0 0.000000 12.500000 hedge
+solid
+0 0.000000 11.500000 hedge
+solid
+0 0.000000 10.500000 hedge
+solid
+0 0.000000 9.500000 hedge
+solid
+0 0.000000 8.500000 hedge
+solid
+0 0.000000 7.500000 hedge
+solid
+0 0.000000 6.500000 hedge
+solid
+0 0.000000 5.500000 hedge
+solid
+0 0.000000 4.500000 hedge
+solid
+0 0.000000 3.500000 hedge
+solid
+0 0.000000 2.500000 hedge
+solid
+0 0.000000 1.500000 hedge
+solid
+0 0.000000 0.500000 hedge
+solid
+0.000000 63.000000 0.500000 vedge

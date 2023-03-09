@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="BDP" id="89D60008-9443-1E9F-0371-AAF98DB3F95F" version="3.5">
+<createdBy>boaca</createdBy>
+<createdTime>2022-10-26 16:34:53 UTC</createdTime>
+<ownerDesignName>BDP</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>89D60008-9443-1E9F-0371-AAF98DB3F95F</designId>
+</OSDM_Design>

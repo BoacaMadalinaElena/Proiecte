@@ -1,0 +1,13 @@
+digraph "PaooGame.DataBasePlayer.CREATE"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="PaooGame.DataBasePlayer.\lCREATE",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="prin convenite numarul de puncte este 2*DIAMOND + COINS"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="PaooGame.DataBasePlayer.get\lDataBaseItems",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_paoo_game_1_1_data_base_player.html#a4676fe680eb37e8ce554e87c8fdd61b0",tooltip="Va returna o lista cu toate inregistrarile din baza de date."];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="PaooGame.DataBasePlayer.\lINSERT",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_paoo_game_1_1_data_base_player.html#a06351fdbd0bff91e5f52826509122d75",tooltip="Va insera datele pentru un nou jucator(se va genera un nume nou - unic) si se vor pune numarul de pun..."];
+}

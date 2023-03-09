@@ -1,0 +1,111 @@
+\hypertarget{class_paoo_game_1_1_characters_1_1_bullet}{}\doxysection{Paoo\+Game.\+Characters.\+Bullet Class Reference}
+\label{class_paoo_game_1_1_characters_1_1_bullet}\index{PaooGame.Characters.Bullet@{PaooGame.Characters.Bullet}}
+
+
+Inheritance diagram for Paoo\+Game.\+Characters.\+Bullet\+:
+% FIG 0
+
+
+Collaboration diagram for Paoo\+Game.\+Characters.\+Bullet\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_paoo_game_1_1_characters_1_1_bullet_a3b82b61389eaf61757c01af417490d92}\label{class_paoo_game_1_1_characters_1_1_bullet_a3b82b61389eaf61757c01af417490d92}} 
+{\bfseries Bullet} (int \mbox{\hyperlink{class_paoo_game_1_1_characters_1_1_elements_a34f1027af1dc1ac2d12df7caf499d1a9}{x}}, int \mbox{\hyperlink{class_paoo_game_1_1_characters_1_1_elements_add0483380df76de48643dd0faac5e7d5}{y}}, int \mbox{\hyperlink{class_paoo_game_1_1_characters_1_1_elements_a1f8405214f5cb6181dab4b07b4e1729d}{width}}, int \mbox{\hyperlink{class_paoo_game_1_1_characters_1_1_elements_aa8d0ad2b6223af3541a2666d548a535d}{height}}, int width\+Rectangle, int height\+Rectanle, int sens)
+\item 
+boolean \mbox{\hyperlink{class_paoo_game_1_1_characters_1_1_bullet_ad513f2c3dd5863a78495f2e83e3905b5}{Move}} ()
+\begin{DoxyCompactList}\small\item\em Actualizare pozitii element =\texorpdfstring{$>$}{>} se defineste in clasele efective. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_paoo_game_1_1_characters_1_1_bullet_a42e63003fa75372e3c9340606d51cce0}{Update}} ()
+\begin{DoxyCompactList}\small\item\em Actualizeaza pozitia glontului. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_paoo_game_1_1_characters_1_1_bullet_a2d0d37ac605f2502bec16b3ad88e5395}{Draw}} ()
+\begin{DoxyCompactList}\small\item\em Deseneaza glontul. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_paoo_game_1_1_characters_1_1_bullet_a251461fc2921ed1a96868b168d11887a}{get\+Width}} ()
+\item 
+int \mbox{\hyperlink{class_paoo_game_1_1_characters_1_1_bullet_a14a25b6ce24c32b5b06febc892ac20aa}{get\+Height}} ()
+\item 
+int \mbox{\hyperlink{class_paoo_game_1_1_characters_1_1_bullet_a119aa943a0cb4c0e3a6dd4115b03db1e}{get\+Sens}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_paoo_game_1_1_characters_1_1_bullet_a2d0d37ac605f2502bec16b3ad88e5395}\label{class_paoo_game_1_1_characters_1_1_bullet_a2d0d37ac605f2502bec16b3ad88e5395}} 
+\index{PaooGame.Characters.Bullet@{PaooGame.Characters.Bullet}!Draw@{Draw}}
+\index{Draw@{Draw}!PaooGame.Characters.Bullet@{PaooGame.Characters.Bullet}}
+\doxysubsubsection{\texorpdfstring{Draw()}{Draw()}}
+{\footnotesize\ttfamily public void Paoo\+Game.\+Characters.\+Bullet.\+Draw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Deseneaza glontul. 
+
+
+
+Reimplemented from \mbox{\hyperlink{class_paoo_game_1_1_characters_1_1_elements_af536b6b3082d4154403bb1eeb753cd53}{Paoo\+Game.\+Characters.\+Elements}}.
+
+\mbox{\Hypertarget{class_paoo_game_1_1_characters_1_1_bullet_a14a25b6ce24c32b5b06febc892ac20aa}\label{class_paoo_game_1_1_characters_1_1_bullet_a14a25b6ce24c32b5b06febc892ac20aa}} 
+\index{PaooGame.Characters.Bullet@{PaooGame.Characters.Bullet}!getHeight@{getHeight}}
+\index{getHeight@{getHeight}!PaooGame.Characters.Bullet@{PaooGame.Characters.Bullet}}
+\doxysubsubsection{\texorpdfstring{getHeight()}{getHeight()}}
+{\footnotesize\ttfamily int Paoo\+Game.\+Characters.\+Bullet.\+get\+Height (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_paoo_game_1_1_characters_1_1_elements}{Paoo\+Game.\+Characters.\+Elements}}.
+
+\mbox{\Hypertarget{class_paoo_game_1_1_characters_1_1_bullet_a119aa943a0cb4c0e3a6dd4115b03db1e}\label{class_paoo_game_1_1_characters_1_1_bullet_a119aa943a0cb4c0e3a6dd4115b03db1e}} 
+\index{PaooGame.Characters.Bullet@{PaooGame.Characters.Bullet}!getSens@{getSens}}
+\index{getSens@{getSens}!PaooGame.Characters.Bullet@{PaooGame.Characters.Bullet}}
+\doxysubsubsection{\texorpdfstring{getSens()}{getSens()}}
+{\footnotesize\ttfamily int Paoo\+Game.\+Characters.\+Bullet.\+get\+Sens (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_paoo_game_1_1_characters_1_1_elements}{Paoo\+Game.\+Characters.\+Elements}}.
+
+\mbox{\Hypertarget{class_paoo_game_1_1_characters_1_1_bullet_a251461fc2921ed1a96868b168d11887a}\label{class_paoo_game_1_1_characters_1_1_bullet_a251461fc2921ed1a96868b168d11887a}} 
+\index{PaooGame.Characters.Bullet@{PaooGame.Characters.Bullet}!getWidth@{getWidth}}
+\index{getWidth@{getWidth}!PaooGame.Characters.Bullet@{PaooGame.Characters.Bullet}}
+\doxysubsubsection{\texorpdfstring{getWidth()}{getWidth()}}
+{\footnotesize\ttfamily int Paoo\+Game.\+Characters.\+Bullet.\+get\+Width (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_paoo_game_1_1_characters_1_1_elements}{Paoo\+Game.\+Characters.\+Elements}}.
+
+\mbox{\Hypertarget{class_paoo_game_1_1_characters_1_1_bullet_ad513f2c3dd5863a78495f2e83e3905b5}\label{class_paoo_game_1_1_characters_1_1_bullet_ad513f2c3dd5863a78495f2e83e3905b5}} 
+\index{PaooGame.Characters.Bullet@{PaooGame.Characters.Bullet}!Move@{Move}}
+\index{Move@{Move}!PaooGame.Characters.Bullet@{PaooGame.Characters.Bullet}}
+\doxysubsubsection{\texorpdfstring{Move()}{Move()}}
+{\footnotesize\ttfamily boolean Paoo\+Game.\+Characters.\+Bullet.\+Move (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Actualizare pozitii element =\texorpdfstring{$>$}{>} se defineste in clasele efective. 
+
+
+
+Reimplemented from \mbox{\hyperlink{class_paoo_game_1_1_characters_1_1_elements_ab1360886c9b452bd6a3999d56d49917d}{Paoo\+Game.\+Characters.\+Elements}}.
+
+\mbox{\Hypertarget{class_paoo_game_1_1_characters_1_1_bullet_a42e63003fa75372e3c9340606d51cce0}\label{class_paoo_game_1_1_characters_1_1_bullet_a42e63003fa75372e3c9340606d51cce0}} 
+\index{PaooGame.Characters.Bullet@{PaooGame.Characters.Bullet}!Update@{Update}}
+\index{Update@{Update}!PaooGame.Characters.Bullet@{PaooGame.Characters.Bullet}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily public void Paoo\+Game.\+Characters.\+Bullet.\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Actualizeaza pozitia glontului. 
+
+
+
+Reimplemented from \mbox{\hyperlink{class_paoo_game_1_1_characters_1_1_elements_a1be592e06dd380a473447d380a5df257}{Paoo\+Game.\+Characters.\+Elements}}.
+
+Here is the call graph for this function\+:
+% FIG 2
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/\+Paoo\+Game/\+Characters/Bullet.\+java\end{DoxyCompactItemize}

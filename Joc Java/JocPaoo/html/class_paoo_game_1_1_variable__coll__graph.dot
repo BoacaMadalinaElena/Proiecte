@@ -1,0 +1,53 @@
+digraph "PaooGame.Variable"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="PaooGame.Variable",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node2 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" game" ,fontname="Helvetica"];
+  Node2 [label="PaooGame.Game",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_paoo_game_1_1_game.html",tooltip="Clasa principala a intregului proiect. Implementeaza Game - Loop (Update -> Draw)"];
+  Node3 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="Runnable",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node4 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" camera" ,fontname="Helvetica"];
+  Node4 [label="PaooGame.GameWindow.Camera",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",URL="$class_paoo_game_1_1_game_window_1_1_camera.html",tooltip=" "];
+  Node5 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" map" ,fontname="Helvetica"];
+  Node5 [label="PaooGame.Map.Map",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_paoo_game_1_1_map_1_1_map.html",tooltip="Utilizata pentru memorarea matricelor si determinarea obiectelor de coliziune."];
+  Node6 -> Node5 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" RectangleTileL1\nRectangleTileL2\nRectangleTileL3" ,fontname="Helvetica"];
+  Node6 [label="Vector\< PaooGame.Map.RectangleId \>",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node7 -> Node6 [dir="back",color="orange",fontsize="10",style="dashed",label=" \< PaooGame::Map::RectangleId \>" ,fontname="Helvetica"];
+  Node7 [label="Vector",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node8 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" castigatGame\ndeadState\nfinishLVLState\nlevel1GameState\nlevel2GameState\nlevel3GameState\nloadGameState\nmenuState\npauseState\nquitGameState\n..." ,fontname="Helvetica"];
+  Node8 [label="PaooGame.States.State",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_paoo_game_1_1_states_1_1_state.html",tooltip="Implementeaza sablonul de proiectare State : jocul este compus din mai multe stari."];
+  Node8 -> Node8 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" previousState" ,fontname="Helvetica"];
+  Node9 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" mouseInput" ,fontname="Helvetica"];
+  Node9 [label="PaooGame.Input.MouseInput",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_paoo_game_1_1_input_1_1_mouse_input.html",tooltip="Trateaza evenimentele de mouse -> apasare click stang pentru selectie , coordonate mouse(trebuie sa s..."];
+  Node10 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="MouseAdapter",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node11 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" keyInput" ,fontname="Helvetica"];
+  Node11 [label="PaooGame.Input.KeyInput",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",URL="$class_paoo_game_1_1_input_1_1_key_input.html",tooltip=" "];
+  Node12 -> Node11 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 [label="KeyListener",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node13 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" dataBase" ,fontname="Helvetica"];
+  Node13 [label="PaooGame.DataBase",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",URL="$class_paoo_game_1_1_data_base.html",tooltip=" "];
+  Node14 -> Node13 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" abstractFactory" ,fontname="Helvetica"];
+  Node14 [label="PaooGame.Characters.Factory\lMethod",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_paoo_game_1_1_characters_1_1_factory_method.html",tooltip="Va fi extinsa pentru a crea producatori concreti."];
+  Node15 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" dataBasePlayer" ,fontname="Helvetica"];
+  Node15 [label="PaooGame.DataBasePlayer",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",URL="$class_paoo_game_1_1_data_base_player.html",tooltip=" "];
+  Node16 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" gloante\nmogly\nrino\nsnake" ,fontname="Helvetica"];
+  Node16 [label="Vector\< PaooGame.Characters.\lElements \>",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node7 -> Node16 [dir="back",color="orange",fontsize="10",style="dashed",label=" \< PaooGame::Characters\l::Elements \>" ,fontname="Helvetica"];
+  Node17 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" cat" ,fontname="Helvetica"];
+  Node17 [label="PaooGame.Characters.Hero",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_paoo_game_1_1_characters_1_1_hero.html",tooltip="Implementeaza notiunea de erou(pisica)."];
+  Node18 -> Node17 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node18 [label="PaooGame.Characters.Elements",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",URL="$class_paoo_game_1_1_characters_1_1_elements.html",tooltip=" "];
+  Node14 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" factoryMethod" ,fontname="Helvetica"];
+  Node19 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" audio" ,fontname="Helvetica"];
+  Node19 [label="PaooGame.Input.Audio",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",URL="$class_paoo_game_1_1_input_1_1_audio.html",tooltip=" "];
+  Node20 -> Node19 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" audioInputStream" ,fontname="Helvetica"];
+  Node20 [label="AudioInputStream",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node21 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" dataBaseSettings" ,fontname="Helvetica"];
+  Node21 [label="PaooGame.DataBaseSettings",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",URL="$class_paoo_game_1_1_data_base_settings.html",tooltip=" "];
+  Node16 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" gloante" ,fontname="Helvetica"];
+}

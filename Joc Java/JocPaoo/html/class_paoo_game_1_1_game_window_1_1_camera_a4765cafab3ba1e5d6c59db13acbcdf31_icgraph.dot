@@ -1,0 +1,14 @@
+digraph "PaooGame.GameWindow.Camera.update"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="RL";
+  Node1 [label="PaooGame.GameWindow.Camera.update",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Schimba coordonate unde trebuie sa fie camera(pe ox)"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="PaooGame.States.Level1Game\lState.Update",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_paoo_game_1_1_states_1_1_level1_game_state.html#adcfbf27e52b7e7678289dff4b33b04eb",tooltip="Actualizeaza starea curenta a meniului."];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="PaooGame.States.Level2Game\lState.Update",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_paoo_game_1_1_states_1_1_level2_game_state.html#a6941f67fbe2b052f12bdb91f220780f6",tooltip="Actualizeaza starea curenta a nivelului 2."];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="PaooGame.States.Level3Game\lState.Update",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_paoo_game_1_1_states_1_1_level3_game_state.html#ab95ee73d642506adb84fb58bb63b9866",tooltip="Actualizeaza starea curenta a nivelului."];
+}

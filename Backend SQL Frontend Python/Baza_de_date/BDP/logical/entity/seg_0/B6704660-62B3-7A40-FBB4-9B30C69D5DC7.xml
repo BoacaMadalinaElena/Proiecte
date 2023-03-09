@@ -1,0 +1,153 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="B6704660-62B3-7A40-FBB4-9B30C69D5DC7" name="PACIENT">
+<createdBy>boaca</createdBy>
+<createdTime>2022-10-26 16:39:02 UTC</createdTime>
+<ownerDesignName>BDP</ownerDesignName>
+<engineerTo>
+<item key="68BD0DB0-5D33-411F-17D7-7A30C4F4EB06" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID" id="88B306BA-8024-25F7-3D4A-5931900CA271">
+<createdBy>boaca</createdBy>
+<createdTime>2022-10-26 16:39:13 UTC</createdTime>
+<ownerDesignName>BDP</ownerDesignName>
+<engineerTo>
+<item key="68BD0DB0-5D33-411F-17D7-7A30C4F4EB06" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Nume" id="B8768934-B146-9C49-1F7C-3632901A2D79">
+<createdBy>boaca</createdBy>
+<createdTime>2022-10-26 16:39:53 UTC</createdTime>
+<ownerDesignName>BDP</ownerDesignName>
+<engineerTo>
+<item key="68BD0DB0-5D33-411F-17D7-7A30C4F4EB06" value="true"/>
+</engineerTo>
+<constraintName>Pacient_Nume_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="length(Nume) &gt;= 2 AND  REGEXP_LIKE ( nume,  &apos;^[a-zA-Z ]*$&apos; )"/>
+</checkConstraint>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Prenume" id="ECF42FF3-8019-6B9C-8D5B-8328B2029440">
+<createdBy>boaca</createdBy>
+<createdTime>2022-10-26 16:40:18 UTC</createdTime>
+<ownerDesignName>BDP</ownerDesignName>
+<engineerTo>
+<item key="68BD0DB0-5D33-411F-17D7-7A30C4F4EB06" value="true"/>
+</engineerTo>
+<constraintName>Pacient_Prenume_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="length(Prenume) &gt;= 2 AND  REGEXP_LIKE ( prenume,  &apos;^[a-zA-Z ]*$&apos; )"/>
+</checkConstraint>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Data_nasterii" id="02EB94AA-7E23-51B9-2C72-ECCE4E3E4241">
+<createdBy>boaca</createdBy>
+<createdTime>2022-10-26 16:40:34 UTC</createdTime>
+<ownerDesignName>BDP</ownerDesignName>
+<engineerTo>
+<item key="68BD0DB0-5D33-411F-17D7-7A30C4F4EB06" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Numar_telefon" id="B071A1A9-BCAE-A0BA-24E9-61F5D2135BEA">
+<createdBy>boaca</createdBy>
+<createdTime>2022-10-26 16:42:04 UTC</createdTime>
+<ownerDesignName>BDP</ownerDesignName>
+<engineerTo>
+<item key="68BD0DB0-5D33-411F-17D7-7A30C4F4EB06" value="true"/>
+</engineerTo>
+<constraintName>Pacient_Numar_Telefon_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="length(Numar_telefon) = 10 AND REGEXP_LIKE ( Numar_telefon,  &apos;^[0][:7:3:2][0-9 ]*$&apos;)"/>
+</checkConstraint>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Gen" id="D6F876FB-8965-2ADD-AE93-0D1B8F20FE08">
+<createdBy>boaca</createdBy>
+<createdTime>2022-10-26 16:42:28 UTC</createdTime>
+<ownerDesignName>BDP</ownerDesignName>
+<engineerTo>
+<item key="68BD0DB0-5D33-411F-17D7-7A30C4F4EB06" value="true"/>
+</engineerTo>
+<constraintName>Pacient_Gen</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<listOfValues>
+<valueDef value="Feminin" description=""/>
+<valueDef value="Masculin" description=""/>
+</listOfValues>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Adresa" id="985BB304-CC9C-3059-0987-D69BC772EEAE">
+<createdBy>boaca</createdBy>
+<createdTime>2022-10-26 16:42:46 UTC</createdTime>
+<ownerDesignName>BDP</ownerDesignName>
+<engineerTo>
+<item key="68BD0DB0-5D33-411F-17D7-7A30C4F4EB06" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="AA51C35E-D07B-7D66-4A87-94F521910E3B" name="PACIENT PK">
+<createdBy>boaca</createdBy>
+<createdTime>2022-10-26 16:39:28 UTC</createdTime>
+<ownerDesignName>BDP</ownerDesignName>
+<engineerTo>
+<item key="68BD0DB0-5D33-411F-17D7-7A30C4F4EB06" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>88B306BA-8024-25F7-3D4A-5931900CA271</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="F0D05075-52E4-6594-33B6-56E84A1375A9" name="PACIENT_TELEFON_UK">
+<createdBy>boaca</createdBy>
+<createdTime>2022-11-22 14:37:34 UTC</createdTime>
+<ownerDesignName>BDP</ownerDesignName>
+<engineerTo>
+<item key="68BD0DB0-5D33-411F-17D7-7A30C4F4EB06" value="true"/>
+</engineerTo>
+<newElementsIDs>B071A1A9-BCAE-A0BA-24E9-61F5D2135BEA</newElementsIDs>
+<usedAttributes>
+<attributeRef>B071A1A9-BCAE-A0BA-24E9-61F5D2135BEA</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

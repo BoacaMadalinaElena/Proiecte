@@ -1,0 +1,3 @@
+Folderul "instantclient_21_7" este necesar pentru conectarea la baza de date,
+ din cauza dimensiuni mari acesta a fost incarcat pe drive la adresa "https://drive.google.com/drive/folders/1-0yOYFRAigZonR1H6_7wWy0LVGLA9wUc?usp=share_link" 
+sau de pe site-ul oficial "https://www.oracle.com/ro/database/technologies/instant-client/winx64-64-downloads.html".

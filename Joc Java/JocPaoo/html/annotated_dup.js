@@ -1,0 +1,128 @@
+var annotated_dup =
+[
+    [ "PaooGame", "namespace_paoo_game.html", [
+      [ "Auxiliary", "namespace_paoo_game_1_1_auxiliary.html", [
+        [ "DataBaseItem", "class_paoo_game_1_1_auxiliary_1_1_data_base_item.html", "class_paoo_game_1_1_auxiliary_1_1_data_base_item" ],
+        [ "MyVector", "class_paoo_game_1_1_auxiliary_1_1_my_vector.html", "class_paoo_game_1_1_auxiliary_1_1_my_vector" ]
+      ] ],
+      [ "Characters", "namespace_paoo_game_1_1_characters.html", [
+        [ "Bullet", "class_paoo_game_1_1_characters_1_1_bullet.html", "class_paoo_game_1_1_characters_1_1_bullet" ],
+        [ "DBConcreteFactory", "class_paoo_game_1_1_characters_1_1_d_b_concrete_factory.html", "class_paoo_game_1_1_characters_1_1_d_b_concrete_factory" ],
+        [ "Elements", "class_paoo_game_1_1_characters_1_1_elements.html", "class_paoo_game_1_1_characters_1_1_elements" ],
+        [ "FactoryMethod", "class_paoo_game_1_1_characters_1_1_factory_method.html", "class_paoo_game_1_1_characters_1_1_factory_method" ],
+        [ "Fire", "class_paoo_game_1_1_characters_1_1_fire.html", "class_paoo_game_1_1_characters_1_1_fire" ],
+        [ "Hero", "class_paoo_game_1_1_characters_1_1_hero.html", "class_paoo_game_1_1_characters_1_1_hero" ],
+        [ "Mogly", "class_paoo_game_1_1_characters_1_1_mogly.html", "class_paoo_game_1_1_characters_1_1_mogly" ],
+        [ "NewConcreteFactory", "class_paoo_game_1_1_characters_1_1_new_concrete_factory.html", "class_paoo_game_1_1_characters_1_1_new_concrete_factory" ],
+        [ "Rino", "class_paoo_game_1_1_characters_1_1_rino.html", "class_paoo_game_1_1_characters_1_1_rino" ],
+        [ "Snake", "class_paoo_game_1_1_characters_1_1_snake.html", "class_paoo_game_1_1_characters_1_1_snake" ]
+      ] ],
+      [ "Exception", "namespace_paoo_game_1_1_exception.html", [
+        [ "ItemNotFond", "class_paoo_game_1_1_exception_1_1_item_not_fond.html", "class_paoo_game_1_1_exception_1_1_item_not_fond" ],
+        [ "ToManyItems", "class_paoo_game_1_1_exception_1_1_to_many_items.html", "class_paoo_game_1_1_exception_1_1_to_many_items" ]
+      ] ],
+      [ "GameWindow", "namespace_paoo_game_1_1_game_window.html", [
+        [ "Camera", "class_paoo_game_1_1_game_window_1_1_camera.html", "class_paoo_game_1_1_game_window_1_1_camera" ],
+        [ "GameWindow", "class_paoo_game_1_1_game_window_1_1_game_window.html", "class_paoo_game_1_1_game_window_1_1_game_window" ]
+      ] ],
+      [ "Graphics", "namespace_paoo_game_1_1_graphics.html", [
+        [ "Assets", "class_paoo_game_1_1_graphics_1_1_assets.html", null ],
+        [ "ImageLoader", "class_paoo_game_1_1_graphics_1_1_image_loader.html", null ],
+        [ "SpriteSheet", "class_paoo_game_1_1_graphics_1_1_sprite_sheet.html", "class_paoo_game_1_1_graphics_1_1_sprite_sheet" ]
+      ] ],
+      [ "Input", "namespace_paoo_game_1_1_input.html", [
+        [ "KeyInput", "class_paoo_game_1_1_input_1_1_key_input.html", "class_paoo_game_1_1_input_1_1_key_input" ],
+        [ "MouseInput", "class_paoo_game_1_1_input_1_1_mouse_input.html", "class_paoo_game_1_1_input_1_1_mouse_input" ]
+      ] ],
+      [ "Map", "namespace_paoo_game_1_1_map.html", [
+        [ "Map", "class_paoo_game_1_1_map_1_1_map.html", "class_paoo_game_1_1_map_1_1_map" ],
+        [ "RectangleId", "class_paoo_game_1_1_map_1_1_rectangle_id.html", "class_paoo_game_1_1_map_1_1_rectangle_id" ]
+      ] ],
+      [ "States", "namespace_paoo_game_1_1_states.html", [
+        [ "DeadState", "class_paoo_game_1_1_states_1_1_dead_state.html", "class_paoo_game_1_1_states_1_1_dead_state" ],
+        [ "EfectiveSaveGameState", "class_paoo_game_1_1_states_1_1_efective_save_game_state.html", "class_paoo_game_1_1_states_1_1_efective_save_game_state" ],
+        [ "ExitState", "class_paoo_game_1_1_states_1_1_exit_state.html", "class_paoo_game_1_1_states_1_1_exit_state" ],
+        [ "FinishGameState", "class_paoo_game_1_1_states_1_1_finish_game_state.html", "class_paoo_game_1_1_states_1_1_finish_game_state" ],
+        [ "FinishState", "class_paoo_game_1_1_states_1_1_finish_state.html", "class_paoo_game_1_1_states_1_1_finish_state" ],
+        [ "InformationState", "class_paoo_game_1_1_states_1_1_information_state.html", "class_paoo_game_1_1_states_1_1_information_state" ],
+        [ "Level1GameState", "class_paoo_game_1_1_states_1_1_level1_game_state.html", "class_paoo_game_1_1_states_1_1_level1_game_state" ],
+        [ "Level2GameState", "class_paoo_game_1_1_states_1_1_level2_game_state.html", "class_paoo_game_1_1_states_1_1_level2_game_state" ],
+        [ "Level3GameState", "class_paoo_game_1_1_states_1_1_level3_game_state.html", "class_paoo_game_1_1_states_1_1_level3_game_state" ],
+        [ "LoadGameState", "class_paoo_game_1_1_states_1_1_load_game_state.html", "class_paoo_game_1_1_states_1_1_load_game_state" ],
+        [ "MenuState", "class_paoo_game_1_1_states_1_1_menu_state.html", "class_paoo_game_1_1_states_1_1_menu_state" ],
+        [ "PauseState", "class_paoo_game_1_1_states_1_1_pause_state.html", "class_paoo_game_1_1_states_1_1_pause_state" ],
+        [ "QuitGameState", "class_paoo_game_1_1_states_1_1_quit_game_state.html", "class_paoo_game_1_1_states_1_1_quit_game_state" ],
+        [ "SaveGameState", "class_paoo_game_1_1_states_1_1_save_game_state.html", "class_paoo_game_1_1_states_1_1_save_game_state" ],
+        [ "StartGameState", "class_paoo_game_1_1_states_1_1_start_game_state.html", "class_paoo_game_1_1_states_1_1_start_game_state" ],
+        [ "State", "class_paoo_game_1_1_states_1_1_state.html", "class_paoo_game_1_1_states_1_1_state" ]
+      ] ],
+      [ "Tiles", "namespace_paoo_game_1_1_tiles.html", [
+        [ "Barrel1Tile", "class_paoo_game_1_1_tiles_1_1_barrel1_tile.html", "class_paoo_game_1_1_tiles_1_1_barrel1_tile" ],
+        [ "Barrel2Tile", "class_paoo_game_1_1_tiles_1_1_barrel2_tile.html", "class_paoo_game_1_1_tiles_1_1_barrel2_tile" ],
+        [ "Blocaj", "class_paoo_game_1_1_tiles_1_1_blocaj.html", "class_paoo_game_1_1_tiles_1_1_blocaj" ],
+        [ "Chest1Tile", "class_paoo_game_1_1_tiles_1_1_chest1_tile.html", "class_paoo_game_1_1_tiles_1_1_chest1_tile" ],
+        [ "Chest2Tile", "class_paoo_game_1_1_tiles_1_1_chest2_tile.html", "class_paoo_game_1_1_tiles_1_1_chest2_tile" ],
+        [ "Chest3Tile", "class_paoo_game_1_1_tiles_1_1_chest3_tile.html", "class_paoo_game_1_1_tiles_1_1_chest3_tile" ],
+        [ "CoinsTile", "class_paoo_game_1_1_tiles_1_1_coins_tile.html", "class_paoo_game_1_1_tiles_1_1_coins_tile" ],
+        [ "ContinuePause1Tile", "class_paoo_game_1_1_tiles_1_1_continue_pause1_tile.html", "class_paoo_game_1_1_tiles_1_1_continue_pause1_tile" ],
+        [ "ContinuePauseTile", "class_paoo_game_1_1_tiles_1_1_continue_pause_tile.html", "class_paoo_game_1_1_tiles_1_1_continue_pause_tile" ],
+        [ "Diamond1Tile", "class_paoo_game_1_1_tiles_1_1_diamond1_tile.html", "class_paoo_game_1_1_tiles_1_1_diamond1_tile" ],
+        [ "Diamond2Tile", "class_paoo_game_1_1_tiles_1_1_diamond2_tile.html", "class_paoo_game_1_1_tiles_1_1_diamond2_tile" ],
+        [ "Diamond3Tile", "class_paoo_game_1_1_tiles_1_1_diamond3_tile.html", "class_paoo_game_1_1_tiles_1_1_diamond3_tile" ],
+        [ "Down1Tile", "class_paoo_game_1_1_tiles_1_1_down1_tile.html", "class_paoo_game_1_1_tiles_1_1_down1_tile" ],
+        [ "DownTile", "class_paoo_game_1_1_tiles_1_1_down_tile.html", "class_paoo_game_1_1_tiles_1_1_down_tile" ],
+        [ "Earth1Tile", "class_paoo_game_1_1_tiles_1_1_earth1_tile.html", "class_paoo_game_1_1_tiles_1_1_earth1_tile" ],
+        [ "Earth2Tile", "class_paoo_game_1_1_tiles_1_1_earth2_tile.html", "class_paoo_game_1_1_tiles_1_1_earth2_tile" ],
+        [ "Earth3Tile", "class_paoo_game_1_1_tiles_1_1_earth3_tile.html", "class_paoo_game_1_1_tiles_1_1_earth3_tile" ],
+        [ "Earth4Tile", "class_paoo_game_1_1_tiles_1_1_earth4_tile.html", "class_paoo_game_1_1_tiles_1_1_earth4_tile" ],
+        [ "ExitPause1Tile", "class_paoo_game_1_1_tiles_1_1_exit_pause1_tile.html", "class_paoo_game_1_1_tiles_1_1_exit_pause1_tile" ],
+        [ "ExitPauseTile", "class_paoo_game_1_1_tiles_1_1_exit_pause_tile.html", "class_paoo_game_1_1_tiles_1_1_exit_pause_tile" ],
+        [ "FenceTile", "class_paoo_game_1_1_tiles_1_1_fence_tile.html", "class_paoo_game_1_1_tiles_1_1_fence_tile" ],
+        [ "FinishTile", "class_paoo_game_1_1_tiles_1_1_finish_tile.html", "class_paoo_game_1_1_tiles_1_1_finish_tile" ],
+        [ "InformationButton1Tile", "class_paoo_game_1_1_tiles_1_1_information_button1_tile.html", "class_paoo_game_1_1_tiles_1_1_information_button1_tile" ],
+        [ "InformationButtonTile", "class_paoo_game_1_1_tiles_1_1_information_button_tile.html", "class_paoo_game_1_1_tiles_1_1_information_button_tile" ],
+        [ "ItemDataBaseTile", "class_paoo_game_1_1_tiles_1_1_item_data_base_tile.html", "class_paoo_game_1_1_tiles_1_1_item_data_base_tile" ],
+        [ "ItemDataBaseTile1", "class_paoo_game_1_1_tiles_1_1_item_data_base_tile1.html", "class_paoo_game_1_1_tiles_1_1_item_data_base_tile1" ],
+        [ "Load1Tile", "class_paoo_game_1_1_tiles_1_1_load1_tile.html", "class_paoo_game_1_1_tiles_1_1_load1_tile" ],
+        [ "LoadTile", "class_paoo_game_1_1_tiles_1_1_load_tile.html", "class_paoo_game_1_1_tiles_1_1_load_tile" ],
+        [ "Menu1Tile", "class_paoo_game_1_1_tiles_1_1_menu1_tile.html", "class_paoo_game_1_1_tiles_1_1_menu1_tile" ],
+        [ "MenuTile", "class_paoo_game_1_1_tiles_1_1_menu_tile.html", "class_paoo_game_1_1_tiles_1_1_menu_tile" ],
+        [ "New1Tile", "class_paoo_game_1_1_tiles_1_1_new1_tile.html", "class_paoo_game_1_1_tiles_1_1_new1_tile" ],
+        [ "NewTile", "class_paoo_game_1_1_tiles_1_1_new_tile.html", "class_paoo_game_1_1_tiles_1_1_new_tile" ],
+        [ "NextLevel1Tile", "class_paoo_game_1_1_tiles_1_1_next_level1_tile.html", "class_paoo_game_1_1_tiles_1_1_next_level1_tile" ],
+        [ "NextLevelTile", "class_paoo_game_1_1_tiles_1_1_next_level_tile.html", "class_paoo_game_1_1_tiles_1_1_next_level_tile" ],
+        [ "PauseTile", "class_paoo_game_1_1_tiles_1_1_pause_tile.html", "class_paoo_game_1_1_tiles_1_1_pause_tile" ],
+        [ "Quit1Tile", "class_paoo_game_1_1_tiles_1_1_quit1_tile.html", "class_paoo_game_1_1_tiles_1_1_quit1_tile" ],
+        [ "QuitTile", "class_paoo_game_1_1_tiles_1_1_quit_tile.html", "class_paoo_game_1_1_tiles_1_1_quit_tile" ],
+        [ "Sand1Tile", "class_paoo_game_1_1_tiles_1_1_sand1_tile.html", "class_paoo_game_1_1_tiles_1_1_sand1_tile" ],
+        [ "Sand2Tile", "class_paoo_game_1_1_tiles_1_1_sand2_tile.html", "class_paoo_game_1_1_tiles_1_1_sand2_tile" ],
+        [ "Sand3Tile", "class_paoo_game_1_1_tiles_1_1_sand3_tile.html", "class_paoo_game_1_1_tiles_1_1_sand3_tile" ],
+        [ "Sand4Tile", "class_paoo_game_1_1_tiles_1_1_sand4_tile.html", "class_paoo_game_1_1_tiles_1_1_sand4_tile" ],
+        [ "Save1Tile", "class_paoo_game_1_1_tiles_1_1_save1_tile.html", "class_paoo_game_1_1_tiles_1_1_save1_tile" ],
+        [ "SavePause1Tile", "class_paoo_game_1_1_tiles_1_1_save_pause1_tile.html", "class_paoo_game_1_1_tiles_1_1_save_pause1_tile" ],
+        [ "SavePauseTile", "class_paoo_game_1_1_tiles_1_1_save_pause_tile.html", "class_paoo_game_1_1_tiles_1_1_save_pause_tile" ],
+        [ "SaveTile", "class_paoo_game_1_1_tiles_1_1_save_tile.html", "class_paoo_game_1_1_tiles_1_1_save_tile" ],
+        [ "Settings1Tile", "class_paoo_game_1_1_tiles_1_1_settings1_tile.html", "class_paoo_game_1_1_tiles_1_1_settings1_tile" ],
+        [ "SettingsTile", "class_paoo_game_1_1_tiles_1_1_settings_tile.html", "class_paoo_game_1_1_tiles_1_1_settings_tile" ],
+        [ "Start", "class_paoo_game_1_1_tiles_1_1_start.html", "class_paoo_game_1_1_tiles_1_1_start" ],
+        [ "Stone1Tile", "class_paoo_game_1_1_tiles_1_1_stone1_tile.html", "class_paoo_game_1_1_tiles_1_1_stone1_tile" ],
+        [ "Stone2Tile", "class_paoo_game_1_1_tiles_1_1_stone2_tile.html", "class_paoo_game_1_1_tiles_1_1_stone2_tile" ],
+        [ "Stone3Tile", "class_paoo_game_1_1_tiles_1_1_stone3_tile.html", "class_paoo_game_1_1_tiles_1_1_stone3_tile" ],
+        [ "Stone4Tile", "class_paoo_game_1_1_tiles_1_1_stone4_tile.html", "class_paoo_game_1_1_tiles_1_1_stone4_tile" ],
+        [ "Stone5Tile", "class_paoo_game_1_1_tiles_1_1_stone5_tile.html", "class_paoo_game_1_1_tiles_1_1_stone5_tile" ],
+        [ "SunTile", "class_paoo_game_1_1_tiles_1_1_sun_tile.html", "class_paoo_game_1_1_tiles_1_1_sun_tile" ],
+        [ "Tile", "class_paoo_game_1_1_tiles_1_1_tile.html", "class_paoo_game_1_1_tiles_1_1_tile" ],
+        [ "Treasure", "class_paoo_game_1_1_tiles_1_1_treasure.html", "class_paoo_game_1_1_tiles_1_1_treasure" ],
+        [ "Up1Tile", "class_paoo_game_1_1_tiles_1_1_up1_tile.html", "class_paoo_game_1_1_tiles_1_1_up1_tile" ],
+        [ "UpTile", "class_paoo_game_1_1_tiles_1_1_up_tile.html", "class_paoo_game_1_1_tiles_1_1_up_tile" ],
+        [ "VidTile", "class_paoo_game_1_1_tiles_1_1_vid_tile.html", "class_paoo_game_1_1_tiles_1_1_vid_tile" ],
+        [ "WaterTile", "class_paoo_game_1_1_tiles_1_1_water_tile.html", "class_paoo_game_1_1_tiles_1_1_water_tile" ],
+        [ "WoodHorizontalTile", "class_paoo_game_1_1_tiles_1_1_wood_horizontal_tile.html", "class_paoo_game_1_1_tiles_1_1_wood_horizontal_tile" ],
+        [ "WoodVerticalTile", "class_paoo_game_1_1_tiles_1_1_wood_vertical_tile.html", "class_paoo_game_1_1_tiles_1_1_wood_vertical_tile" ]
+      ] ],
+      [ "DataBase", "class_paoo_game_1_1_data_base.html", "class_paoo_game_1_1_data_base" ],
+      [ "Game", "class_paoo_game_1_1_game.html", "class_paoo_game_1_1_game" ],
+      [ "Main", "class_paoo_game_1_1_main.html", null ],
+      [ "Variable", "class_paoo_game_1_1_variable.html", null ]
+    ] ]
+];

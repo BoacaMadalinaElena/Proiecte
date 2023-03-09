@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Pacient_Fisa_FK" directorySegmentName="seg_0" id="C3F89669-0839-05D6-28CB-08C6877BA5BD">
+<createdBy>boaca</createdBy>
+<createdTime>2022-10-26 16:54:40 UTC</createdTime>
+<ownerDesignName>BDP</ownerDesignName>
+<engineerTo>
+<item key="214335BD-7355-25F1-5F97-F401375BDAAC" value="true"/>
+</engineerTo>
+<sourcePk>AA51C35E-D07B-7D66-4A87-94F521910E3B</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>are </nameOnSource>
+<nameOnTarget>apartine unui</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>B6704660-62B3-7A40-FBB4-9B30C69D5DC7</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>331BB2F1-05A2-8372-00F1-D22008006ABF</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

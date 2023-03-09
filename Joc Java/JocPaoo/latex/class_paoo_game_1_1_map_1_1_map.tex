@@ -1,0 +1,211 @@
+\hypertarget{class_paoo_game_1_1_map_1_1_map}{}\doxysection{Paoo\+Game.\+Map.\+Map Class Reference}
+\label{class_paoo_game_1_1_map_1_1_map}\index{PaooGame.Map.Map@{PaooGame.Map.Map}}
+
+
+Utilizata pentru memorarea matricelor si determinarea obiectelor de coliziune.  
+
+
+
+
+Collaboration diagram for Paoo\+Game.\+Map.\+Map\+:
+% FIG 0
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_paoo_game_1_1_map_1_1_map_ac287bb3deac0a084105b7dd45b28a7e9}\label{class_paoo_game_1_1_map_1_1_map_ac287bb3deac0a084105b7dd45b28a7e9}} 
+void {\bfseries Draw} ()
+\begin{DoxyCompactList}\small\item\em Deseneaza harta actuala. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_paoo_game_1_1_map_1_1_map_a404a743339f486bb05c362948ac29d20}{get\+Level\+Val\+Map}} (int level, int x, int y)
+\begin{DoxyCompactList}\small\item\em returneaza ce element am la o anumita coordonata pentru un anumit nivel \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_paoo_game_1_1_map_1_1_map_ac45569737381dfd0866b0c12bda1f95c}{set\+Val}} (int level, int i, int j)
+\begin{DoxyCompactList}\small\item\em Modific o valoare din matricea harti actuale(cand colectez banuti sau diamnate) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_paoo_game_1_1_map_1_1_map_ae3cf98cc4ef0d23a4d9a24563d078353}\label{class_paoo_game_1_1_map_1_1_map_ae3cf98cc4ef0d23a4d9a24563d078353}} 
+int {\bfseries get\+Tip\+Map} ()
+\begin{DoxyCompactList}\small\item\em Returnez tipul harti. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_paoo_game_1_1_map_1_1_map_a9f6e3797514a6fa4b215635a4282de9a}\label{class_paoo_game_1_1_map_1_1_map_a9f6e3797514a6fa4b215635a4282de9a}} 
+int\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} {\bfseries get\+Map} ()
+\item 
+\mbox{\Hypertarget{class_paoo_game_1_1_map_1_1_map_a697b71c77acb1d9c908b37290bf22b2e}\label{class_paoo_game_1_1_map_1_1_map_a697b71c77acb1d9c908b37290bf22b2e}} 
+void {\bfseries set\+Map} (int i, int j, int val)
+\begin{DoxyCompactList}\small\item\em Sereaza o valoare in matrice. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+final int\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_paoo_game_1_1_map_1_1_map_a6aca6b43dafd4ce3e5891763c10b913d}{map1}}
+\begin{DoxyCompactList}\small\item\em variabile ce nu se schimba(folosite la reinitializare -\/\texorpdfstring{$>$}{>} eu schimb map1,map2 cand elimin banuti , diamante...) \end{DoxyCompactList}\item 
+final int\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_paoo_game_1_1_map_1_1_map_af10818b71cfb98c39b5944b6ba1fae03}{map2}}
+\item 
+final int\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_paoo_game_1_1_map_1_1_map_a49d121c3aec13497fdd34f229028e365}{map3}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static int \mbox{\hyperlink{class_paoo_game_1_1_map_1_1_map_afca72ec881674f4e44f0bd7d7a22a451}{Tip\+Map}} = 1
+\item 
+static Vector$<$ \mbox{\hyperlink{class_paoo_game_1_1_map_1_1_rectangle_id}{Rectangle\+Id}} $>$ \mbox{\hyperlink{class_paoo_game_1_1_map_1_1_map_ad484419e728305b5781f122992ed65ad}{Rectangle\+Tile\+L1}} = new Vector$<$$>$()
+\item 
+static Vector$<$ \mbox{\hyperlink{class_paoo_game_1_1_map_1_1_rectangle_id}{Rectangle\+Id}} $>$ \mbox{\hyperlink{class_paoo_game_1_1_map_1_1_map_a6c7b5083bacafe4c9ee3d6803ec935cb}{Rectangle\+Tile\+L3}} = new Vector$<$$>$()
+\item 
+static Vector$<$ \mbox{\hyperlink{class_paoo_game_1_1_map_1_1_rectangle_id}{Rectangle\+Id}} $>$ \mbox{\hyperlink{class_paoo_game_1_1_map_1_1_map_a82d949c1db2147bad4ef64376ba9e411}{Rectangle\+Tile\+L2}} = new Vector$<$$>$()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Utilizata pentru memorarea matricelor si determinarea obiectelor de coliziune. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_paoo_game_1_1_map_1_1_map_a404a743339f486bb05c362948ac29d20}\label{class_paoo_game_1_1_map_1_1_map_a404a743339f486bb05c362948ac29d20}} 
+\index{PaooGame.Map.Map@{PaooGame.Map.Map}!getLevelValMap@{getLevelValMap}}
+\index{getLevelValMap@{getLevelValMap}!PaooGame.Map.Map@{PaooGame.Map.Map}}
+\doxysubsubsection{\texorpdfstring{getLevelValMap()}{getLevelValMap()}}
+{\footnotesize\ttfamily public static int Paoo\+Game.\+Map.\+Map.\+get\+Level\+Val\+Map (\begin{DoxyParamCaption}\item[{int}]{level,  }\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+
+
+returneaza ce element am la o anumita coordonata pentru un anumit nivel 
+
+
+\begin{DoxyParams}{Parameters}
+{\em level} & \+: numarul nivelului \\
+\hline
+{\em x} & \+: coordonata x \\
+\hline
+{\em y} & \+: coordonata y \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+% FIG 1
+\mbox{\Hypertarget{class_paoo_game_1_1_map_1_1_map_ac45569737381dfd0866b0c12bda1f95c}\label{class_paoo_game_1_1_map_1_1_map_ac45569737381dfd0866b0c12bda1f95c}} 
+\index{PaooGame.Map.Map@{PaooGame.Map.Map}!setVal@{setVal}}
+\index{setVal@{setVal}!PaooGame.Map.Map@{PaooGame.Map.Map}}
+\doxysubsubsection{\texorpdfstring{setVal()}{setVal()}}
+{\footnotesize\ttfamily public static void Paoo\+Game.\+Map.\+Map.\+set\+Val (\begin{DoxyParamCaption}\item[{int}]{level,  }\item[{int}]{i,  }\item[{int}]{j }\end{DoxyParamCaption})}
+
+
+
+Modific o valoare din matricea harti actuale(cand colectez banuti sau diamnate) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em harta} & \+: numarul harti(nivel) \\
+\hline
+{\em i,j} & \+: indici pentru matrice \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_paoo_game_1_1_map_1_1_map_a6aca6b43dafd4ce3e5891763c10b913d}\label{class_paoo_game_1_1_map_1_1_map_a6aca6b43dafd4ce3e5891763c10b913d}} 
+\index{PaooGame.Map.Map@{PaooGame.Map.Map}!map1@{map1}}
+\index{map1@{map1}!PaooGame.Map.Map@{PaooGame.Map.Map}}
+\doxysubsubsection{\texorpdfstring{map1}{map1}}
+{\footnotesize\ttfamily final int \mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} Paoo\+Game.\+Map.\+Map.\+map1}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} \textcolor{keywordtype}{int}[][]\{}
+\DoxyCodeLine{            \{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0\},}
+\DoxyCodeLine{            \{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0\},}
+\DoxyCodeLine{            \{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0\},}
+\DoxyCodeLine{            \{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0\},}
+\DoxyCodeLine{            \{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0\},}
+\DoxyCodeLine{            \{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0\},}
+\DoxyCodeLine{            \{0, 22, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0\},}
+\DoxyCodeLine{            \{0, 22, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 15, 15, 15, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 15, 15, 0, 0, 0, 0, 0, 0, 0\},}
+\DoxyCodeLine{            \{0, 22, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 1, 2, 14, 15, 14, 15, 0, 0, 0, 0, 0, 0, 12, 0, 0, 0, 0, 0, 0, 0, 12, 14, 12, 3, 2, 0, 0, 0, 0, 0, 0, 0, 0\},}
+\DoxyCodeLine{            \{0, 22, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 12, 15, 12, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 22, 3, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 0, 0, 0, 0, 12, 12, 12, 3, 1, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0\},}
+\DoxyCodeLine{            \{0, 22, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,22, 3, 1, 2, 12, 12, 12, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 12, 12, 12, 12, 3, 1, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0\},}
+\DoxyCodeLine{            \{0, 22, 22, 0, 0, 0, 0, 0, 0, 0, 14, 0, 0, 0, 0, 0, 0, 22, 3, 1, 2, 0, 0, 0, 0, 11, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 1, 1, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0\},}
+\DoxyCodeLine{            \{0, 22, 22, 0, 0, 0, 0, 0, 0, 12, 6, 12, 0, 0, 12, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 12, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 12, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0\},}
+\DoxyCodeLine{            \{0, 22, 23, 0, 0, 0, 12, 0, 0, 8, 7, 8, 12, 0, 9, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 21, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0\},}
+\DoxyCodeLine{            \{18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 1, 1, 1, 1, 1, 1, 1, 20, 20, 20, 20, 20, 20, 20, 20, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0\}}
+\DoxyCodeLine{    \}}
+
+\end{DoxyCode}
+
+
+variabile ce nu se schimba(folosite la reinitializare -\/\texorpdfstring{$>$}{>} eu schimb map1,map2 cand elimin banuti , diamante...) 
+
+\mbox{\Hypertarget{class_paoo_game_1_1_map_1_1_map_af10818b71cfb98c39b5944b6ba1fae03}\label{class_paoo_game_1_1_map_1_1_map_af10818b71cfb98c39b5944b6ba1fae03}} 
+\index{PaooGame.Map.Map@{PaooGame.Map.Map}!map2@{map2}}
+\index{map2@{map2}!PaooGame.Map.Map@{PaooGame.Map.Map}}
+\doxysubsubsection{\texorpdfstring{map2}{map2}}
+{\footnotesize\ttfamily final int \mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} Paoo\+Game.\+Map.\+Map.\+map2}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} \textcolor{keywordtype}{int}[][]\{}
+\DoxyCodeLine{            \{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0\},}
+\DoxyCodeLine{            \{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0\},}
+\DoxyCodeLine{            \{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0\},}
+\DoxyCodeLine{            \{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0\},}
+\DoxyCodeLine{            \{22, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0\},}
+\DoxyCodeLine{            \{22, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0\},}
+\DoxyCodeLine{            \{22, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0\},}
+\DoxyCodeLine{            \{22, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 12, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 22\},}
+\DoxyCodeLine{            \{22, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 24, 26, 26, 26, 26, 26, 26, 25, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 22\},}
+\DoxyCodeLine{            \{22, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 24, 25, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 22\},}
+\DoxyCodeLine{            \{22, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 12, 0, 0, 0, 0, 12, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 24, 26, 26, 25, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 21, 0, 22\},}
+\DoxyCodeLine{            \{22, 0, 22, 0, 0, 0, 12, 0, 0, 0, 0, 12, 24, 26, 26, 26, 26, 25, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 24, 25, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 12, 0, 0, 0, 0, 0, 26, 26, 22\},}
+\DoxyCodeLine{            \{22, 0, 22, 0, 0, 0, 24, 26, 26, 26, 26, 25, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 24, 25, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 15, 0, 0, 0, 26, 26, 26, 26, 26, 26, 27, 27, 22\},}
+\DoxyCodeLine{            \{22, 0, 23, 0, 0, 0, 0, 15, 0, 15, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 12, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 16, 0, 0, 0, 16, 0, 0, 0, 0, 0, 0, 0, 26, 26, 26, 26, 27, 27, 27, 27, 27, 27, 27, 27, 22\},}
+\DoxyCodeLine{            \{26, 26, 26, 26, 26, 26, 26, 26, 26, 26, 26, 26, 26, 26, 26, 26, 26, 26, 26, 26, 26, 26, 26, 26, 26, 26, 26, 26, 26, 26, 26, 26, 26, 26, 26, 26, 26, 26, 26, 26, 26, 26, 26, 26, 26, 26, 26, 26, 26, 26, 26, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27\}}
+\DoxyCodeLine{    \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_paoo_game_1_1_map_1_1_map_a49d121c3aec13497fdd34f229028e365}\label{class_paoo_game_1_1_map_1_1_map_a49d121c3aec13497fdd34f229028e365}} 
+\index{PaooGame.Map.Map@{PaooGame.Map.Map}!map3@{map3}}
+\index{map3@{map3}!PaooGame.Map.Map@{PaooGame.Map.Map}}
+\doxysubsubsection{\texorpdfstring{map3}{map3}}
+{\footnotesize\ttfamily final int \mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} Paoo\+Game.\+Map.\+Map.\+map3}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} \textcolor{keywordtype}{int}[][]\{}
+\DoxyCodeLine{            \{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0\},}
+\DoxyCodeLine{            \{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0\},}
+\DoxyCodeLine{            \{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0\},}
+\DoxyCodeLine{            \{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0\},}
+\DoxyCodeLine{            \{22, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0\},}
+\DoxyCodeLine{            \{22, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 14, 15, 14, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 14, 15, 14, 0, 0, 0, 0, 0, 0\},}
+\DoxyCodeLine{            \{22, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 30, 29, 32, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 30, 29, 32, 0, 0, 0, 0, 0, 0\},}
+\DoxyCodeLine{            \{22, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 15, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 12, 0, 0, 0, 0, 0, 12, 0, 12, 0, 0, 0, 0, 0, 12, 0, 0, 0, 0, 0, 0, 0, 0, 22\},}
+\DoxyCodeLine{            \{22, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 30, 29, 29, 29, 29, 29, 32, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 30, 33, 33, 33, 33, 33, 33, 33, 33, 33, 33, 33, 33, 33, 32, 0, 0, 0, 0, 0, 0, 0, 0, 0, 22\},}
+\DoxyCodeLine{            \{22, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 12, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 12, 0, 0, 0, 12, 0, 0, 12, 0, 12, 0, 12, 0, 12, 0, 12, 0, 15, 0, 12, 0, 12, 0, 12, 0, 12, 0, 12, 0, 0, 0, 0, 0, 22\},}
+\DoxyCodeLine{            \{22, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 30, 29, 29, 29, 29, 32, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 12, 33, 33, 33, 33, 33, 12, 0, 30, 29, 29, 29, 29, 29, 29, 29, 29, 29, 29, 29, 29, 29, 29, 29, 29, 29, 29, 29, 32, 0, 0, 0, 0, 0, 0, 0, 22\},}
+\DoxyCodeLine{            \{22, 0, 22, 0, 0, 0, 0, 0, 0, 0, 14, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 12, 30, 28, 28, 28, 28, 28, 32, 12, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 22\},}
+\DoxyCodeLine{            \{22, 0, 22, 0, 0, 0, 0, 0, 0, 12, 8, 12, 0, 0, 0, 0, 0, 0, 0, 0, 0, 12, 0, 0, 0, 0, 0, 30, 28, 0, 0, 0, 0, 0, 28, 32, 0, 0, 0, 0, 0, 12, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 12, 0, 0, 0, 0, 0, 0, 0, 0, 0, 34, 22\},}
+\DoxyCodeLine{            \{22, 0, 23, 0, 0, 0, 16, 0, 0, 6, 7, 6, 0, 0, 0, 0, 0, 0, 0, 0, 0, 11, 0, 0, 0, 0, 0, 15, 16, 0, 0, 0, 0, 0, 16, 15, 0, 0, 0, 0, 0, 6, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 6, 0, 0, 0, 0, 0, 0, 0, 33, 33, 33, 22\},}
+\DoxyCodeLine{            \{33, 33, 33, 33, 33, 33, 33, 33, 33, 33, 33, 33, 33, 33, 33, 33, 33, 33, 33, 33, 33, 33, 33, 33, 33, 33, 33, 33, 33, 33, 33, 33, 33, 33, 33, 33, 33, 33, 33, 33, 33, 33, 33, 33, 33, 33, 33, 33, 33, 33, 33, 33, 33, 33, 33, 33, 33, 33, 33, 33, 28, 28, 28\}}
+\DoxyCodeLine{    \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_paoo_game_1_1_map_1_1_map_ad484419e728305b5781f122992ed65ad}\label{class_paoo_game_1_1_map_1_1_map_ad484419e728305b5781f122992ed65ad}} 
+\index{PaooGame.Map.Map@{PaooGame.Map.Map}!RectangleTileL1@{RectangleTileL1}}
+\index{RectangleTileL1@{RectangleTileL1}!PaooGame.Map.Map@{PaooGame.Map.Map}}
+\doxysubsubsection{\texorpdfstring{RectangleTileL1}{RectangleTileL1}}
+{\footnotesize\ttfamily Vector$<$\mbox{\hyperlink{class_paoo_game_1_1_map_1_1_rectangle_id}{Rectangle\+Id}}$>$ Paoo\+Game.\+Map.\+Map.\+Rectangle\+Tile\+L1 = new Vector$<$$>$()\hspace{0.3cm}{\ttfamily [static]}}
+
+Referinta spre vectorul de coliziune pentru nivelul 1 \mbox{\Hypertarget{class_paoo_game_1_1_map_1_1_map_a82d949c1db2147bad4ef64376ba9e411}\label{class_paoo_game_1_1_map_1_1_map_a82d949c1db2147bad4ef64376ba9e411}} 
+\index{PaooGame.Map.Map@{PaooGame.Map.Map}!RectangleTileL2@{RectangleTileL2}}
+\index{RectangleTileL2@{RectangleTileL2}!PaooGame.Map.Map@{PaooGame.Map.Map}}
+\doxysubsubsection{\texorpdfstring{RectangleTileL2}{RectangleTileL2}}
+{\footnotesize\ttfamily Vector$<$\mbox{\hyperlink{class_paoo_game_1_1_map_1_1_rectangle_id}{Rectangle\+Id}}$>$ Paoo\+Game.\+Map.\+Map.\+Rectangle\+Tile\+L2 = new Vector$<$$>$()\hspace{0.3cm}{\ttfamily [static]}}
+
+Referinta spre vectorul de coliziune pentru nivelul 3 \mbox{\Hypertarget{class_paoo_game_1_1_map_1_1_map_a6c7b5083bacafe4c9ee3d6803ec935cb}\label{class_paoo_game_1_1_map_1_1_map_a6c7b5083bacafe4c9ee3d6803ec935cb}} 
+\index{PaooGame.Map.Map@{PaooGame.Map.Map}!RectangleTileL3@{RectangleTileL3}}
+\index{RectangleTileL3@{RectangleTileL3}!PaooGame.Map.Map@{PaooGame.Map.Map}}
+\doxysubsubsection{\texorpdfstring{RectangleTileL3}{RectangleTileL3}}
+{\footnotesize\ttfamily Vector$<$\mbox{\hyperlink{class_paoo_game_1_1_map_1_1_rectangle_id}{Rectangle\+Id}}$>$ Paoo\+Game.\+Map.\+Map.\+Rectangle\+Tile\+L3 = new Vector$<$$>$()\hspace{0.3cm}{\ttfamily [static]}}
+
+Referinta spre vectorul de coliziune pentru nivelul 2 \mbox{\Hypertarget{class_paoo_game_1_1_map_1_1_map_afca72ec881674f4e44f0bd7d7a22a451}\label{class_paoo_game_1_1_map_1_1_map_afca72ec881674f4e44f0bd7d7a22a451}} 
+\index{PaooGame.Map.Map@{PaooGame.Map.Map}!TipMap@{TipMap}}
+\index{TipMap@{TipMap}!PaooGame.Map.Map@{PaooGame.Map.Map}}
+\doxysubsubsection{\texorpdfstring{TipMap}{TipMap}}
+{\footnotesize\ttfamily int Paoo\+Game.\+Map.\+Map.\+Tip\+Map = 1\hspace{0.3cm}{\ttfamily [static]}}
+
+Referinta spre numarul harti curente 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/\+Paoo\+Game/\+Map/Map.\+java\end{DoxyCompactItemize}

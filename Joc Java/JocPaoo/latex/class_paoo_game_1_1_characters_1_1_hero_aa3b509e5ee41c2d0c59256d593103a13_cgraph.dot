@@ -1,0 +1,23 @@
+digraph "PaooGame.Characters.Hero.Update"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="PaooGame.Characters.Hero.\lUpdate",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Se actualizeaza pozitia prin mutare si viata."];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="PaooGame.Characters.Hero.get\lFireCollision",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_paoo_game_1_1_characters_1_1_hero.html#a5e32195f6f5b1a3432d18cce844eefa3",tooltip="Se returneaza coliziunile cu focul."];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="PaooGame.States.State.Get\lState",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_paoo_game_1_1_states_1_1_state.html#afdb4471c22fc7ca39cc3f39bb2f3efe3",tooltip="Returneaza starea curenta."];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid"];
+  Node4 [label="PaooGame.Characters.Hero.get\lMoglyColision",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_paoo_game_1_1_characters_1_1_hero.html#a015a01e2964948b926e43c18a17bac8e",tooltip="Se returneaza coliziunile cu Mogly."];
+  Node1 -> Node5 [color="midnightblue",fontsize="10",style="solid"];
+  Node5 [label="PaooGame.Characters.Hero.get\lRinoColision",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_paoo_game_1_1_characters_1_1_hero.html#ab79e5fe4af211104874bfaa75d87fc2a",tooltip="Se returneaza coliziunile cu Rino."];
+  Node1 -> Node6 [color="midnightblue",fontsize="10",style="solid"];
+  Node6 [label="PaooGame.Characters.Hero.get\lSnakeCollision",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_paoo_game_1_1_characters_1_1_hero.html#a10658482de159c7791230c279e0a0a2b",tooltip="Se returneaza coliziunile cu sarpele."];
+  Node1 -> Node7 [color="midnightblue",fontsize="10",style="solid"];
+  Node7 [label="PaooGame.Characters.Hero.Move",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_paoo_game_1_1_characters_1_1_hero.html#a53f21cced7885ddd722529ab21687554",tooltip="Simuleaza mutarile personajului stanga , dreapta , salturi etc."];
+  Node1 -> Node8 [color="midnightblue",fontsize="10",style="solid"];
+  Node8 [label="PaooGame.States.State.Set\lState",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_paoo_game_1_1_states_1_1_state.html#a9219295fa9fb713e7fa21fe052d80591",tooltip="se va modifica valoarea lui currentState in timpul joclui."];
+}

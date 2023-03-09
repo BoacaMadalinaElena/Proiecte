@@ -1,0 +1,12 @@
+digraph "src/PaooGame/States"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  compound=true
+  subgraph clusterdir_73dcbc268d0d3d696219e75ad3bc0ad1 {
+    graph [ bgcolor="#edf0f7", pencolor="grey50", style="filled,dashed,", label="PaooGame", fontname="Helvetica", fontsize="10", URL="dir_73dcbc268d0d3d696219e75ad3bc0ad1.html"]
+  dir_6cff9db2da6840e2a00f3cd963a35074 [shape=box, label="States", style="filled,bold,", fillcolor="#edf0f7", color="grey25", URL="dir_6cff9db2da6840e2a00f3cd963a35074.html"];
+  }
+}
