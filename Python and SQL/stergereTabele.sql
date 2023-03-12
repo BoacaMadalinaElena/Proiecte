@@ -1,0 +1,15 @@
+drop table AFECTIUNE CASCADE CONSTRAINTS;
+drop table DETALII_AFECTIUNE CASCADE CONSTRAINTS;
+drop table FISA_AFECTIUNE_FK CASCADE CONSTRAINTS;
+drop table FISA_MEDICALA CASCADE CONSTRAINTS;
+drop table MEDICAMENT CASCADE CONSTRAINTS;
+drop table MDT_FISA_FK CASCADE CONSTRAINTS;
+drop table PACIENT CASCADE CONSTRAINTS;
+drop table PSIHIATRU CASCADE CONSTRAINTS;
+
+drop SEQUENCE fisa_medicala_id_seq;
+drop SEQUENCE medicament_id_seq;
+drop SEQUENCE pacient_id_seq;
+drop SEQUENCE psihiatru_id_seq;
+drop SEQUENCE afectiune_id_seq;
+
