@@ -1,0 +1,62 @@
+ul {
+    display: inline-block;
+    margin-right: 10px;
+    list-style-type: none;
+}
+
+li{
+    text-decoration: none;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+#navbar{
+    text-align: end;
+    background-color: #044a42;
+}
+
+button{
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 1.2em;
+    border-radius: 4px;
+    border: 0px;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+.homePacient{
+    text-align: center;
+    color: #000;
+}
+
+#personalData{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    color: #044a42;
+}
+
+table {
+    width: 60%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    margin: auto;
+  }
+  
+  th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  

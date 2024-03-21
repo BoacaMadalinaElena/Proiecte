@@ -1,0 +1,51 @@
+h1 {
+    text-align: center;
+}
+
+#div-nested {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #044a42, #ffffff);
+}
+
+input {
+    width: 480px;
+    height: 32px;
+    margin-top: 16px;
+}
+
+form {
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.548), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 16px;
+}
+
+label {
+    text-align: left;
+    display: block;
+    margin-top: 8px;
+    font-size: 1.2em;
+}
+
+input {
+    font-size: 1em;
+}
+
+p {
+    text-align: end;
+    color: red;
+    font-size: 1.2em;
+}
+
+#primary{
+    background-color: #ffffff;
+}
+
+div{
+    margin: 0;
+    padding: 0;
+}

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/MedicalOffice.iml" filepath="$PROJECT_DIR$/MedicalOffice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/patient_component/patient_component.iml" filepath="$PROJECT_DIR$/patient_component/patient_component.iml" />
+    </modules>
+  </component>
+</project>

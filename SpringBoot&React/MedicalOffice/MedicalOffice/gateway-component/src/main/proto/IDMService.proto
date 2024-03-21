@@ -1,0 +1,48 @@
+syntax = "proto3";
+option java_multiple_files = true;
+package com.example.idm_component.presentation.grpc;
+//com.example.idm_component.presentation.grpc
+// Aceste operatii nu sunt toate dedicate utilizatorului ci adminului(sunt pentru testare in dezvoltare)
+
+message EmptyGRPCRequest{
+}
+message EmptyGRPCResponse{
+}
+message IdGRPCRequest{
+    int64 id=1;
+}
+
+//_________Users_________
+message UserDtoGRPC {
+    int64 id=1;
+    int64 id_role=2;
+    string username=3;
+    string password=4;
+}
+
+service UserService {
+    rpc createUser(UserDtoGRPC) returns (UserDtoGRPC);
+}
+
+//_____Authorization_____
+message JWTValidateRequest {
+    string token = 1;
+    string role = 2;
+    string id = 3;
+}
+
+message JWTValidateResponse {
+    int32 id = 1;
+    int32 role = 2;
+}
+
+message CredentialsRequest {
+    string username = 1;
+    string password = 2;
+}
+
+service JWTValidator {
+    rpc validateJWT(JWTValidateRequest) returns (JWTValidateResponse);
+    rpc logout(JWTValidateRequest) returns (EmptyGRPCResponse);
+    rpc login(CredentialsRequest) returns (JWTValidateRequest);
+}
