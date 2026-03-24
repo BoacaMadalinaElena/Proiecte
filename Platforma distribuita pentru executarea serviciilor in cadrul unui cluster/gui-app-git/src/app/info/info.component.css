@@ -1,0 +1,29 @@
+#img-main-page {
+    width: 80%;
+    height: 80%;
+}
+
+h1,
+h2 {
+    text-align: center;
+}
+
+li {
+    font-size: 1.2em;
+    width: 80%;
+    text-align: justify;
+    padding: 10px;
+}
+
+a {
+    text-align: center;
+}
+
+.ghid {
+    color: #234E70;
+    cursor: pointer;
+}
+
+#content-home {
+    width: 60%;
+}

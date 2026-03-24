@@ -1,0 +1,37 @@
+form{
+    width: 70%;
+}
+
+button{
+    border-color: #538BA2;
+    background: #538BA2;
+    color: #ffffff;
+    height: 10%;
+    width: 32%;
+}
+
+.full{
+    background-color: #ffffff;
+    box-shadow: 0 0 80px rgba(0, 0, 0, 0.185);
+    width: 50%;
+}
+
+#message {
+    color: red;
+    font-size: 20px;
+    font-family: Roboto;
+    font-style: normal;
+}
+
+
+h1{
+    text-align: center;
+    font-size: 32px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+}
+
+#feedback{
+height: 32vh;
+}

@@ -1,0 +1,157 @@
+<app-navbar></app-navbar>
+
+<div class="d-flex ">
+    <div class="d-inline part2 mt-0 pt-0 px-0 mx-0">
+        <!--  <br>
+        <h2 class="mt-0 pt-0">{{translations.run.title}}</h2>
+        <br>-->
+        <ul class="menu mt-2">
+            <!--
+                    "executeNavbar": "Execute Code",
+            "dependencies": "Dependencies",
+            "files": "Files",
+            "console": "Console",
+            "send": "Send"
+            -->
+            <li class="mx-5" [ngStyle]="{'color': tabNumber === 0 ? '#234E70' : '#000'}" (click)="changeTab(0)">
+                {{translations.run.executeNavbar}}</li>
+            <!--<li class="mx-5" [ngStyle]="{'color': tabNumber === 1 ? '#234E70' : '#000'}" (click)="changeTab(1)">
+                {{translations.run.dependencies}}</li>-->
+            <li class="mx-5" [ngStyle]="{'color': tabNumber === 2 ? '#234E70' : '#000'}" (click)="changeTab(2)">
+                {{translations.run.files}}
+            </li>
+            <li class="mx-5" [ngStyle]="{'color': tabNumber === 3 ? '#234E70' : '#000'}" (click)="changeTab(3)">
+                {{translations.run.console}}
+            </li>
+        </ul>
+        <hr class="mt-2 pt-0">
+        <div class="d-flex align-items-center justify-content-center px-0 form  vertical-border" *ngIf="tabNumber == 0">
+            <div class="intern mx-2 px-0">
+                <p id="info">{{translations.run.typeRun}}</p>
+                <select name="type" id="type" [(ngModel)]="typeRun" (ngModelChange)="onSelectChangeType()">
+                    <option value="0">{{translations.run.method1}}</option>
+                    <option value="2">{{translations.run.method2}}</option>
+                </select>
+                <br>
+                <br>
+                <p class="infoRun mx-auto">{{translations.run.text1}}</p>
+                <p (click)="downloadFileJava()" class="getJava">GetPathFile class</p>
+                <p class="infoRun mx-auto">{{translations.run.text2}}</p>
+                <p id="info">{{translations.run.type}}</p>
+                <select name="type" id="type" [(ngModel)]="typeFiles" (ngModelChange)="onSelectChangeType()">
+                    <option value="java">Java</option>
+                  <!--  <option value="class">Class</option>-->
+                    <option value="jar">Jar</option>
+                    <option *ngIf="typeRun === '2'" value="py">Python</option>
+                </select>
+                <br>
+                <br>
+                <p id="info">{{translations.run.fileSelect}}</p>
+                <label for="myfile" class="custom-file-upload p-2"
+                    *ngIf="typeFiles == 'java' || typeFiles == 'class' || typeFiles == ''"
+                    [class.label-disabled]="!isSelectedType">
+                    {{translations.run.select}}
+                    <input type="file" id="myfile" name="myfile" multiple accept=".{{typeFiles}}"
+                        [disabled]="!isSelectedType" (change)="onFileSelected($event)"
+                        style="opacity: 0.5; cursor: not-allowed;">
+
+                </label>
+                <label for="myfile" class="custom-file-upload p-2" *ngIf="typeFiles == 'jar'"
+                    [class.label-disabled]="!isSelectedType">
+                    {{translations.run.select}}
+                    <input type="file" id="myfile" name="myfile" accept=".{{typeFiles}}" [disabled]="!isSelectedType"
+                        (change)="onFileSelected($event)" style="opacity: 0.5; cursor: not-allowed;">
+
+                </label>
+                <label for="myfile" class="custom-file-upload p-2" *ngIf="typeFiles == 'py'"
+                    [class.label-disabled]="!isSelectedType">
+                    {{translations.run.select}}
+                    <input type="file" id="myfile" name="myfile"  multiple accept=".{{typeFiles}}" [disabled]="!isSelectedType"
+                        (change)="onFileSelected($event)" style="opacity: 0.5; cursor: not-allowed;">
+
+                </label>
+                <br>
+                <p id="info">{{translations.run.fileSelected}} </p>
+                <div class="scroll-container mx-auto">
+                    <div *ngFor="let value of listOfFilesName">
+                        <app-file-upload [inputValue]="value"></app-file-upload>
+                    </div>
+                </div><br>
+                <p id="info">{{translations.run.startFile}}</p>
+                <label for="fileDropdown"></label>
+                <select id="fileDropdown" name="fileDropdown" [(ngModel)]="startUpFile" [disabled]="!isSelectedFiles"
+                    (ngModelChange)="onSelectChangeStartUp($event)">
+                    <option *ngFor="let value of listOfFilesName" [value]="value.fileName">{{ value.fileName }}
+                    </option>
+                </select>
+                <br>
+                <br>
+                <button [disabled]="!isSelectedStartUp" class="mb-5"
+                    (click)="submit()">{{translations.run.run}}</button>
+
+            </div>
+
+        </div>
+        <!--
+        <div class="intern align-items-center justify-content-center mx-auto" *ngIf="tabNumber == 1">
+            <h3 class="mt-0 mx-auto">{{translations.run.external}}</h3>
+         
+            <br>
+            <p>
+                {{translations.run.messageExernalLibrary}} <a href="https://mvnrepository.com/" target="_blank">Mvn Repository</a>
+            </p>
+            <br>
+            <form #userForm="ngForm" (ngSubmit)="submitNewMaven(userForm.value)">
+                <div class="containerMaven">
+                    <label class="maven me-4">groupId</label><br>
+                    <input type="text" class="mavenInput"><br><br>
+                </div>
+                <div class="containerMaven">
+                    <label class="maven me-4">artifactId</label><br>
+                    <input type="text" class="mavenInput "><br><br>
+                </div>
+                <div class="containerMaven">
+                    <label class="maven me-4">version</label><br>
+                    <input type="text" class="mavenInput "><br><br>
+                </div>
+                <br>
+                <input type="submit" [disabled]="false" value="{{translations.createAccount.submit}}">
+            </form>
+        </div>-->
+        <div class="intern align-items-center justify-content-center mx-auto terminalDiv" *ngIf="tabNumber == 2">
+            <p id="info">{{translations.run.fileSelect}}</p>
+            <label for="myfile" class="custom-file-upload p-2">
+                {{translations.run.select}}
+                <input type="file" id="myfile" name="myfile" multiple
+                    accept=".txt, .pdf, .png, .img, .jpg, .jpeg, .mp3, .mp4" (change)="onFileSelectedAux($event)"
+                    style="opacity: 1; cursor: pointer;">
+            </label>
+            <br>
+            <br>
+            <p id="info">{{translations.run.fileSelected}} </p>
+            <div class="scroll-container mx-auto">
+                <div *ngFor="let value of listOfFilesNameAux">
+                    <app-file-upload [inputValue]="value"></app-file-upload>
+                </div>
+            </div><br>
+        </div>
+        <div class="intern align-items-center justify-content-center mx-auto terminalDiv" *ngIf="tabNumber == 3">
+            <div id="terminal" class="mx-auto">
+                <div contenteditable="true" id="output" [innerHTML]="terminalText" class="left-aligned"></div>
+                <div id="outputFiles" class="left-aligned mt-5">
+                    <div *ngFor="let value of filesResponse">
+                        <p (click)="downloadFile(value)" class="fileToSave">{{value.fileName}}</p>
+                    </div>
+                </div>
+                <div class="inputContainer mt-5">
+                    <input type="text" id="input" class="input-field" [(ngModel)]="inputValue" autofocus>
+                    <button id="button" [disabled]="inputValue.length == 0"
+                        (click)="readValue()">{{translations.run.send}}</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="result">
+</div>
+<app-popup></app-popup>

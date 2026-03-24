@@ -1,0 +1,13 @@
+#img-main-page{
+    width: 80%;
+    height: 80%;
+}
+
+p,h1,h2{
+    text-align: center;
+}
+
+p{
+    font-size: 1.5em;
+}
+

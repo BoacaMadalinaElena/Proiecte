@@ -1,0 +1,55 @@
+<app-navbar></app-navbar>
+<div class="text-center mt-4 mx-5 px-5">
+    <h1>{{translations.settings.language}}</h1>
+    <form id="formLanguage" *ngIf="language === 'en'" (change)="onSelectionChange($event)" class="mt-4 d-inline">
+        <select class="me-2 py-1 mt-2 my-0 language py-auto">
+            <option value="en">{{translations.startUp.language2}}</option>
+            <option value="ro">{{translations.startUp.language1}}</option>
+        </select>
+    </form>
+    <form id="formLanguage" *ngIf="language === 'ro'" (change)="onSelectionChange($event)" class="mt-4 pt-0 d-inline">
+        <select class="me-2 py-1 mt-2 language py-auto">
+            <option value="ro">{{translations.startUp.language1}}</option>
+            <option value="en">{{translations.startUp.language2}}</option>
+        </select>
+    </form>
+    <hr class="mt-4 py-0">
+    <h1 class="mt-2">{{translations.settings.profile}}</h1>
+    <h3 class="mx-auto">{{translations.settings.note}}</h3>
+    <div class="container">
+        <form id="formStartUp" #userForm="ngForm" class="justify-content-center" (ngSubmit)="onClickSubmit()">
+            <div class="form-group text-center">
+                <label class="text-start">{{translations.createAccount.username}}</label>
+                <input type="text" name="username" class="mx-auto" [(ngModel)]="username" required>
+            </div>
+            <div class="form-group">
+                <label class="text-start">{{translations.createAccount.lastName}}</label>
+                <input type="text" name="lastName" class="mx-auto" [(ngModel)]="lastName" ngModel required>
+            </div>
+            <div class="form-group">
+                <label class="text-start">{{translations.createAccount.firstName}}</label>
+                <input type="text" name="firstName" class="mx-auto" [(ngModel)]="firstName" required>
+            </div>
+            <div class="form-group">
+                <label class="text-start">{{translations.createAccount.description}}</label>
+                <textarea name="description" class="mx-auto" [(ngModel)]="description"></textarea>
+            </div>
+            <br />
+            <div class="message">
+                <p id="message" *ngIf="userForm.value.password1 != userForm.value.password">
+                    {{translations.createAccount.passwordMessage}}</p>
+                <p id="message">{{messageFromServer}}</p>
+            </div>
+            <input type="submit" class="mx-auto mt-0"
+                [disabled]="!userForm.valid || userForm.value.password1 != userForm.value.password"
+                value="{{translations.settings.button}}">
+        </form>
+    </div>
+    <!--
+    <hr class="mt-4">
+    <h1>{{translations.settings.changePassword}}</h1>
+    <h3 class="mx-auto">{{translations.settings.changePasswordMessage1}}<strong (click)="resetPassowrd()">{{translations.settings.link}}</strong>{{translations.settings.changePasswordMessage2}}</h3>
+-->
+</div>
+<app-popup></app-popup>
+<app-loader *ngIf="loaderFlag"></app-loader>

@@ -1,0 +1,20 @@
+<app-navbar></app-navbar>
+<br>
+<br>
+<br>
+<div class="row mt-0 pt-0 ms-5 ps-5">
+    <div id="content-home" class="d-inline col-6 mt-5 ps-5 justify-content-center">
+        <h1 class=""> {{translations.about.title}}</h1>
+        <h2 class="mt-5 pt-5 mb-0">{{translations.about.aboutText}}</h2><br>
+        <h2 (click)="navigate()" class="mx-auto ghid" >{{translations.about.button}}</h2>
+    </div>
+    <div class="d-inline col-6 ps-3 mt-5 pt-5">
+        <img id="img-main-page" class="ms-5 ps-5 pt-5" src="/assets/home.svg">
+    </div>
+</div>
+<div *ngIf="isVisible" class="popup-overlay">
+    <div class="popup">
+      <p [innerHTML]="message"></p>
+      <button (click)="closePopup()">{{translations.popup.close}}</button>
+    </div>
+  </div>

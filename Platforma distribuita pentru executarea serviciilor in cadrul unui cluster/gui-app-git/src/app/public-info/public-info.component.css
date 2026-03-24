@@ -1,0 +1,58 @@
+#img-main-page {
+    width: 80%;
+    height: 80%;
+}
+
+h1,
+h2 {
+    text-align: center;
+}
+
+li {
+    font-size: 1.2em;
+    width: 100%;
+    text-align: justify;
+}
+
+a {
+    text-align: center;
+}
+
+.ghid {
+    color: #234E70;
+    cursor: pointer;
+}
+
+#content-home {
+    width: 60%;
+}
+
+.containerStart {
+    background-image: url('../images/bg_bggenerator_com_15.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.content {
+    position: absolute;
+    top: 10%;
+    left: 15%;
+    right: 15%;
+    bottom: 10%;
+    width: 70%;
+    background-color: #ffffff;
+    box-shadow: 0 0 80px rgba(0, 0, 0, 1.0);
+}
+
+a{
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.4em;
+}

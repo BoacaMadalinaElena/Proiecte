@@ -1,0 +1,89 @@
+<app-navbar></app-navbar>
+
+<div class="d-flex ">
+    <div class="d-inline part2 mt-0 pt-2 px-0 mx-0">
+        <!--  <br>
+        <h2 class="mt-0 pt-0">{{translations.run.title}}</h2>
+        <br>-->
+        <ul class="menu mt-3">
+            <!--
+                    "executeNavbar": "Execute Code",
+            "dependencies": "Dependencies",
+            "files": "Files",
+            "console": "Console",
+            "send": "Send"
+            -->
+            <li class="mx-5" [ngStyle]="{'color': tabNumber === 0 ? '#234E70' : '#000'}" (click)="changeTab(0)">
+                {{translations.run.info}}</li>
+            <li class="mx-5" [ngStyle]="{'color': tabNumber === 2 ? '#234E70' : '#000'}" (click)="changeTab(2)">
+                {{translations.run.files}}
+            </li>
+            <li class="mx-5" [ngStyle]="{'color': tabNumber === 3 ? '#234E70' : '#000'}" (click)="changeTab(3)">
+                {{translations.run.console}}
+            </li>
+        </ul>
+        <hr class="mt-2 pt-0">
+        <br>
+        <div class="infoApp align-items-center justify-content-center mx-auto" *ngIf="tabNumber == 0">
+            <!--TODO-->
+            <h1>{{info.title}}</h1>
+            <br>
+            <h2 class="text-justify">{{info.description}}</h2>
+            <br>
+            <hr>
+            <br>
+            <h2 *ngIf="filesCode != undefined && filesCode.length > 0">{{translations.run.filesAvaiable}}</h2>
+            <div id="outputFiles" class="left-aligned mt-5" *ngIf="filesCode != undefined && filesCode.length > 0">
+                <div *ngFor="let value of filesCode">
+                    <p (click)="downloadFileCode(value)" class="fileToSave">{{value.fileName}}</p>
+                </div>
+            </div>
+            <div class="container">
+                <div class="d-flex align-items-center justify-content-center mt-5">
+                    <button (click)="submit()" class="btn btn-primary">{{translations.run.run}}</button>
+                </div>
+            </div>
+            <div class="plus-sign" *ngIf="cookies.getByName('id') === info.userId || cookies.getByName('roleType') === 'admin' " (click)="deleteCode()"><svg
+                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                    <path
+                        d="M135.2 17.7L128 32H32C14.3 32 0 46.3 0 64S14.3 96 32 96H416c17.7 0 32-14.3 32-32s-14.3-32-32-32H320l-7.2-14.3C307.4 6.8 296.3 0 284.2 0H163.8c-12.1 0-23.2 6.8-28.6 17.7zM416 128H32L53.2 467c1.6 25.3 22.6 45 47.9 45H346.9c25.3 0 46.3-19.7 47.9-45L416 128z" />
+                </svg></div>
+        </div>
+        <div class="intern align-items-center justify-content-center mx-auto terminalDiv" *ngIf="tabNumber == 2">
+            <p id="info">{{translations.run.fileSelect}}</p>
+            <label for="myfile" class="custom-file-upload p-2">
+                {{translations.run.select}}
+                <input type="file" id="myfile" name="myfile" multiple
+                    accept=".txt, .pdf, .png, .img, .jpg, .jpeg, .mp3, .mp4" (change)="onFileSelectedAux($event)"
+                    style="opacity: 1; cursor: pointer;">
+            </label>
+            <br>
+            <br>
+            <p id="info">{{translations.run.fileSelected}} </p>
+            <div class="scroll-container mx-auto">
+                <div *ngFor="let value of listOfFilesNameAux">
+                    <app-file-upload [inputValue]="value"></app-file-upload>
+                </div>
+            </div><br>
+        </div>
+        <div class="intern align-items-center justify-content-center mx-auto terminalDiv" *ngIf="tabNumber == 3">
+            <div id="terminal" class="mx-auto">
+                <div contenteditable="true" id="output" [innerHTML]="terminalText" class="left-aligned"></div>
+                <div id="outputFiles" class="left-aligned mt-5">
+                    <div *ngFor="let value of filesResponse">
+                        <p (click)="downloadFile(value)" class="fileToSave my-0 py-0">{{value.fileName}}</p>
+                    </div>
+                </div>
+                <div class="inputContainer mt-5">
+                    <input type="text" id="input" class="input-field" [(ngModel)]="inputValue" autofocus>
+                    <button id="button" [disabled]="inputValue.length == 0"
+                        (click)="readValue()">{{translations.run.send}}</button>
+                </div>
+            </div>
+        </div>
+        <app-popup></app-popup>
+    </div>
+</div>
+<div class="result">
+</div>
+<app-loader *ngIf="loaderFlag"></app-loader>

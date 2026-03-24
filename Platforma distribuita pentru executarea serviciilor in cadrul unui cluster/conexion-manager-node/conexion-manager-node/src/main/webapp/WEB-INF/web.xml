@@ -1,0 +1,13 @@
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         version="2.4" xmlns="http://java.sun.com/xml/ns/j2ee"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
+    <context-param>
+        <param-name>org.apache.tomcat.websocket.textBufferSize</param-name>
+        <param-value>67108864</param-value>
+    </context-param>
+    <context-param>
+        <param-name>org.apache.tomcat.websocket.binaryBufferSize</param-name>
+        <!--64MB-->
+        <param-value>67108864</param-value>
+    </context-param>
+</web-app>

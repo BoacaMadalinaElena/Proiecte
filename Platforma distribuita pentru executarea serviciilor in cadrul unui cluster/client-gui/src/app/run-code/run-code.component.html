@@ -1,0 +1,66 @@
+<app-navbar></app-navbar>
+
+<div class="d-flex col-12">
+    <div class="d-inline part1 mt-0 pt-5 px-5 col-6">
+        <h1 class="mt-5 pt-5">Încărcare cod pentru execuție</h1>
+        <br>
+        <p id="info" >Platforma noastră vă oferă o experiență dinamică de excepție! Puteți încărca și executa cod în
+            moduri
+            variate: fișiere .class, fișiere .java, arhive zip cu toate fișierele menționate anterior și fișiere jar.
+            Pentru a da viață codului dvs., trebuie doar să selectați tipul de fișiere pe care doriți să le încărcați
+            (fișierele trebuie să fie dintr-un singur tip), să încărcați fișierele și să alegeți din meniul derulant
+            numele clasei de start-up. Aceasta trebuie să conțină o metodă nestatică numită "run". Bucurați-vă de magia
+            programării dinamice!</p>
+    </div>
+    <div class="d-inline part2 mt-0 pt-5 px-5 col-6">
+        <br>
+        <div class="">
+            <div class="d-flex align-items-center justify-content-center form">
+                <div class="intern">
+                    <p id="info">Selectează tipul:</p>
+                    <select name="type" id="type" [(ngModel)]="typeFiles" (ngModelChange)="onSelectChangeType()">
+                        <option value="java"></option>
+                        <option value="java">Java</option>
+                        <option value="class">Class</option>
+                        <option value="zip">Zip</option>
+                        <option value="jar">Jar</option>
+                    </select>
+                    <br>
+                    <hr>
+                    <br>
+                    <p id="info">Selectați fișierele dorite:</p>
+                    <label for="myfile" class="custom-file-upload p-2"
+                        [style.background-color]="!isSelectedType ? 'gray' : ' #234E70'">
+                        Selectează
+                        <input type="file" id="myfile" name="myfile" multiple accept=".{{typeFiles}}"
+                            [attr.disabled]="isSelectedType ? null : true" (change)="onFileSelected($event)">
+                    </label>
+                    <br>
+                    <hr>
+                    <p id="info">Fișierele selectate sunt: </p>
+                    <div class="scroll-container">
+                        <div *ngFor="let value of listOfFilesName">
+                            <app-file-upload [inputValue]="value"></app-file-upload>
+                        </div>
+                    </div><br>
+                    <hr>
+                    <p id="info">Selectați fișierul care conține clasa de start a proiectului(cea care conține metoda
+                        void run())</p>
+                    <label for="fileDropdown"></label>
+                    <select id="fileDropdown" name="fileDropdown" [(ngModel)]="startUpFile"
+                        [attr.disabled]="isSelectedFiles ? null : true"
+                        [style.background-color]="!isSelectedFiles ? 'gray' : '#234E70'"
+                        (ngModelChange)="onSelectChangeStartUp()">
+                        <option *ngFor="let value of listOfFilesName" [value]="value">{{ value }}</option>
+                    </select>
+                    <br>
+                    <hr>
+                    <br>
+                    <button [attr.disabled]="isSelectedStartUp ? null : true"
+                        [style.background-color]="!isSelectedStartUp ? 'gray' : '#234E70'"
+                        (click)="submit()">Execută</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

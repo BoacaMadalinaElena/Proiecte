@@ -1,0 +1,59 @@
+<div class=" d-flex containerStart m-0 p-0">
+    <div class="content">
+        <form id="formLanguage" *ngIf="language === 'ro'" (change)="onSelectionChange($event)" class="mt-0 pt-0">
+            <select class="me-2  pt-2 language py-auto">
+                <option value="ro">{{translations.startUp.language1}}</option>
+                <option value="en">{{translations.startUp.language2}}</option>
+            </select>
+        </form>
+        <form id="formLanguage" *ngIf="language === 'en'" (change)="onSelectionChange($event)" class="mt-0">
+            <select class="me-2  pt-2 language py-auto">
+                <option value="en">{{translations.startUp.language2}}</option>
+                <option value="ro">{{translations.startUp.language1}}</option>
+            </select>
+        </form>
+        <p id="titleStartUp" class="mb-3 pb-0">{{translations.createAccount.title}}</p>
+        <form id="formStartUp" #userForm="ngForm" (ngSubmit)="onClickSubmit(userForm.value)">
+            <div class="form-group">
+                <label class="mx-auto">{{translations.createAccount.username}}</label>
+                <input type="text" name="username" class="mx-auto" ngModel required>
+            </div>
+            <div class="form-group">
+                <label class="mx-auto">{{translations.createAccount.email}}</label>
+                <input type="text" name="email" class="mx-auto" ngModel required>
+            </div>
+            <div class="form-group">
+                <label class="mx-auto">{{translations.createAccount.lastName}}</label>
+                <input type="text" name="lastName" class="mx-auto" ngModel required>
+            </div>
+            <div class="form-group">
+                <label class="mx-auto">{{translations.createAccount.firstName}}</label>
+                <input type="text" name="firstName" class="mx-auto" ngModel required>
+            </div>
+            <div class="form-group  mx-auto">
+                <label class="mx-auto">{{translations.createAccount.password}}</label>
+                <input type="password" name="password"  class="mx-auto" ngModel required>
+            </div>
+            <div class="form-group  mx-auto">
+                <label class="mx-auto">{{translations.createAccount.password2}}</label>
+                <input type="password" name="password1" class="mx-auto" ngModel required>
+            </div>
+            <div class="form-group  mx-auto">
+                <label class="mx-auto">{{translations.createAccount.description}}</label>
+                <textarea name="description" class="mx-auto" ngModel></textarea>
+            </div>
+            <br />
+            <div class="message">
+                <p id="message" *ngIf="userForm.value.password1 != userForm.value.password">{{translations.createAccount.passwordMessage}}</p>
+                <p id="message">{{messageFromServer}}</p>
+            </div>
+            <div class="link">
+                <a href="/login">{{translations.createAccount.message}}</a>
+            </div>
+            <br>
+            <input type="submit" class="mx-auto" [disabled]="!userForm.valid || userForm.value.password1 != userForm.value.password" value="{{translations.createAccount.submit}}">
+        </form>
+        <app-popup></app-popup>
+    </div>
+</div>
+<app-loader *ngIf="loaderFlag"></app-loader>

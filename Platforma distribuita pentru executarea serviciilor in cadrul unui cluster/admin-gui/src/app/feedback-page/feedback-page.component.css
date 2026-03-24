@@ -1,0 +1,48 @@
+select,.buttonBlue {
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    background-color: #234E70;
+    font-size: 1.2em;
+    border-radius: 10px;
+    width: 32%;
+    height: 40px;
+    border: 0px;
+    text-align: center;
+}
+
+h1{
+    font-size: 1.5em;
+    text-align: center;
+}
+
+input {
+    width: 100%;
+    display: block;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: #272727;
+    border-width: 1px;
+    height: 12%;
+}
+
+th,td{
+    border: 1px solid #272727; 
+    text-align: center;
+}
+
+button{
+    border: none;
+    background-color: #ffffff;
+    width: 48px;
+    height: 48px;
+}
+
+.dis {
+    opacity: 0.3; 
+    pointer-events: none;
+}
+
+.left-align {
+    text-align: left;
+}

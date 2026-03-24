@@ -1,0 +1,6 @@
+<div *ngIf="isVisible" class="popup-overlay">
+    <div class="popup">
+        <p [innerHTML]="message"></p>
+        <button (click)="closePopup()">{{translations.popup.close}}</button>
+    </div>
+</div>

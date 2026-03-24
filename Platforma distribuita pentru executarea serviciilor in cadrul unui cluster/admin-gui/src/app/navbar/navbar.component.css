@@ -1,0 +1,48 @@
+li {
+    list-style-type: none;
+    font-size: 1.5em;
+    color: #fff;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+img {
+    position: absolute;
+    left: 4%;
+    width: 300px;
+    height: 40px;
+}
+
+ul {
+    text-align: end;
+    background-color: #234E70;
+}
+
+a:hover {
+    color: #d8d8d8;
+    text-decoration-thickness: 2px;
+}
+
+
+#logout {
+    background-color: #fff;
+    color: #234E70;
+    border-radius: 20px;
+}
+
+li {
+    cursor: pointer;
+}
+
+select {
+    color: #ffffff;
+    background-color: #234E70;
+    background-color: #fff;
+    color: #234E70;
+    border-radius: 20px;
+    font-size: 1.4em;
+}
+

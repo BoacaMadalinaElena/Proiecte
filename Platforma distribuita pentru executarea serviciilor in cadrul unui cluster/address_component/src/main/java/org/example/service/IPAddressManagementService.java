@@ -1,0 +1,116 @@
+package org.example.service;
+
+import jakarta.transaction.Transactional;
+import org.example.dto.IpPublicAddressDto;
+import org.example.exception.ConflictException;
+import org.example.exception.InternalServerError;
+import org.example.exception.InvalidFieldException;
+import org.example.other.CustomPrinter;
+import org.example.repository.IpPublicAddressRepository;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import java.time.LocalDateTime;
+import java.util.Comparator;
+import java.util.List;
+import java.util.Optional;
+
+@Service
+public class IPAddressManagementService {
+    @Autowired
+    private IpPublicAddressRepository ipPublicAddressRepository;
+    @Autowired
+    private ParameterValidateService parameterValidateService;
+
+    private int count = 0;
+
+
+    public void clearList() {
+            List<IpPublicAddressDto> localDateTimes = this.ipPublicAddressRepository.findAll();
+            for (IpPublicAddressDto ipPublicAddressDto : localDateTimes) {
+                if (LocalDateTime.now().isAfter(ipPublicAddressDto.getDateTime().plusMinutes(2))) {
+                    this.ipPublicAddressRepository.deleteByIpAndPort(ipPublicAddressDto.getIp(),ipPublicAddressDto.getPort());
+                    CustomPrinter.printErr("Node: " + localDateTimes + " id down!");
+                }
+        }
+    }
+
+    public IpPublicAddressDto add(String ip, int port) throws ConflictException, InvalidFieldException {
+        if (this.parameterValidateService.ipAddressValidate(ip)) {
+            if (port < 1023 || port > 65535) {
+                throw new InvalidFieldException("Numărul portului este invalid!", "The port number is invalid!");
+            }
+            if(parameterValidateService.isValidIPAddress(ip)){
+                throw new InvalidFieldException("Adresa ip este invalidă!",
+                        "The IP address is invalid!");
+            }
+            try {
+                Optional<IpPublicAddressDto> ipPublicAddressDto = this.ipPublicAddressRepository.findByIpAndPort(ip, port);
+                if (ipPublicAddressDto.isPresent()) {
+                    this.ipPublicAddressRepository.deleteByIpAndPort(ip, port);
+                }
+                return this.ipPublicAddressRepository.save(new IpPublicAddressDto(null, ip, port, LocalDateTime.now()));
+            } catch (Exception ex) {
+                if (ex.getMessage().contains("UK_IP_PORT")) {
+                    throw new ConflictException("Există deja o înregistrare cu acest IP și port!", "The record with this IP and port already exists!");
+                }
+                throw ex;
+            }
+        } else {
+            throw new InvalidFieldException("Adresa IP este în format invalid!", "Invalid IP address format!");
+        }
+
+    }
+
+    public IpPublicAddressDto getIpPublicAddress() throws InternalServerError {
+        this.clearList();
+        List<IpPublicAddressDto> list = this.ipPublicAddressRepository.findAll();
+        Comparator<IpPublicAddressDto> comparator = Comparator.comparing(IpPublicAddressDto::getId);
+        list.sort(comparator);
+
+        try {
+            IpPublicAddressDto ipPublicAddressDto = list.get(this.count);
+            this.count += 1;
+            this.count %= list.size();
+            return ipPublicAddressDto;
+        } catch (IndexOutOfBoundsException ex2) {
+            this.count = 0;
+           EmailService.send("spammadalinaboaca@gmail.com","Master node error","There is no master node available.","en");
+            throw new InternalServerError("Nu există noduri disponibile un administrator a fost notificat!", "There are no available nodes, an administrator has been notified!");
+        }
+    }
+
+    @Transactional
+
+    public void deleteIpAddress(String ip, int port) throws InvalidFieldException {
+        this.count--;
+        if (this.parameterValidateService.ipAddressValidate(ip)) {
+            if (port < 1023 || port > 65535) {
+                throw new InvalidFieldException("Numărul portului este invalid!", "The port number is invalid!");
+            }
+            if(parameterValidateService.isValidIPAddress(ip)){
+                throw new InvalidFieldException("Adresa ip este invalidă!",
+                        "The IP address is invalid!");
+            }
+            this.ipPublicAddressRepository.deleteByIpAndPort(ip, port);
+        } else {
+            throw new InvalidFieldException("Adresa IP este în format invalid!", "Invalid IP address format!");
+        }
+
+    }
+
+    public Optional<IpPublicAddressDto> findByIpAndPort(String ip, int port) throws InvalidFieldException {
+        if (this.parameterValidateService.ipAddressValidate(ip)) {
+            if (port < 1023 || port > 65535) {
+                throw new InvalidFieldException("Numărul portului este invalid!", "The port number is invalid!");
+            }
+            if(parameterValidateService.isValidIPAddress(ip)){
+                throw new InvalidFieldException("Adresa ip este invalidă!",
+                        "The IP address is invalid!");
+            }
+            return this.ipPublicAddressRepository.findByIpAndPort(ip, port);
+        } else {
+            throw new InvalidFieldException("Adresa IP este în format invalid!", "Invalid IP address format!");
+        }
+    }
+}

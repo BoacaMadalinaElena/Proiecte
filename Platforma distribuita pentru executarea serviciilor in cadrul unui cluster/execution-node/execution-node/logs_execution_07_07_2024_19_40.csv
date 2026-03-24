@@ -1,0 +1,303 @@
+"07/07/2024 19:40:38","192.168.1.100:43099","SUCCESS","GENERIC","Start"
+"07/07/2024 19:40:38","192.168.1.100:43099","SUCCESS","GENERIC","main"
+"07/07/2024 19:40:38","192.168.1.100:43099","SUCCESS","GENERIC","Start ConnectionTCPManager"
+"07/07/2024 19:40:38","192.168.1.100:43099","SUCCESS","GENERIC","Start ConnectionUDPManager"
+"07/07/2024 19:40:38","192.168.1.100:43099","INFO","GENERIC","OsName: Linux"
+"07/07/2024 19:40:38","192.168.1.100:43099","WARNING","GENERIC","Read file: logs_execution_07_07_2024_19_30"
+"07/07/2024 19:40:38","192.168.1.100:43099","INFO","GENERIC","Fisierul: logs_execution_07_07_2024_19_30.csv nu exista!"
+"07/07/2024 19:41:08","192.168.1.100:43099","INFO","GENERIC","New client: /192.168.1.100_43216"
+"07/07/2024 19:41:09","192.168.1.100:43099","SUCCESS","GENERIC","Wait request...."
+"07/07/2024 19:42:29","192.168.1.100:43099","MESSAGE","GENERIC","Message from: 479b758a-45a6-46ab-9784-6a90add685d3 with file: TestWrite.java"
+"07/07/2024 19:42:30","192.168.1.100:43099","INFO","479b758a-45a6-46ab-9784-6a90add685d3","Compile: Process exit value: 0"
+"07/07/2024 19:42:30","192.168.1.100:43099","INFO","479b758a-45a6-46ab-9784-6a90add685d3","Compile: Process exit value: 0"
+"07/07/2024 19:42:30","192.168.1.100:43099","SUCCESS","479b758a-45a6-46ab-9784-6a90add685d3","192.168.1.100:43216 I have sent the result!"
+"07/07/2024 19:42:30","192.168.1.100:43099","INFO","479b758a-45a6-46ab-9784-6a90add685d3","serverJavaResourcesRemote/192.168.1.100_43216/"
+"07/07/2024 19:42:30","192.168.1.100:43099","INFO","479b758a-45a6-46ab-9784-6a90add685d3","serverJavaResourcesRemote/192.168.1.100_43216_479b758a-45a6-46ab-9784-6a90add685d3"
+"07/07/2024 19:42:30","192.168.1.100:43099","SUCCESS","479b758a-45a6-46ab-9784-6a90add685d3","Wait request...."
+"07/07/2024 19:42:50","192.168.1.100:43099","MESSAGE","479b758a-45a6-46ab-9784-6a90add685d3","Message from: 479b758a-45a6-46ab-9784-6a90add685d3 with file: TestWrite.java"
+"07/07/2024 19:42:50","192.168.1.100:43099","INFO","479b758a-45a6-46ab-9784-6a90add685d3","MessageToExecutionNode(userId=479b758a-45a6-46ab-9784-6a90add685d3, fileName=TestWrite.java, content=// ok
+public class TestWrite {
+    public static void main(String[] args){
+        System.out.println(""Incepeti testul..."");
+
+        int num1 = 5;
+        int num2 = 7;
+        int sum = num1 + num2;
+        System.out.println(""Suma dintre "" + num1 + "" si "" + num2 + "" este: "" + sum);
+
+        String text = ""Java este minunat!"";
+        System.out.println(""Textul initial: "" + text);
+        System.out.println(""Lungimea textului: "" + text.length());
+        double pi = 3.14159;
+        System.out.println(""Valoarea lui PI: "" + pi);
+
+        System.out.println(""Testul s-a încheiat."");
+    }
+}
+, isStartUp=1, contentByte=[], methodExecution=2)"
+"07/07/2024 19:42:54","192.168.1.100:43099","ERROR","479b758a-45a6-46ab-9784-6a90add685d3","Error response from daemon: No such container: 479b758a-45a6-46ab-9784-6a90add685d3
+"
+"07/07/2024 19:42:54","192.168.1.100:43099","ERROR","479b758a-45a6-46ab-9784-6a90add685d3","Error stop container!"
+"07/07/2024 19:42:54","192.168.1.100:43099","INFO","479b758a-45a6-46ab-9784-6a90add685d3","Run command: /usr/bin/dash -c jar cfm TestWrite.jar manifest.txt *.class"
+"07/07/2024 19:42:54","192.168.1.100:43099","INFO","479b758a-45a6-46ab-9784-6a90add685d3","Status create jar: 0 for: 479b758a-45a6-46ab-9784-6a90add685d3"
+"07/07/2024 19:42:55","192.168.1.100:43099","INFO","479b758a-45a6-46ab-9784-6a90add685d3","Status create volume: 0"
+"07/07/2024 19:42:55","192.168.1.100:43099","INFO","479b758a-45a6-46ab-9784-6a90add685d3","/usr/local/bin/docker image build -t 479b758a-45a6-46ab-9784-6a90add685d3:latest ."
+"07/07/2024 19:45:08","192.168.1.100:43099","ERROR","479b758a-45a6-46ab-9784-6a90add685d3","#0 building with ""desktop-linux"" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 153B done
+#1 DONE 0.0s
+
+#2 [internal] load metadata for docker.io/library/amazoncorretto:17-alpine-jdk
+#2 DONE 2.5s
+
+#3 [internal] load .dockerignore
+#3 transferring context: 2B done
+#3 DONE 0.0s
+
+#4 [internal] load build context
+#4 transferring context: 3.53kB 0.0s done
+#4 DONE 0.0s
+
+#5 [1/4] FROM docker.io/library/amazoncorretto:17-alpine-jdk@sha256:950933535cc7d81fe0851e6b4782f4b25b24a9e3115bbacc77b40c57144701c0
+#5 resolve docker.io/library/amazoncorretto:17-alpine-jdk@sha256:950933535cc7d81fe0851e6b4782f4b25b24a9e3115bbacc77b40c57144701c0 0.0s done
+#5 sha256:950933535cc7d81fe0851e6b4782f4b25b24a9e3115bbacc77b40c57144701c0 2.67kB / 2.67kB done
+#5 sha256:0e763fa4969988d8cf0a53b7471be64a8c38b1d81d2bd89f362d387565791a25 1.37kB / 1.37kB done
+#5 sha256:60d459aa3f206c915cdc2beb55f50efe372bac2a8eff2038ab034003c51d28cb 2.38kB / 2.38kB done
+#5 sha256:b84a74cde5af5c5199bfc2ce2a8c8951a29a7716d17327e923f1a14c870a858b 0B / 3.42MB 0.1s
+#5 sha256:b0db5f63c3906482ac90304cf0e89c91fc810984dd49f92dd3a9d8ab4b99878b 0B / 146.24MB 0.1s
+#5 sha256:b84a74cde5af5c5199bfc2ce2a8c8951a29a7716d17327e923f1a14c870a858b 1.05MB / 3.42MB 1.3s
+#5 sha256:b84a74cde5af5c5199bfc2ce2a8c8951a29a7716d17327e923f1a14c870a858b 2.10MB / 3.42MB 1.8s
+#5 sha256:b84a74cde5af5c5199bfc2ce2a8c8951a29a7716d17327e923f1a14c870a858b 3.15MB / 3.42MB 2.8s
+#5 extracting sha256:b84a74cde5af5c5199bfc2ce2a8c8951a29a7716d17327e923f1a14c870a858b
+#5 sha256:b84a74cde5af5c5199bfc2ce2a8c8951a29a7716d17327e923f1a14c870a858b 3.42MB / 3.42MB 3.3s done
+#5 extracting sha256:b84a74cde5af5c5199bfc2ce2a8c8951a29a7716d17327e923f1a14c870a858b 0.1s done
+#5 sha256:b0db5f63c3906482ac90304cf0e89c91fc810984dd49f92dd3a9d8ab4b99878b 3.15MB / 146.24MB 5.3s
+#5 sha256:b0db5f63c3906482ac90304cf0e89c91fc810984dd49f92dd3a9d8ab4b99878b 10.49MB / 146.24MB 10.4s
+#5 sha256:b0db5f63c3906482ac90304cf0e89c91fc810984dd49f92dd3a9d8ab4b99878b 16.78MB / 146.24MB 15.5s
+#5 sha256:b0db5f63c3906482ac90304cf0e89c91fc810984dd49f92dd3a9d8ab4b99878b 23.07MB / 146.24MB 20.6s
+#5 sha256:b0db5f63c3906482ac90304cf0e89c91fc810984dd49f92dd3a9d8ab4b99878b 28.31MB / 146.24MB 25.7s
+#5 sha256:b0db5f63c3906482ac90304cf0e89c91fc810984dd49f92dd3a9d8ab4b99878b 34.60MB / 146.24MB 30.8s
+#5 sha256:b0db5f63c3906482ac90304cf0e89c91fc810984dd49f92dd3a9d8ab4b99878b 40.89MB / 146.24MB 35.9s
+#5 sha256:b0db5f63c3906482ac90304cf0e89c91fc810984dd49f92dd3a9d8ab4b99878b 48.23MB / 146.24MB 40.9s
+#5 sha256:b0db5f63c3906482ac90304cf0e89c91fc810984dd49f92dd3a9d8ab4b99878b 52.43MB / 146.24MB 45.9s
+#5 sha256:b0db5f63c3906482ac90304cf0e89c91fc810984dd49f92dd3a9d8ab4b99878b 57.67MB / 146.24MB 51.1s
+#5 sha256:b0db5f63c3906482ac90304cf0e89c91fc810984dd49f92dd3a9d8ab4b99878b 60.82MB / 146.24MB 56.2s
+#5 sha256:b0db5f63c3906482ac90304cf0e89c91fc810984dd49f92dd3a9d8ab4b99878b 67.11MB / 146.24MB 61.2s
+#5 sha256:b0db5f63c3906482ac90304cf0e89c91fc810984dd49f92dd3a9d8ab4b99878b 71.30MB / 146.24MB 66.3s
+#5 sha256:b0db5f63c3906482ac90304cf0e89c91fc810984dd49f92dd3a9d8ab4b99878b 76.55MB / 146.24MB 71.4s
+#5 sha256:b0db5f63c3906482ac90304cf0e89c91fc810984dd49f92dd3a9d8ab4b99878b 82.84MB / 146.24MB 76.6s
+#5 sha256:b0db5f63c3906482ac90304cf0e89c91fc810984dd49f92dd3a9d8ab4b99878b 88.08MB / 146.24MB 81.7s
+#5 sha256:b0db5f63c3906482ac90304cf0e89c91fc810984dd49f92dd3a9d8ab4b99878b 94.37MB / 146.24MB 86.9s
+#5 sha256:b0db5f63c3906482ac90304cf0e89c91fc810984dd49f92dd3a9d8ab4b99878b 100.66MB / 146.24MB 92.0s
+#5 sha256:b0db5f63c3906482ac90304cf0e89c91fc810984dd49f92dd3a9d8ab4b99878b 106.95MB / 146.24MB 97.2s
+#5 sha256:b0db5f63c3906482ac90304cf0e89c91fc810984dd49f92dd3a9d8ab4b99878b 113.25MB / 146.24MB 102.3s
+#5 sha256:b0db5f63c3906482ac90304cf0e89c91fc810984dd49f92dd3a9d8ab4b99878b 119.54MB / 146.24MB 107.3s
+#5 sha256:b0db5f63c3906482ac90304cf0e89c91fc810984dd49f92dd3a9d8ab4b99878b 126.88MB / 146.24MB 112.4s
+#5 sha256:b0db5f63c3906482ac90304cf0e89c91fc810984dd49f92dd3a9d8ab4b99878b 133.17MB / 146.24MB 117.4s
+#5 sha256:b0db5f63c3906482ac90304cf0e89c91fc810984dd49f92dd3a9d8ab4b99878b 139.46MB / 146.24MB 122.5s
+#5 sha256:b0db5f63c3906482ac90304cf0e89c91fc810984dd49f92dd3a9d8ab4b99878b 144.70MB / 146.24MB 127.5s
+#5 sha256:b0db5f63c3906482ac90304cf0e89c91fc810984dd49f92dd3a9d8ab4b99878b 146.24MB / 146.24MB 128.0s done
+#5 extracting sha256:b0db5f63c3906482ac90304cf0e89c91fc810984dd49f92dd3a9d8ab4b99878b 0.1s
+#5 extracting sha256:b0db5f63c3906482ac90304cf0e89c91fc810984dd49f92dd3a9d8ab4b99878b 1.7s done
+#5 DONE 129.9s
+
+#6 [2/4] WORKDIR /app
+#6 DONE 0.2s
+
+#7 [3/4] ADD TestWrite.jar TestWrite.jar
+#7 DONE 0.0s
+
+#8 [4/4] COPY . .
+#8 DONE 0.0s
+
+#9 exporting to image
+#9 exporting layers 0.0s done
+#9 writing image sha256:92fc81e8b7701b60d87417f9182edafb03bc39df9aa0115ee53e098a2b29dcdf done
+#9 naming to docker.io/library/479b758a-45a6-46ab-9784-6a90add685d3:latest done
+#9 DONE 0.0s
+"
+"07/07/2024 19:45:08","192.168.1.100:43099","INFO","479b758a-45a6-46ab-9784-6a90add685d3","Docker build image: 0"
+"07/07/2024 19:45:08","192.168.1.100:43099","INFO","479b758a-45a6-46ab-9784-6a90add685d3","/usr/local/bin/docker run --network none -m 400m -v 479b758a-45a6-46ab-9784-6a90add685d3:/app --name 479b758a-45a6-46ab-9784-6a90add685d3 -i 479b758a-45a6-46ab-9784-6a90add685d3:latest"
+"07/07/2024 19:45:09","192.168.1.100:43099","INFO","479b758a-45a6-46ab-9784-6a90add685d3","Incepeti testul..."
+"07/07/2024 19:45:09","192.168.1.100:43099","INFO","479b758a-45a6-46ab-9784-6a90add685d3","Suma dintre 5 si 7 este: 12"
+"07/07/2024 19:45:09","192.168.1.100:43099","INFO","479b758a-45a6-46ab-9784-6a90add685d3","Textul initial: Java este minunat!"
+"07/07/2024 19:45:09","192.168.1.100:43099","INFO","479b758a-45a6-46ab-9784-6a90add685d3","Lungimea textului: 18"
+"07/07/2024 19:45:09","192.168.1.100:43099","INFO","479b758a-45a6-46ab-9784-6a90add685d3","Valoarea lui PI: 3.14159"
+"07/07/2024 19:45:09","192.168.1.100:43099","INFO","479b758a-45a6-46ab-9784-6a90add685d3","Testul s-a încheiat."
+"07/07/2024 19:45:09","192.168.1.100:43099","SUCCESS","479b758a-45a6-46ab-9784-6a90add685d3","/usr/local/bin/docker cp 479b758a-45a6-46ab-9784-6a90add685d3:/app ./serverJavaResourcesRemote/192.168.1.100_43216/"
+"07/07/2024 19:45:09","192.168.1.100:43099","INFO","479b758a-45a6-46ab-9784-6a90add685d3","Status cp docker:local: 0"
+"07/07/2024 19:45:09","192.168.1.100:43099","INFO","479b758a-45a6-46ab-9784-6a90add685d3","Status process run container: 0"
+"07/07/2024 19:45:09","192.168.1.100:43099","INFO","479b758a-45a6-46ab-9784-6a90add685d3","serverJavaResourcesRemote/192.168.1.100_43216/"
+"07/07/2024 19:45:09","192.168.1.100:43099","INFO","479b758a-45a6-46ab-9784-6a90add685d3","serverJavaResourcesRemote/192.168.1.100_43216_479b758a-45a6-46ab-9784-6a90add685d3"
+"07/07/2024 19:45:09","192.168.1.100:43099","ERROR","479b758a-45a6-46ab-9784-6a90add685d3","serverJavaResourcesRemote/192.168.1.100_43216_479b758a-45a6-46ab-9784-6a90add685d3"
+"07/07/2024 19:45:09","192.168.1.100:43099","SUCCESS","479b758a-45a6-46ab-9784-6a90add685d3","Success delete container!"
+"07/07/2024 19:45:09","192.168.1.100:43099","SUCCESS","479b758a-45a6-46ab-9784-6a90add685d3","Success delete volume!"
+"07/07/2024 19:45:09","192.168.1.100:43099","SUCCESS","479b758a-45a6-46ab-9784-6a90add685d3","Success delete image!"
+"07/07/2024 19:45:09","192.168.1.100:43099","SUCCESS","479b758a-45a6-46ab-9784-6a90add685d3","Completed successfully for: 479b758a-45a6-46ab-9784-6a90add685d3"
+"07/07/2024 19:45:09","192.168.1.100:43099","SUCCESS","479b758a-45a6-46ab-9784-6a90add685d3","Wait request...."
+"07/07/2024 19:45:20","192.168.1.100:43099","MESSAGE","479b758a-45a6-46ab-9784-6a90add685d3","Message from: 479b758a-45a6-46ab-9784-6a90add685d3 with file: TestWrite.java"
+"07/07/2024 19:45:20","192.168.1.100:43099","INFO","479b758a-45a6-46ab-9784-6a90add685d3","MessageToExecutionNode(userId=479b758a-45a6-46ab-9784-6a90add685d3, fileName=TestWrite.java, content=// ok
+public class TestWrite {
+    public static void main(String[] args){
+        System.out.println(""Incepeti testul..."");
+
+        int num1 = 5;
+        int num2 = 7;
+        int sum = num1 + num2;
+        System.out.println(""Suma dintre "" + num1 + "" si "" + num2 + "" este: "" + sum);
+
+        String text = ""Java este minunat!"";
+        System.out.println(""Textul initial: "" + text);
+        System.out.println(""Lungimea textului: "" + text.length());
+        double pi = 3.14159;
+        System.out.println(""Valoarea lui PI: "" + pi);
+
+        System.out.println(""Testul s-a încheiat."");
+    }
+}
+, isStartUp=1, contentByte=[], methodExecution=2)"
+"07/07/2024 19:45:21","192.168.1.100:43099","ERROR","479b758a-45a6-46ab-9784-6a90add685d3","Error response from daemon: No such container: 479b758a-45a6-46ab-9784-6a90add685d3
+"
+"07/07/2024 19:45:21","192.168.1.100:43099","ERROR","479b758a-45a6-46ab-9784-6a90add685d3","Error stop container!"
+"07/07/2024 19:45:21","192.168.1.100:43099","INFO","479b758a-45a6-46ab-9784-6a90add685d3","Run command: /usr/bin/dash -c jar cfm TestWrite.jar manifest.txt *.class"
+"07/07/2024 19:45:21","192.168.1.100:43099","INFO","479b758a-45a6-46ab-9784-6a90add685d3","Status create jar: 0 for: 479b758a-45a6-46ab-9784-6a90add685d3"
+"07/07/2024 19:45:21","192.168.1.100:43099","INFO","479b758a-45a6-46ab-9784-6a90add685d3","Status create volume: 0"
+"07/07/2024 19:45:21","192.168.1.100:43099","INFO","479b758a-45a6-46ab-9784-6a90add685d3","/usr/local/bin/docker image build -t 479b758a-45a6-46ab-9784-6a90add685d3:latest ."
+"07/07/2024 19:45:22","192.168.1.100:43099","ERROR","479b758a-45a6-46ab-9784-6a90add685d3","#0 building with ""desktop-linux"" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 153B done
+#1 DONE 0.0s
+
+#2 [internal] load metadata for docker.io/library/amazoncorretto:17-alpine-jdk
+#2 DONE 0.6s
+
+#3 [internal] load .dockerignore
+#3 transferring context: 2B done
+#3 DONE 0.0s
+
+#4 [1/4] FROM docker.io/library/amazoncorretto:17-alpine-jdk@sha256:950933535cc7d81fe0851e6b4782f4b25b24a9e3115bbacc77b40c57144701c0
+#4 DONE 0.0s
+
+#5 [internal] load build context
+#5 transferring context: 3.53kB done
+#5 DONE 0.0s
+
+#6 [2/4] WORKDIR /app
+#6 CACHED
+
+#7 [3/4] ADD TestWrite.jar TestWrite.jar
+#7 DONE 0.0s
+
+#8 [4/4] COPY . .
+#8 DONE 0.0s
+
+#9 exporting to image
+#9 exporting layers 0.0s done
+#9 writing image sha256:dfb3d15f927737ad3eceac8d3a101f19d1ebcb2b17ce39e73d8c18104af65c63
+#9 writing image sha256:dfb3d15f927737ad3eceac8d3a101f19d1ebcb2b17ce39e73d8c18104af65c63 done
+#9 naming to docker.io/library/479b758a-45a6-46ab-9784-6a90add685d3:latest done
+#9 DONE 0.1s
+"
+"07/07/2024 19:45:22","192.168.1.100:43099","INFO","479b758a-45a6-46ab-9784-6a90add685d3","Docker build image: 0"
+"07/07/2024 19:45:22","192.168.1.100:43099","INFO","479b758a-45a6-46ab-9784-6a90add685d3","/usr/local/bin/docker run --network none -m 400m -v 479b758a-45a6-46ab-9784-6a90add685d3:/app --name 479b758a-45a6-46ab-9784-6a90add685d3 -i 479b758a-45a6-46ab-9784-6a90add685d3:latest"
+"07/07/2024 19:45:22","192.168.1.100:43099","INFO","479b758a-45a6-46ab-9784-6a90add685d3","Incepeti testul..."
+"07/07/2024 19:45:22","192.168.1.100:43099","INFO","479b758a-45a6-46ab-9784-6a90add685d3","Suma dintre 5 si 7 este: 12"
+"07/07/2024 19:45:22","192.168.1.100:43099","INFO","479b758a-45a6-46ab-9784-6a90add685d3","Textul initial: Java este minunat!"
+"07/07/2024 19:45:22","192.168.1.100:43099","INFO","479b758a-45a6-46ab-9784-6a90add685d3","Lungimea textului: 18"
+"07/07/2024 19:45:22","192.168.1.100:43099","INFO","479b758a-45a6-46ab-9784-6a90add685d3","Valoarea lui PI: 3.14159"
+"07/07/2024 19:45:22","192.168.1.100:43099","INFO","479b758a-45a6-46ab-9784-6a90add685d3","Testul s-a încheiat."
+"07/07/2024 19:45:22","192.168.1.100:43099","SUCCESS","479b758a-45a6-46ab-9784-6a90add685d3","/usr/local/bin/docker cp 479b758a-45a6-46ab-9784-6a90add685d3:/app ./serverJavaResourcesRemote/192.168.1.100_43216/"
+"07/07/2024 19:45:22","192.168.1.100:43099","INFO","479b758a-45a6-46ab-9784-6a90add685d3","Status cp docker:local: 0"
+"07/07/2024 19:45:22","192.168.1.100:43099","INFO","479b758a-45a6-46ab-9784-6a90add685d3","Status process run container: 0"
+"07/07/2024 19:45:22","192.168.1.100:43099","INFO","479b758a-45a6-46ab-9784-6a90add685d3","serverJavaResourcesRemote/192.168.1.100_43216/"
+"07/07/2024 19:45:22","192.168.1.100:43099","INFO","479b758a-45a6-46ab-9784-6a90add685d3","serverJavaResourcesRemote/192.168.1.100_43216_479b758a-45a6-46ab-9784-6a90add685d3"
+"07/07/2024 19:45:22","192.168.1.100:43099","ERROR","479b758a-45a6-46ab-9784-6a90add685d3","serverJavaResourcesRemote/192.168.1.100_43216_479b758a-45a6-46ab-9784-6a90add685d3"
+"07/07/2024 19:45:22","192.168.1.100:43099","SUCCESS","479b758a-45a6-46ab-9784-6a90add685d3","Success delete container!"
+"07/07/2024 19:45:23","192.168.1.100:43099","SUCCESS","479b758a-45a6-46ab-9784-6a90add685d3","Success delete volume!"
+"07/07/2024 19:45:23","192.168.1.100:43099","SUCCESS","479b758a-45a6-46ab-9784-6a90add685d3","Success delete image!"
+"07/07/2024 19:45:23","192.168.1.100:43099","SUCCESS","479b758a-45a6-46ab-9784-6a90add685d3","Completed successfully for: 479b758a-45a6-46ab-9784-6a90add685d3"
+"07/07/2024 19:45:23","192.168.1.100:43099","SUCCESS","479b758a-45a6-46ab-9784-6a90add685d3","Wait request...."
+"07/07/2024 19:45:34","192.168.1.100:43099","MESSAGE","479b758a-45a6-46ab-9784-6a90add685d3","Message from: 479b758a-45a6-46ab-9784-6a90add685d3 with file: TestWrite.java"
+"07/07/2024 19:45:34","192.168.1.100:43099","INFO","479b758a-45a6-46ab-9784-6a90add685d3","MessageToExecutionNode(userId=479b758a-45a6-46ab-9784-6a90add685d3, fileName=TestWrite.java, content=// ok
+public class TestWrite {
+    public static void main(String[] args){
+        System.out.println(""Incepeti testul..."");
+
+        int num1 = 5;
+        int num2 = 7;
+        int sum = num1 + num2;
+        System.out.println(""Suma dintre "" + num1 + "" si "" + num2 + "" este: "" + sum);
+
+        String text = ""Java este minunat!"";
+        System.out.println(""Textul initial: "" + text);
+        System.out.println(""Lungimea textului: "" + text.length());
+        double pi = 3.14159;
+        System.out.println(""Valoarea lui PI: "" + pi);
+
+        System.out.println(""Testul s-a încheiat."");
+    }
+}
+, isStartUp=1, contentByte=[], methodExecution=2)"
+"07/07/2024 19:45:35","192.168.1.100:43099","ERROR","479b758a-45a6-46ab-9784-6a90add685d3","Error response from daemon: No such container: 479b758a-45a6-46ab-9784-6a90add685d3
+"
+"07/07/2024 19:45:35","192.168.1.100:43099","ERROR","479b758a-45a6-46ab-9784-6a90add685d3","Error stop container!"
+"07/07/2024 19:45:35","192.168.1.100:43099","INFO","479b758a-45a6-46ab-9784-6a90add685d3","Run command: /usr/bin/dash -c jar cfm TestWrite.jar manifest.txt *.class"
+"07/07/2024 19:45:35","192.168.1.100:43099","INFO","479b758a-45a6-46ab-9784-6a90add685d3","Status create jar: 0 for: 479b758a-45a6-46ab-9784-6a90add685d3"
+"07/07/2024 19:45:35","192.168.1.100:43099","INFO","479b758a-45a6-46ab-9784-6a90add685d3","Status create volume: 0"
+"07/07/2024 19:45:35","192.168.1.100:43099","INFO","479b758a-45a6-46ab-9784-6a90add685d3","/usr/local/bin/docker image build -t 479b758a-45a6-46ab-9784-6a90add685d3:latest ."
+"07/07/2024 19:45:37","192.168.1.100:43099","ERROR","479b758a-45a6-46ab-9784-6a90add685d3","#0 building with ""desktop-linux"" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 153B done
+#1 DONE 0.0s
+
+#2 [internal] load metadata for docker.io/library/amazoncorretto:17-alpine-jdk
+#2 DONE 0.6s
+
+#3 [internal] load .dockerignore
+#3 transferring context: 2B done
+#3 DONE 0.0s
+
+#4 [1/4] FROM docker.io/library/amazoncorretto:17-alpine-jdk@sha256:950933535cc7d81fe0851e6b4782f4b25b24a9e3115bbacc77b40c57144701c0
+#4 DONE 0.0s
+
+#5 [internal] load build context
+#5 transferring context: 3.53kB done
+#5 DONE 0.0s
+
+#6 [2/4] WORKDIR /app
+#6 CACHED
+
+#7 [3/4] ADD TestWrite.jar TestWrite.jar
+#7 DONE 0.0s
+
+#8 [4/4] COPY . .
+#8 DONE 0.0s
+
+#9 exporting to image
+#9 exporting layers 0.0s done
+#9 writing image sha256:fc820e64568c75f38c55c6506dedd5119c249791052a6d6e9b1e71bfda9cffa7 done
+#9 naming to docker.io/library/479b758a-45a6-46ab-9784-6a90add685d3:latest done
+#9 DONE 0.0s
+"
+"07/07/2024 19:45:37","192.168.1.100:43099","INFO","479b758a-45a6-46ab-9784-6a90add685d3","Docker build image: 0"
+"07/07/2024 19:45:37","192.168.1.100:43099","INFO","479b758a-45a6-46ab-9784-6a90add685d3","/usr/local/bin/docker run --network none -m 400m -v 479b758a-45a6-46ab-9784-6a90add685d3:/app --name 479b758a-45a6-46ab-9784-6a90add685d3 -i 479b758a-45a6-46ab-9784-6a90add685d3:latest"
+"07/07/2024 19:45:37","192.168.1.100:43099","INFO","479b758a-45a6-46ab-9784-6a90add685d3","Incepeti testul..."
+"07/07/2024 19:45:37","192.168.1.100:43099","INFO","479b758a-45a6-46ab-9784-6a90add685d3","Suma dintre 5 si 7 este: 12"
+"07/07/2024 19:45:37","192.168.1.100:43099","INFO","479b758a-45a6-46ab-9784-6a90add685d3","Textul initial: Java este minunat!"
+"07/07/2024 19:45:37","192.168.1.100:43099","INFO","479b758a-45a6-46ab-9784-6a90add685d3","Lungimea textului: 18"
+"07/07/2024 19:45:37","192.168.1.100:43099","INFO","479b758a-45a6-46ab-9784-6a90add685d3","Valoarea lui PI: 3.14159"
+"07/07/2024 19:45:37","192.168.1.100:43099","INFO","479b758a-45a6-46ab-9784-6a90add685d3","Testul s-a încheiat."
+"07/07/2024 19:45:37","192.168.1.100:43099","SUCCESS","479b758a-45a6-46ab-9784-6a90add685d3","/usr/local/bin/docker cp 479b758a-45a6-46ab-9784-6a90add685d3:/app ./serverJavaResourcesRemote/192.168.1.100_43216/"
+"07/07/2024 19:45:37","192.168.1.100:43099","INFO","479b758a-45a6-46ab-9784-6a90add685d3","Status cp docker:local: 0"
+"07/07/2024 19:45:37","192.168.1.100:43099","INFO","479b758a-45a6-46ab-9784-6a90add685d3","Status process run container: 0"
+"07/07/2024 19:45:37","192.168.1.100:43099","INFO","479b758a-45a6-46ab-9784-6a90add685d3","serverJavaResourcesRemote/192.168.1.100_43216/"
+"07/07/2024 19:45:37","192.168.1.100:43099","INFO","479b758a-45a6-46ab-9784-6a90add685d3","serverJavaResourcesRemote/192.168.1.100_43216_479b758a-45a6-46ab-9784-6a90add685d3"
+"07/07/2024 19:45:37","192.168.1.100:43099","ERROR","479b758a-45a6-46ab-9784-6a90add685d3","serverJavaResourcesRemote/192.168.1.100_43216_479b758a-45a6-46ab-9784-6a90add685d3"
+"07/07/2024 19:45:37","192.168.1.100:43099","SUCCESS","479b758a-45a6-46ab-9784-6a90add685d3","Success delete container!"
+"07/07/2024 19:45:37","192.168.1.100:43099","SUCCESS","479b758a-45a6-46ab-9784-6a90add685d3","Success delete volume!"
+"07/07/2024 19:45:37","192.168.1.100:43099","SUCCESS","479b758a-45a6-46ab-9784-6a90add685d3","Success delete image!"
+"07/07/2024 19:45:37","192.168.1.100:43099","SUCCESS","479b758a-45a6-46ab-9784-6a90add685d3","Completed successfully for: 479b758a-45a6-46ab-9784-6a90add685d3"
+"07/07/2024 19:45:37","192.168.1.100:43099","SUCCESS","479b758a-45a6-46ab-9784-6a90add685d3","Wait request...."

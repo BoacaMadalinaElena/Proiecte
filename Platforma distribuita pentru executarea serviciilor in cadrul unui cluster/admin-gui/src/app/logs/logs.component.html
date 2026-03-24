@@ -1,0 +1,120 @@
+<app-navbar></app-navbar>
+<div class="container-fluid d-flex  w-100 justify-content-center mx-0 px-0">
+    <div class="row w-100 justify-content-center into mx-0 px-0">
+        <div class="col-md-6">
+            <h1 class="text-center my-4"> {{translations.logs.type}}</h1>
+            <div class="text-center my-2">
+                <select class="form-select" name="type" id="type" [(ngModel)]="typeMessages"
+                    (ngModelChange)="onTypeChange()">
+                    <option value="0">Http node</option>
+                    <option value="1">Master node</option>
+                    <option value="2">Execution node</option>
+                </select>
+            </div>
+            <div class="my-3">
+                <label for="input1">{{translations.logs.time}}:</label>
+                <input type="text" id="input1" [(ngModel)]="time" class="form-control">
+            </div>
+            <div class="my-3" *ngIf="typeMessages === '2' || typeMessages === '1'">
+                <label for="input2" >{{translations.logs.address}}:</label>
+                <input type="text" id="input2" [(ngModel)]="address" class="form-control">
+            </div>
+            <div class="my-3">
+                <label for="input3">{{translations.logs.typeErr}}:</label>
+                <input type="text" id="input3" [(ngModel)]="type" class="form-control">
+            </div>
+            <div class="my-3" *ngIf="typeMessages === '2'">
+                <label for="input4">{{translations.logs.userId}}:</label>
+                <input type="text" id="input4" [(ngModel)]="userId" class="form-control">
+            </div>
+            <div class="my-3" *ngIf="typeMessages === '0'">
+                <label for="input4">{{translations.logs.microservice}}:</label>
+                <input type="text" id="input4" [(ngModel)]="microservice" class="form-control">
+            </div>
+            <div class="text-center my-4">
+                <button class="mx-auto px-auto buttonBlue" (click)="start()">{{translations.logs.run}}</button>
+            </div>
+        </div>
+        <p></p>
+        <div class="d-flex w-100  justify-content-center">
+            <div>
+                <button *ngIf="prevPage" (click)="goToPrevPage()" class="mx-5"><svg xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 512 512">
+                        <path
+                            d="M48 256a208 208 0 1 1 416 0A208 208 0 1 1 48 256zm464 0A256 256 0 1 0 0 256a256 256 0 1 0 512 0zM217.4 376.9c4.2 4.5 10.1 7.1 16.3 7.1c12.3 0 22.3-10 22.3-22.3V304h96c17.7 0 32-14.3 32-32V240c0-17.7-14.3-32-32-32H256V150.3c0-12.3-10-22.3-22.3-22.3c-6.2 0-12.1 2.6-16.3 7.1L117.5 242.2c-3.5 3.8-5.5 8.7-5.5 13.8s2 10.1 5.5 13.8l99.9 107.1z" />
+                    </svg></button>
+                <button *ngIf="!prevPage" class="mx-5 dis"><svg xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 512 512">
+                        <path
+                            d="M48 256a208 208 0 1 1 416 0A208 208 0 1 1 48 256zm464 0A256 256 0 1 0 0 256a256 256 0 1 0 512 0zM217.4 376.9c4.2 4.5 10.1 7.1 16.3 7.1c12.3 0 22.3-10 22.3-22.3V304h96c17.7 0 32-14.3 32-32V240c0-17.7-14.3-32-32-32H256V150.3c0-12.3-10-22.3-22.3-22.3c-6.2 0-12.1 2.6-16.3 7.1L117.5 242.2c-3.5 3.8-5.5 8.7-5.5 13.8s2 10.1 5.5 13.8l99.9 107.1z" />
+                    </svg></button>
+                <button *ngIf="nextPage" (click)="goToNextPage()" class="mx-5"><svg xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 512 512">
+                        <path
+                            d="M464 256A208 208 0 1 1 48 256a208 208 0 1 1 416 0zM0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM294.6 135.1c-4.2-4.5-10.1-7.1-16.3-7.1C266 128 256 138 256 150.3V208H160c-17.7 0-32 14.3-32 32v32c0 17.7 14.3 32 32 32h96v57.7c0 12.3 10 22.3 22.3 22.3c6.2 0 12.1-2.6 16.3-7.1l99.9-107.1c3.5-3.8 5.5-8.7 5.5-13.8s-2-10.1-5.5-13.8L294.6 135.1z" />
+                    </svg></button>
+                <button *ngIf="!nextPage" class="mx-5 dis"><svg xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 512 512">
+                        <path
+                            d="M464 256A208 208 0 1 1 48 256a208 208 0 1 1 416 0zM0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM294.6 135.1c-4.2-4.5-10.1-7.1-16.3-7.1C266 128 256 138 256 150.3V208H160c-17.7 0-32 14.3-32 32v32c0 17.7 14.3 32 32 32h96v57.7c0 12.3 10 22.3 22.3 22.3c6.2 0 12.1-2.6 16.3-7.1l99.9-107.1c3.5-3.8 5.5-8.7 5.5-13.8s-2-10.1-5.5-13.8L294.6 135.1z" />
+                    </svg></button>
+            </div>
+        </div>
+
+        <div class="mt-2 w-100">
+            <div class="container d-flex w-100">
+                <!--        <table class="table">
+                    <thead>
+                        <tr>
+                            <th>{{translations.logs.timeT}}</th>
+                            <th>{{translations.logs.addressT}}</th>
+                            <th>{{translations.logs.typeErrT}}</th>
+                            <th *ngIf="typeMessages === '2'">{{translations.logs.userIdT}}</th>
+                            <th>{{translations.logs.messageT}}</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let item of logs">
+                            <td class="left-align">{{ item.localDateTime }}</td>
+                            <td class="left-align">{{ item.address }}</td>
+                            <td class="left-align">{{ item.type }}</td>
+                            <td class="left-align" *ngIf="typeMessages === '2'">{{ item.userId }}</td>
+                            <td class="left-align" style="white-space: pre-line">{{ item.message }}</td>
+                   
+                    </tbody>
+                </table>
+            -->
+            <div class="col-md-12 mt-2 w-100 pre-container">
+                    <pre class="w-100">{{formattedLogs}}</pre>
+              </div>
+            </div>
+
+        </div>
+        <div class="d-flex  justify-content-center">
+            <div>
+                <button *ngIf="prevPage" (click)="goToPrevPage()" class="mx-5"><svg xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 512 512">
+                        <path
+                            d="M48 256a208 208 0 1 1 416 0A208 208 0 1 1 48 256zm464 0A256 256 0 1 0 0 256a256 256 0 1 0 512 0zM217.4 376.9c4.2 4.5 10.1 7.1 16.3 7.1c12.3 0 22.3-10 22.3-22.3V304h96c17.7 0 32-14.3 32-32V240c0-17.7-14.3-32-32-32H256V150.3c0-12.3-10-22.3-22.3-22.3c-6.2 0-12.1 2.6-16.3 7.1L117.5 242.2c-3.5 3.8-5.5 8.7-5.5 13.8s2 10.1 5.5 13.8l99.9 107.1z" />
+                    </svg></button>
+                <button *ngIf="!prevPage" class="mx-5 dis"><svg xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 512 512">
+                        <path
+                            d="M48 256a208 208 0 1 1 416 0A208 208 0 1 1 48 256zm464 0A256 256 0 1 0 0 256a256 256 0 1 0 512 0zM217.4 376.9c4.2 4.5 10.1 7.1 16.3 7.1c12.3 0 22.3-10 22.3-22.3V304h96c17.7 0 32-14.3 32-32V240c0-17.7-14.3-32-32-32H256V150.3c0-12.3-10-22.3-22.3-22.3c-6.2 0-12.1 2.6-16.3 7.1L117.5 242.2c-3.5 3.8-5.5 8.7-5.5 13.8s2 10.1 5.5 13.8l99.9 107.1z" />
+                    </svg></button>
+                <button *ngIf="nextPage" (click)="goToNextPage()" class="mx-5"><svg xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 512 512">
+                        <path
+                            d="M464 256A208 208 0 1 1 48 256a208 208 0 1 1 416 0zM0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM294.6 135.1c-4.2-4.5-10.1-7.1-16.3-7.1C266 128 256 138 256 150.3V208H160c-17.7 0-32 14.3-32 32v32c0 17.7 14.3 32 32 32h96v57.7c0 12.3 10 22.3 22.3 22.3c6.2 0 12.1-2.6 16.3-7.1l99.9-107.1c3.5-3.8 5.5-8.7 5.5-13.8s-2-10.1-5.5-13.8L294.6 135.1z" />
+                    </svg></button>
+                <button *ngIf="!nextPage" class="mx-5 dis"><svg xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 512 512">
+                        <path
+                            d="M464 256A208 208 0 1 1 48 256a208 208 0 1 1 416 0zM0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM294.6 135.1c-4.2-4.5-10.1-7.1-16.3-7.1C266 128 256 138 256 150.3V208H160c-17.7 0-32 14.3-32 32v32c0 17.7 14.3 32 32 32h96v57.7c0 12.3 10 22.3 22.3 22.3c6.2 0 12.1-2.6 16.3-7.1l99.9-107.1c3.5-3.8 5.5-8.7 5.5-13.8s-2-10.1-5.5-13.8L294.6 135.1z" />
+                    </svg></button>
+            </div>
+        </div>
+    </div>
+</div>
+<app-popup></app-popup>
+<app-loader *ngIf="loaderFlag"></app-loader>

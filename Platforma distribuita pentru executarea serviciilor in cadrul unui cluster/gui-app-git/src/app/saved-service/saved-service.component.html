@@ -1,0 +1,5 @@
+<div class="mt-0 pt-4 text-center px-2" (click)="openCode()">
+    <p class="h4">{{inputElement.title}}</p>
+    <p class="justified-text px-3 mt-5">{{ inputElement.description.slice(0, 400) }}{{ inputElement.description.length > 50 ? '...' : '' }}</p>
+</div>
+<app-popup></app-popup>

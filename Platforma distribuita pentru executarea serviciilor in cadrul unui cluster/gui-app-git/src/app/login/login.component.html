@@ -1,0 +1,47 @@
+<div class=" d-flex containerStart m-0 p-0">
+    <div class="content">
+        <form id="formLanguage" *ngIf="language === 'ro'" (change)="onSelectionChange($event)" class="mt-0 pt-0">
+            <select class="me-2  pt-2 language py-auto">
+                <option value="ro">{{translations.startUp.language1}}</option>
+                <option value="en">{{translations.startUp.language2}}</option>
+            </select>
+        </form>
+        <form id="formLanguage" *ngIf="language === 'en'" (change)="onSelectionChange($event)" class="mt-0">
+            <select class="me-2  pt-2 language py-auto">
+                <option value="en">{{translations.startUp.language2}}</option>
+                <option value="ro">{{translations.startUp.language1}}</option>
+            </select>
+        </form>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <p id="titleStartUp" class="mb-5 pb-0">{{translations.login.title}}</p>
+        <form id="formStartUp" #userForm="ngForm" class="mx-auto" (ngSubmit)="onClickSubmit(userForm.value)">
+            <div class="form-group mx-auto">
+                <label class="mx-auto">{{translations.login.username}}</label>
+                <input type="text" name="identity" class="mx-auto" ngModel>
+            </div>
+            <div class="form-group mx-auto">
+                <label class="mx-auto">{{translations.login.password}}</label>
+                <input type="password" name="password"  class="mx-auto" ngModel>
+            </div>
+            <br />
+            <div class="message">
+                <p id="message" *ngIf="messageFromServer != null">{{messageFromServer}}</p>
+            </div>
+            <div class="link">
+                <a href="/create-account">{{translations.login.message}}</a>
+            </div>
+            <div class="link">
+                <a href="/reset-password/">{{translations.login.passwordReset}}</a>
+            </div>
+            <br>
+            <input type="submit" class="mx-auto  py-0" value="{{translations.login.submit}}">
+        </form>
+
+    </div>
+</div>
+<app-popup></app-popup>
+<app-loader *ngIf="loaderFlag"></app-loader>

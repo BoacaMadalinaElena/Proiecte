@@ -1,0 +1,66 @@
+.main {
+    width: 80%;
+    height: 80%;
+}
+
+.divSmall {
+    width: 100%;
+    height: 100%;
+}
+
+.divVerySmall {
+    width: 30%;
+    height: 80%;
+}
+
+.divLarge {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40vh;
+}
+
+.plus-sign {
+    position: fixed;
+    bottom: 40px;
+    right: 80px;
+    width: 80px;
+    height: 80px;
+    background-color: #234E70;
+    color: #ffffff;
+    font-size: 48px;
+    text-align: center;
+    line-height: 80px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.center-container {
+    display: flex;
+    justify-content: center;
+}
+
+
+button{
+    border: none;
+    background-color: #ffffff;
+    width: 48px;
+    height: 48px;
+}
+
+.dis {
+    opacity: 0.3; 
+    pointer-events: none;
+}
+
+input{
+    width: 100%;
+    border-radius: 8px;
+    border: 1px solid rgb(0, 0, 0);
+    font-size: 1.2em;
+}
+
+.divSearch{
+    width: 100%;
+    
+}

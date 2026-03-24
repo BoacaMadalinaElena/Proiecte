@@ -1,0 +1,12 @@
+<div>
+    <ul class="m-0 py-3 mx-0 px0">
+        <img class="d-inline mt-0 ps-0 ms-0 pt-0" src="assets/logo.svg">
+        <li (click)="changeTab(0)" class="px-3 py-0 my-0 d-inline"  (click)="navigateTo('/home')"><a [style.textDecoration]="getIdUnderline() == '0' ? 'underline' : 'none'">{{translations.navbar.home}}</a></li>
+        <li (click)="changeTab(2)" class="px-3 py-0 d-inline" (click)="navigateTo('/logs')" ><a [style.textDecoration]="getIdUnderline() == '2' ? 'underline' : 'none'" >{{translations.navbar.logs}}</a></li>
+       <li (click)="changeTab(3)" class="px-3 py-0 d-inline"  (click)="navigateTo('/feedback-page')" ><a [style.textDecoration]="getIdUnderline() == '3' ? 'underline' : 'none'">{{translations.navbar.feedback}}</a>
+        </li>
+      <li (click)="changeTab(0)" class="px-3 py-1 d-inline me-2" id="logout"><a id="logout" (click)="logout()" [style.textDecoration]="getIdUnderline() == '7' ? 'underline' : 'none'"
+               >{{translations.navbar.logout}}</a></li>
+    </ul>
+</div>
+<app-popup></app-popup>

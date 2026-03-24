@@ -1,0 +1,182 @@
+services:
+  mongodb-container:
+    container_name: 'mongodb-container'
+    image: 'mongo:latest'
+    environment:
+      - 'MONGO_INITDB_ROOT_PASSWORD=password'
+      - 'MONGO_INITDB_ROOT_USERNAME=root'
+    ports:
+      - '27019:27017'
+    expose:
+      - '27019'
+    volumes:
+      - 'data1:/data1'
+    restart: always
+
+  mariadb-container:
+    container_name: 'mariadb-container'
+    image: 'mariadb:latest'
+    environment:
+      - 'MARIADB_DATABASE=cluster'
+      - 'MARIADB_PASSWORD=password'
+      - 'MARIADB_ROOT_PASSWORD=password'
+      - 'MARIADB_USER=user'
+    ports:
+      - '3306:3306'
+    expose:
+      - '3306'
+    volumes:
+      - 'data2:/data2'
+    restart: always
+      
+  mariadb-container-code:
+    container_name: 'mariadb-container-code'
+    image: 'mariadb:latest'
+    environment:
+      - 'MARIADB_DATABASE=cluster'
+      - 'MARIADB_PASSWORD=password'
+      - 'MARIADB_ROOT_PASSWORD=password'
+      - 'MARIADB_USER=user'
+    ports:
+      - '3307:3306'
+    expose:
+      - '3307'
+    volumes:
+      - 'data3:/data3'
+    restart: always
+      
+  mariadb-container-feedback:
+    container_name: 'mariadb-container-feedback'
+    image: 'mariadb:latest'
+    environment:
+      - 'MARIADB_DATABASE=cluster'
+      - 'MARIADB_PASSWORD=password'
+      - 'MARIADB_ROOT_PASSWORD=password'
+      - 'MARIADB_USER=user'
+    ports:
+      - '3308:3306'
+    expose:
+      - '3308'
+    volumes:
+      - 'data4:/data4'
+    restart: always
+      
+  mariadb-container-ip:
+    container_name: 'mariadb-container-ip'
+    image: 'mariadb:latest'
+    environment:
+      - 'MARIADB_DATABASE=cluster'
+      - 'MARIADB_PASSWORD=password'
+      - 'MARIADB_ROOT_PASSWORD=password'
+      - 'MARIADB_USER=user'
+    ports:
+      - '3309:3306'
+    expose:
+      - '3309'
+    volumes:
+      - 'data4:/data4'
+    restart: always
+
+  redis-query:
+    image: 'redis/redis-stack:latest'
+    environment:
+      - 'REDIS_ARGS=--appendonly yes'
+    container_name: 'redis-query'
+    volumes:
+      - 'data5:/data5'
+    ports:
+      - '6379:6379'
+      - '8001:8001'
+    expose:
+      - '6379'
+      - '8001'
+    restart: always
+
+  address_component:
+    build: "./address_component"
+    image: "address_component:v1"
+    container_name: "address-component-microservice"
+    depends_on:
+      - mariadb-container-ip
+    volumes:
+      - 'data6:/data6'
+    ports:
+      - '9030:9030'
+    expose:
+      - '9030'
+    restart: always
+
+  centralized_log_store:
+    build: "./centralized_log_store"
+    image: "centralized_log_store:v1"
+    container_name: "centralized_log_store"
+    depends_on:
+      - mongodb-container
+    volumes:
+      - 'data7:/data7'
+    ports:
+      - '8070:8070'
+    expose:
+      - '8070'
+    restart: always
+
+  code_component:
+    build: "./code_component"
+    image: "code_component:v1"
+    container_name: "code_component"
+    depends_on:
+      - mariadb-container-code
+    volumes:
+      - 'data8:/data8'
+    ports:
+      - '9010:9010'
+    expose:
+      - '9010'
+    restart: always
+
+  feedback_component:
+    build: "./feedback_component"
+    image: "feedback_component:v1"
+    container_name: "feedback_component"
+    depends_on:
+      - mariadb-container-feedback
+    volumes:
+      - 'data9:/data9'
+    ports:
+      - '9020:9020'
+    expose:
+      - '9020'
+    restart: always
+      
+  idm_node:
+    build: "./idm_node"
+    image: "idm_node:v1"
+    container_name: "idm_node"
+    depends_on:
+      - mariadb-container
+    volumes:
+      - 'data10:/data10'
+    ports:
+      - '9040:9040'
+    expose:
+      - '9040'
+    restart: always
+
+ 
+volumes:
+  data1: {}
+  data2: {}
+  data3: {}
+  data4: {}
+  data5: {}
+  data6: {}
+  data7: {}
+  data8: {}
+  data9: {}
+  data10: {}
+
+networks:
+  cluster:
+    driver: bridge
+    
+

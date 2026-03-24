@@ -1,0 +1,161 @@
+{
+    "en": {
+        "home": {
+            "message": "Welcome to our innovative and distributed platform, meticulously designed to manage and execute services in a dynamic cluster environment. Our main mission is to improve efficiency, ensure scalability, and enhance security in the contemporary landscape of distributed applications. Our platform offers a comprehensive approach covering service deployment, management, and continuous monitoring.",
+            "title": "Distributed Platform for Service Execution in a Cluster",
+            "message2": "Join us today and unlock the unlimited potential of distributed applications!"
+        },
+        "navbar": {
+            "home": "Home",
+            "avaiable": "Available Services",
+            "run": "Run Your Code",
+            "settings": "Settings",
+            "results": "Results",
+            "contact": "Contact",
+            "about": "About",
+            "logout": "Logout"
+        },
+        "run": {
+            "title": "Upload code for execution",
+            "message": "Our platform offers you an exceptional dynamic experience! You can upload and execute code in various ways: .class files, .java files, zip archives with all the files mentioned earlier, and jar files. To bring your code to life, you just need to select the type of files you want to upload (the files must be of the same type), upload the files, and choose from the drop-down menu the name of the startup class. This must contain a non-static method named \"run\". Enjoy the magic of dynamic programming!",
+            "type": "Select type:",
+            "fileSelect": "Select the desired files:",
+            "select": "Select",
+            "fileSelected": "Selected files are: ",
+            "startFile": "Select the file containing the startup class of the project (the one containing the void run() method)",
+            "run": "Run",
+            "executeNavbar": "Execute Code",
+            "dependencies": "Dependencies",
+            "files": "Files",
+            "console": "Console",
+            "send": "Send"
+        },
+        "startUp": {
+            "message": "Log in or create an account to have the opportunity to execute code and explore our numerous services!",
+            "welcome": "Welcome!",
+            "login": "Log in",
+            "or": "Or",
+            "create": "Create account",
+            "language1": "Romain",
+            "language2": "English"
+        },
+        "createAccount": {
+            "title": "Create Account",
+            "username": "Username",
+            "password": "Password",
+            "password2": "Repeat password",
+            "email": "Email",
+            "firstName": "First Name",
+            "lastName": "Last Name",
+            "description": "Description",
+            "submit": "Submit",
+            "message": "Do you already have an account? Log in!",
+            "passwordMessage": "The two passwords do not match!",
+            "succes": "The user has been successfully created! Now you need to log in to the newly created account!"
+        },
+        "login": {
+            "title": "Log in",
+            "username": "Username or email",
+            "password": "Password",
+            "message": "Don't have an account? Sign up!",
+            "submit": "Log in"
+        },
+        "popup": {
+            "close": "Close"
+        },
+        "contact": {
+            "title": "Distributed Platform for Cluster Service Execution",
+            "aboutText": "The Distributed Platform for Cluster Service Execution, created by Boaca Madalina-Elena between 2023-2024, provides a space where programmers can publish software solutions accessible to users from various domains. Through it, users can access and use services without requiring advanced IT knowledge. This simplifies the process of accessing technology and brings benefits to both programmers and users."
+        },
+        "about": {
+            "title": "Distributed Platform for Running Services Within a Cluster",
+            "aboutText": "The distributed platform for running services within a cluster, created by Boacă Mădălina-Elena between 2023-2024, provides a space where programmers can publish software solutions accessible to users from various domains. Through it, users can access and use services without requiring advanced IT knowledge. This simplifies the process of accessing technology and brings benefits to both programmers and users."
+        }
+    },
+    "ro": {
+        "home": {
+            "message": "Bine ați venit pe platforma noastră inovatoare și distribuită, meticulos proiectată pentru a gestiona și executa servicii într-un mediu cluster dinamic. Misiunea noastră principală este să îmbunătățim eficiența, să asigurăm scalabilitatea și să consolidăm securitatea în peisajul contemporan al aplicațiilor distribuite. Platforma noastră oferă o abordare cuprinzătoare care acoperă implementarea serviciilor, gestionarea acestora și monitorizarea continuă.",
+            "title": "Platforma Distribuită pentru Execuția Serviciilor în Cluster",
+            "message2": "Alăturați-vă nouă astăzi și deblocați potențialul nelimitat al aplicațiilor distribuite!"
+        },
+        "navbar": {
+            "home": "Acasă",
+            "avaiable": "Servicii disponibile",
+            "run": "Execută codul tău",
+            "settings": "Setări",
+            "results": "Rezultate",
+            "contact": "Contact",
+            "about": "Despre",
+            "logout": "Ieșire"
+        },
+        "run": {
+            "title": "Încărcare cod pentru execuție",
+            "message": "Platforma noastră vă oferă o experiență dinamică de excepție! Puteți încărca și executa cod în moduri variate: fișiere .class, fișiere .java, arhive zip cu toate fișierele menționate anterior și fișiere jar. Pentru a da viață codului dvs., trebuie doar să selectați tipul de fișiere pe care doriți să le încărcați (fișierele trebuie să fie dintr-un singur tip), să încărcați fișierele și să alegeți din meniul derulant numele clasei de start-up. Aceasta trebuie să conțină o metodă nestatică numită \"run\". Bucurați-vă de magia programării dinamice!",
+            "type": "Selectează tipul:",
+            "fileSelect": "Selectați fișierele dorite:",
+            "select": "Selectează",
+            "fileSelected": "Fișierele selectate sunt: ",
+            "startFile": "Clasa principală",
+            "run": "Execută",
+            "external": "Librării externe",
+            "example": "https://repo1.maven.org/maven2/org/apache/commons/commons-lang3/3.4/commons-lang3-3.4.jar org.apache.commons:commons-lang3:3.4 .",
+            "messageExernalLibrary": "Librăriile externe trebuie specificate prin următoarele câmpuri: groupId, artifactId, version care pot fi obținute din:",
+            "executeNavbar": "Încărcare cod",
+            "dependencies": "Dependențe",
+            "files": "Fișiere",
+            "saveCode": "Publică codul tău pentru a fi disponibil și altora!",
+            "console": "Consolă",
+            "publish": "Publică",
+            "appName": "Numele aplicației",
+            "description": "Descrierea aplicației",
+            "invalidName": "Numele aplicației trebuie să aibă minim cinci caractere.",
+            "send": "Trimite",
+            "by": "De",
+            "info": "Informații despre cod",
+            "filesAvaiable": "Fișierele disponibile:"
+        },
+        "startUp": {
+            "message": "Conectați-vă sau creați un cont pentru a avea ocazia de a executa cod și de a explora numeroasele noastre servicii!",
+            "welcome": "Bine ai venit!",
+            "login": "Conectare",
+            "or": "Sau",
+            "create": "Creare cont",
+            "language1": "Română",
+            "language2": "Engleză"
+        },
+        "createAccount": {
+            "title": "Crează cont",
+            "username": "Nume de utilizator",
+            "password": "Parolă",
+            "password2": "Repetare parolă",
+            "email": "Email",
+            "firstName": "Prenume",
+            "lastName": "Nume",
+            "description": "Descriere",
+            "submit": "Creare",
+            "message": "Ai deja cont? Conectează-te!",
+            "passwordMessage": "Cele două parole nu corespund!",
+            "succes": "Utilizatorul a fost creat cu succes! Acum trebuie să te conectezi la contul tocmai creat!"
+        },
+        "login": {
+            "title": "Conectare",
+            "username": "Nume de utilizator sau email",
+            "password": "Parolă",
+            "message": "Nu ai cont? Înregistrează-te!",
+            "submit": "Conectează-te"
+        },
+        "popup": {
+            "close": "Închide"
+        },
+        "about": {
+            "title": "Platforma distribuită pentru execuția serviciilor în cadrul unui cluster",
+            "aboutText": "Platforma distribuită pentru execuția serviciilor în  cadrul unui cluster, creată de Boacă Mădălina-Elena între 2023-2024, oferă un spațiu unde programatorii pot publica soluții software accesibile utilizatorilor din diverse domenii. Prin intermediul ei, utilizatorii pot accesa și utiliza servicii fără a fi necesare cunoștințe avansate de IT. Aceasta simplifică procesul de acces la tehnologie și aduce beneficii atât programatorilor, cât și utilizatorilor."
+        },
+        "save": {
+            "saveSuccess": "Codul a fost publicat cu succes!"
+        },
+        "delete": {
+            "deleteSucces": "Programul publicat a fost șters cu success!"
+        }
+    }
+}

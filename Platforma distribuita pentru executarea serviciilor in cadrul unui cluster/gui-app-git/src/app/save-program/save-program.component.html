@@ -1,0 +1,81 @@
+<app-navbar></app-navbar>
+<div class="container mx-auto">
+    <h4 class="mt-2 mb-4">{{translations.run.saveCode}}</h4>
+    <p id="info">{{translations.run.typeRun}}</p>
+    <select name="type" id="type" [(ngModel)]="typeRun" (ngModelChange)="onSelectChangeType()">
+        <option value="0">{{translations.run.method1}}</option>
+        <option value="2">{{translations.run.method2}}</option>
+    </select>
+    <br>
+    <br>
+    <p class="infoRun mx-auto">{{translations.run.text1}}</p>
+    <p (click)="downloadFileJava()" class="getJava">GetPathFile class</p>
+    <p class="infoRun mx-auto">{{translations.run.text2}}</p>
+
+    <p id="info">{{translations.run.type}}</p>
+    <select name="type" id="type" [(ngModel)]="typeFiles" (ngModelChange)="onSelectChangeType()">
+        <option value="java">Java</option>
+   <!--    <option value="class">Class</option>--> 
+        <option value="jar">Jar</option>
+        <option *ngIf="typeRun === '2'" value="py">Python</option>
+    </select>
+    <br>
+    <br>
+    <p id="info">{{translations.run.fileSelect}}</p>
+    <label for="myfile" class="custom-file-upload p-2 "
+        *ngIf="typeFiles == 'java' || typeFiles == 'class' || typeFiles == ''" [class.label-disabled]="!isSelectedType">
+        {{translations.run.select}}
+        <input type="file" id="myfile" name="myfile" multiple accept=".{{typeFiles}}" [disabled]="!isSelectedType"
+            (change)="onFileSelected($event)" style="opacity: 0.5; cursor: not-allowed;">
+    </label>
+    <label for="myfile" class="custom-file-upload p-2" *ngIf="typeFiles == 'jar'"
+        [class.label-disabled]="!isSelectedType">
+        {{translations.run.select}}
+        <input type="file" id="myfile" name="myfile" accept=".{{typeFiles}}" [disabled]="!isSelectedType"
+            (change)="onFileSelected($event)" style="opacity: 0.5; cursor: not-allowed;">
+
+    </label>
+    <label for="myfile" class="custom-file-upload p-2" *ngIf="typeFiles == 'py'"
+    [class.label-disabled]="!isSelectedType">
+    {{translations.run.select}}
+    <input type="file" id="myfile" name="myfile"  multiple accept=".{{typeFiles}}" [disabled]="!isSelectedType"
+        (change)="onFileSelected($event)" style="opacity: 0.5; cursor: not-allowed;">
+
+</label>
+    <br>
+    <p id="info">{{translations.run.fileSelected}} </p>
+    <div class="scroll-container mx-auto">
+        <div *ngFor="let value of listOfFilesName">
+            <div (click)="removeValue(value)">
+                <p class="d-inline" id="p1">{{value}}</p>
+                <p class="d-inline" id="p2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;X</p>
+            </div>
+        </div>
+    </div><br>
+    <p id="info">{{translations.run.startFile}}</p>
+    <label for="fileDropdown"></label>
+    <select id="fileDropdown" name="fileDropdown" [(ngModel)]="startUpFile" [disabled]="!isSelectedFiles"
+        (ngModelChange)="onSelectChangeStartUp($event)">
+        <option *ngFor="let value of listOfFilesName" [value]="value">{{ value }}
+        </option>
+    </select>
+    <div class=" div2  mt-2">
+        <p id="info2" class="required-field mt-4">{{translations.run.appName}}</p>
+        <a class="star">*</a>
+        <br>
+        <textarea class="mx-auto textarea1" [(ngModel)]="textAreaValue1"></textarea>
+        <p id="message" class="my-0 py-0 " *ngIf="textAreaValue1.length < 5">{{translations.run.invalidName}}</p>
+        <br>
+        <p id="info2" class="required-field mt-0 pt-0">{{translations.run.description}}</p>
+        <br>
+        <textarea class="mx-auto textarea2" [(ngModel)]="textAreaValue2"></textarea>
+    </div>
+    <label id="info" for="checkbox" class="mt-2">{{translations.run.avaiable}}	&nbsp;	&nbsp;	&nbsp;</label>
+    <input type="checkbox" class="pt-2 mt-2" [checked]="isPublic" (change)="toggleCheckbox($event)">
+    <div class="containerButton mt-4">
+        <button [disabled]="!isSelectedStartUp || textAreaValue1.length < 5 " class="mb-5 center-button-save"
+            (click)="submit()">{{translations.run.publish}}</button>
+    </div>
+    <app-popup></app-popup>
+</div>
+<app-loader *ngIf="loaderFlag"></app-loader>

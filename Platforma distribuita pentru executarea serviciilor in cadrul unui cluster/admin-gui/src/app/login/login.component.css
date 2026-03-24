@@ -1,0 +1,143 @@
+.containerStart {
+    background-image: url('../images/bg_bggenerator_com_15.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.content {
+    position: absolute;
+    top: 15%;
+    left: 35%;
+    right: 15%;
+    bottom: 10%;
+    width: 30%;
+    height: 60%;
+    background-color: #ffffff;
+    box-shadow: 0 0 80px rgba(0, 0, 0, 1.0);
+}
+
+.message {
+    text-align: end;
+}
+
+#message {
+    color: red;
+    font-size: 20px;
+    font-family: Roboto;
+    font-style: normal;
+}
+
+#titleStartUp {
+    text-align: center;
+    color: #000000;
+    font-size: 48px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 120%;
+}
+
+
+#formStartUp {
+    position: relative;
+    margin-left: 10%;
+    margin-top: 0%;
+    width: 80%;
+    height: 80%;
+    min-width: 200px;
+    min-height: 100px;
+}
+
+#logoStartUp {
+    width: 20%;
+    height: 20%;
+    position: absolute;
+    top: 5%;
+    left: 40%;
+}
+
+p {
+    color: #000;
+}
+
+#formLanguage {
+    text-align: end;
+    justify-content: end;
+}
+
+#globe {
+    width: 24px;
+    height: 100%;
+}
+
+.language {
+    border: 0px;
+    background-color: #FFF;
+    font-size: 20px;
+    height: 100%;
+}
+
+label {
+    text-align: start;
+}
+
+input,
+textarea {
+    width: 100%;
+    display: block;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: #272727;
+    border-width: 1px;
+    height: 16%;
+}
+
+input[type=submit] {
+    border-color: #538BA2;
+    background: #538BA2;
+    color: #ffffff;
+    height: 8%;
+}
+
+input,
+textarea {
+    margin-top: 1px;
+}
+
+label,
+input,
+a {
+    margin-top: 10px;
+    font-size: 20px;
+    font-family: Roboto;
+    font-style: normal;
+}
+
+textarea {
+    resize: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.link{
+    text-align: end;
+}
+
+label,
+input,
+a,
+textarea {
+    margin-top: 5px;
+    font-size: 20px;
+    font-family: Roboto;
+    font-style: normal;
+}

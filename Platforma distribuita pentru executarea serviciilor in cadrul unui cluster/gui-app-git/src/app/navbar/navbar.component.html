@@ -1,0 +1,17 @@
+<div>
+    <ul class="m-0 py-3 mx-0 px0">
+        <img class="d-inline mt-0 ps-0 ms-0 pt-0" src="assets/logo.svg">
+        <li (click)="changeTab(0)" class="px-3 py-0 my-0 d-inline"  (click)="navigateTo('/home')"><a [style.textDecoration]="getIdUnderline() == '0' ? 'underline' : 'none'">{{translations.navbar.home}}</a></li>
+        <li (click)="changeTab(1)" class="px-3 py-0 d-inline" (click)="navigateTo('/avaiable-service/0')"><a [style.textDecoration]="getIdUnderline() == '1' ? 'underline' : 'none'"
+            >{{translations.navbar.avaiable}}</a></li>
+        <li (click)="changeTab(2)" class="px-3 py-0 d-inline" (click)="navigateTo('/run-code')" ><a [style.textDecoration]="getIdUnderline() == '2' ? 'underline' : 'none'" >{{translations.navbar.run}}</a></li>
+       <li (click)="changeTab(3)" class="px-3 py-0 d-inline"  (click)="navigateTo('/settings')" ><a [style.textDecoration]="getIdUnderline() == '3' ? 'underline' : 'none'">{{translations.navbar.settings}}</a>
+        </li>
+       <!-- <li (click)="changeTab(4)" class="px-3 py-0 d-inline" (click)="navigateTo('/result')"><a [style.textDecoration]="getIdUnderline() == '4' ? 'underline' : 'none'" >{{translations.navbar.results}}</a></li>-->
+        <li (click)="changeTab(5)" class="px-3 py-0 d-inline"  (click)="navigateTo('/contact')" ><a [style.textDecoration]="getIdUnderline() == '5' ? 'underline' : 'none'">{{translations.navbar.contact}}</a></li>
+        <li (click)="changeTab(6)" class="px-3 py-0 d-inline" (click)="navigateTo('/about')"><a [style.textDecoration]="getIdUnderline() == '6' ? 'underline' : 'none'" >{{translations.navbar.about}}</a></li>
+        <li (click)="changeTab(0)" class="px-3 py-1 d-inline me-2" id="logout"><a id="logout" (click)="logout()" [style.textDecoration]="getIdUnderline() == '7' ? 'underline' : 'none'"
+               >{{translations.navbar.logout}}</a></li>
+    </ul>
+</div>
+<app-popup></app-popup>

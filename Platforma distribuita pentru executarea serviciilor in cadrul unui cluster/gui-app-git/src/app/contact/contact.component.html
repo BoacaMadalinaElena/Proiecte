@@ -1,0 +1,23 @@
+<app-navbar></app-navbar>
+<br><br><br><br>
+<div class=" d-flex full  mt-2 justify-content-center mx-auto">
+    <form #feedbackForm="ngForm" (ngSubmit)="submitFeedback()">
+        <h1 class="mt-4">{{translations.contact.title}}</h1>
+      
+        <div class="form-group mt-4">
+            <label for="subject" class="text-start">{{translations.contact.subject}}:</label>
+            <input type="text" id="subject" name="subject" class="form-control" [(ngModel)]="feedbackData.subject" required>
+        </div>
+
+        <div class="form-group mt-4">
+            <label for="content" class="text-start">{{translations.contact.content}}:</label>
+            <textarea id="content" name="content" class="form-control" [(ngModel)]="feedbackData.content" required></textarea>
+        </div>
+        <p id="message" *ngIf="messageFromServer">{{ messageFromServer }}</p>
+        <div class="form-group justify-content-center text-center mt-5 mb-5">
+            <button type="submit" class="btn mx-auto btn-primary">{{translations.contact.send}}</button>
+        </div>
+        <app-popup></app-popup>
+    </form>
+</div>
+<app-loader *ngIf="loaderFlag"></app-loader>
